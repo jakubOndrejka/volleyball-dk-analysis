@@ -24,7 +24,8 @@
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-09-22T18:40:05.583Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "76141",
@@ -49,7 +50,8 @@
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-09-22T18:40:04.077Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "76630",
@@ -74,7 +76,8 @@
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "76641",
@@ -94,7 +97,8 @@
       "failures": 1,
       "reason": "Service endpoints exceed the final score.",
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77379",
@@ -119,7 +123,8 @@
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77438",
@@ -144,7 +149,8 @@
       "failures": 0,
       "sets": 5,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77563",
@@ -169,7 +175,8 @@
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77592",
@@ -194,7 +201,8 @@
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77651",
@@ -219,7 +227,8 @@
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77682",
@@ -244,7 +253,8 @@
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "78033",
@@ -260,7 +270,8 @@
       "failures": 1,
       "reason": "fetch failed",
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 3
     },
     {
       "id": "78034",
@@ -276,7 +287,8 @@
       "failures": 1,
       "reason": "fetch failed",
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 3
     },
     {
       "id": "78035",
@@ -292,7 +304,8 @@
       "failures": 1,
       "reason": "fetch failed",
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 3
     },
     {
       "id": "78036",
@@ -308,7 +321,8 @@
       "failures": 1,
       "reason": "fetch failed",
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 3
     },
     {
       "id": "77566",
@@ -324,7 +338,8 @@
       "failures": 1,
       "reason": "fetch failed",
       "lastCheckedAt": "2026-09-22T18:40:07.295Z",
-      "parserVersion": 1
+      "parserVersion": 1,
+      "bestOf": 5
     },
     {
       "id": "77724",
