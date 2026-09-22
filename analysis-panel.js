@@ -3,8 +3,10 @@ import {
   percentage,
   teamKey,
   validateConfig,
+  listSetters,
 } from "./analysis-engine.js";
 import { SharedCoaches } from "./shared-coaches.js";
+import { openAnalysisDetail } from "./analysis-details.js";
 const root = document.getElementById("analysis-panel");
 const storageKey = "volleyball-analysis:setters:v1";
 const coachNameKey = "volleyball-analysis:coach-name:v1";
@@ -50,6 +52,7 @@ let context = null,
   loaded = [],
   minTurns = 0,
   sort = "servingTurns",
+  rotationSetterId = "",
   report = null;
 try {
   const saved = localStorage.getItem(storageKey);
@@ -180,7 +183,13 @@ function table(rows, columns, label) {
                       ? "—"
                       : `${v > 0 ? "+" : ""}${fmt(v)}`
                     : esc(v);
-            return `<${i ? "td" : "th"} ${i ? "" : 'scope="row"'} class="${type === "signed" && v !== null ? (v < 0 ? "a-negative" : "a-positive") : ""}">${text}${key === "name" && r.servingTurns < 10 ? '<span class="a-chip">small sample</span>' : ""}</${i ? "td" : "th"}>`;
+            const linked =
+              key === "name" && r.id
+                ? `<button class="a-drill-link" data-player-id="${esc(r.id)}" aria-label="View ${esc(r.name)} match history">${text}<span aria-hidden="true"> ↗</span></button>`
+                : key === "rotation"
+                  ? `<button class="a-drill-link" data-rotation="${esc(r.rotation)}" aria-label="View ${esc(r.rotation)} match history">${text}<span aria-hidden="true"> ↗</span></button>`
+                  : text;
+            return `<${i ? "td" : "th"} ${i ? "" : 'scope="row"'} class="${type === "signed" && v !== null ? (v < 0 ? "a-negative" : "a-positive") : ""}">${linked}${key === "name" && r.servingTurns < 10 ? '<span class="a-chip">small sample</span>' : ""}</${i ? "td" : "th"}>`;
           })
           .join("")}</tr>`,
     )
@@ -396,6 +405,7 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
     ?.addEventListener("click", () => write(false, true));
 }
 function renderReport() {
+  root.querySelector("#a-detail")?.remove();
   const target = root.querySelector("#a-report");
   if (!target) return;
   const matches = loaded.filter(
@@ -423,7 +433,17 @@ function renderReport() {
         (b[sort] ?? -Infinity) - (a[sort] ?? -Infinity) ||
         b.servingTurns - a.servingTurns,
     );
-  const stuck = r.rotation
+  const setters = listSetters(loaded, team, merged());
+  if (!setters.some((p) => p.id === rotationSetterId)) rotationSetterId = "";
+  const setterName = (p) =>
+    `${p.numbers.map((n) => "#" + n).join(" / ")} · ${p.name}`;
+  const chosenSetter = setters.find((p) => p.id === rotationSetterId);
+  const rotations = rotationSetterId
+    ? analyseTeam(matches, team, merged(), selectedSet || null, {
+        setterId: rotationSetterId,
+      })
+    : r;
+  const stuck = rotations.rotation
     .filter((x) => x.rotation !== "Unconfirmed" && x.received >= 10)
     .sort((a, b) => a.sideOutPct - b.sideOutPct)[0];
   target.innerHTML = `<div class="a-metrics"><div class="a-metric"><span>First serve, point won</span><strong>${pct(percentage(firstWins, turns))}</strong><small>${firstWins} of ${turns} serving turns</small></div><div class="a-metric"><span>Side-out rate</span><strong>${pct(percentage(r.total.sideOuts, r.total.received))}</strong><small>${r.total.sideOuts} of ${r.total.received} receptions</small></div><div class="a-metric"><span>In the sample</span><strong>${r.setCount} sets</strong><small>${r.matchCount} ${r.matchCount === 1 ? "match" : "matches"} · ${r.total.rallies} rallies</small></div><div class="a-metric"><span>Rotations confirmed</span><strong>${pct(r.confirmedPct)}</strong><small>${r.rotation.at(-1).rallies} rallies Unconfirmed</small></div></div>
@@ -441,16 +461,44 @@ ${r.confirmedPct < 100 ? '<div class="a-notice">Some rotations are <strong>Uncon
     )
     .join(
       "",
-    )}</select></label></div>${shown.length ? table(shown, serveColumns, "Player serving analysis") : '<p class="a-note">No players meet this minimum. Lower the filter to see everyone.</p>'}<p class="a-note">Compare first-rally win % and points / turn alongside the number of turns. Fewer than 10 turns is a small sample. A point won while serving is a team rally win; this does not measure aces or serve errors. Scroll right for serves, sets and rates.</p></section>
-<section class="a-card"><div class="a-card-head"><div><h3>Where do we get stuck?</h3><p>S1–S6 = setter position before the rally. Side-outs count in the receiving rotation, before the team rotates.</p></div><button id="a-rotation-csv" class="a-small">Download rotation CSV ↓</button></div><div class="a-bars">${r.rotation
+    )}</select></label></div>${shown.length ? table(shown, serveColumns, "Player serving analysis") : '<p class="a-note">No players meet this minimum. Lower the filter to see everyone.</p>'}<p class="a-note">Click a player for match history and progress charts. Compare first-rally win % and points / turn alongside the number of turns. Fewer than 10 turns is a small sample. A point won while serving is a team rally win; this does not measure aces or serve errors. Scroll right for serves, sets and rates.</p></section>
+<section class="a-card" id="a-rotation-section"><div class="a-card-head"><div><h3>Where do we get stuck?</h3><p>S1–S6 = setter position before the rally. Side-outs count in the receiving rotation, before the team rotates.</p></div><button id="a-rotation-csv" class="a-small">Download rotation CSV ↓</button></div><div class="a-toolbar"><label>Setter <select id="a-rotation-setter"><option value="">All setters</option>${setters.map((p) => `<option value="${esc(p.id)}" ${p.id === rotationSetterId ? "selected" : ""}>${esc(setterName(p))}</option>`).join("")}</select></label><span class="a-note">${rotations.total.rallies} rallies · ${chosenSetter ? esc(setterName(chosenSetter)) : "all setters, including Unconfirmed"}</span></div><p class="a-note">${chosenSetter ? "Only rallies where this player was the identified setter. Ambiguous rallies are excluded. The serving table and overview above still show the whole team." : setters.length ? "Filter by the actual setter on each rally, including configured backups. Click a rotation for match history and progress charts." : "Choose setters in “Who was setting?” to enable individual setter filters. Unassigned rallies stay Unconfirmed."}</p><div class="a-bars">${rotations.rotation
     .slice(0, 6)
     .map(
       (b) =>
-        `<div class="a-bar"><b>${b.rotation}</b><strong>${pct(b.sideOutPct)}</strong><small>${b.sideOuts}/${b.received} side-outs</small><div class="a-bar-track"><i style="width:${b.sideOutPct || 0}%"></i></div></div>`,
+        `<button class="a-bar" data-rotation="${b.rotation}" aria-label="View ${b.rotation} match history"><b>${b.rotation} ↗</b><strong>${pct(b.sideOutPct)}</strong><small>${b.sideOuts}/${b.received} side-outs</small><div class="a-bar-track"><i style="width:${b.sideOutPct || 0}%"></i></div></button>`,
     )
     .join(
       "",
-    )}</div>${stuck ? `<div class="a-notice"><strong>${stuck.rotation}</strong> has the lowest observed side-out rate: <strong>${pct(stuck.sideOutPct)}</strong> (${stuck.sideOuts}/${stuck.received}). Its longest receiving spell lost ${stuck.longestReceivingRun} consecutive points. Compare rotations with similar sample sizes.</div>` : '<p class="a-note">The comparison appears once a confirmed rotation has at least 10 received rallies.</p>'}${table(r.rotation, rotationColumns, "Rotation analysis")}<p class="a-note">Net points / 100 = 100 × (won − lost) / rallies. A dash means no observations. ${r.serving.reduce((n, p) => n + p.setEndingTurns, 0)} serving turns ended with a set-winning point; their runs stop at the set boundary.</p></section>`;
+    )}</div>${stuck ? `<div class="a-notice"><strong>${stuck.rotation}</strong> has the lowest observed side-out rate: <strong>${pct(stuck.sideOutPct)}</strong> (${stuck.sideOuts}/${stuck.received}). Its longest receiving spell lost ${stuck.longestReceivingRun} consecutive points. Compare rotations with similar sample sizes.</div>` : '<p class="a-note">The comparison appears once a confirmed rotation has at least 10 received rallies.</p>'}${chosenSetter && !rotations.total.rallies ? '<div class="a-notice">No rallies are attributed to this setter in the selected match/set. Check the setter choices or select more matches.</div>' : ""}${table(rotations.rotation, rotationColumns, "Rotation analysis")}<p class="a-note">Net points / 100 = 100 × (won − lost) / rallies. A dash means no observations. ${r.serving.reduce((n, p) => n + p.setEndingTurns, 0)} serving turns ended with a set-winning point; their runs stop at the set boundary.</p></section>`;
+  target.querySelector("#a-rotation-setter").onchange = (event) => {
+    rotationSetterId = event.target.value;
+    renderReport();
+    root.querySelector("#a-rotation-setter")?.focus();
+  };
+  target
+    .querySelectorAll("[data-player-id], [data-rotation]")
+    .forEach((button) => {
+      button.onclick = () =>
+        openAnalysisDetail({
+          root,
+          type: button.dataset.playerId ? "player" : "rotation",
+          id: button.dataset.playerId || button.dataset.rotation,
+          team,
+          matches: loaded,
+          currentMatches: matches,
+          setFilter: selectedSet || null,
+          config: merged(),
+          setterId: rotationSetterId || null,
+          setterName: chosenSetter ? setterName(chosenSetter) : "All setters",
+          opener: button,
+          table,
+          serveColumns,
+          rotationColumns,
+          download,
+          csv,
+        });
+    });
   target.querySelector("#a-min-turns").onchange = (e) => {
     minTurns = Math.max(0, Math.min(1000, +e.target.value || 0));
     renderReport();
@@ -467,8 +515,8 @@ ${r.confirmedPct < 100 ? '<div class="a-notice">Some rotations are <strong>Uncon
     );
   target.querySelector("#a-rotation-csv").onclick = () =>
     download(
-      `${team}-rotations-${selectedMatch}.csv`,
-      csv(r.rotation, [
+      `${team}-rotations-${selectedMatch}${rotationSetterId ? "-setter-" + rotationSetterId : ""}.csv`,
+      csv(rotations.rotation, [
         ...rotationColumns,
         ["longestReceivingRun", "Longest receiving loss run"],
         ["receivingStalls", "Receiving spells losing 3+"],
@@ -499,6 +547,7 @@ ${shared.enabled || sharedError ? `<div class="a-notice a-shared-status ${shared
     ?.addEventListener("click", refreshShared);
   root.querySelector("#a-team").onchange = (e) => {
     team = e.target.value;
+    rotationSetterId = "";
     selectedMatch = "all";
     selectedSet = "";
     setupSet = "";
@@ -595,6 +644,7 @@ function setContext(c) {
   const changed = !context || +c.leagueId !== +context.leagueId;
   context = c;
   if (changed || !c.teams.some((t) => t.name === team)) {
+    rotationSetterId = "";
     team =
       (firstContext && params.get("team")) ||
       c.team ||
@@ -606,6 +656,7 @@ function setContext(c) {
     selectedSet = "";
     setupSet = "";
   } else if (c.team && c.team !== team) {
+    rotationSetterId = "";
     team = c.team;
     selectedMatch = "all";
     selectedSet = "";

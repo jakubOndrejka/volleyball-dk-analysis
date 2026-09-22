@@ -13,6 +13,7 @@ The original standings and fixtures website from [sidiropoulos/volleyball-dk](ht
 - Per-match setters, backup setters, optional per-set overrides, and explicit back-row/front-row rules for teams using two setters.
 - CSV downloads, local setter persistence, and configuration import/export for sharing.
 - Optional shared coach editing through a Google Sheet and Apps Script: one coach code, no coach accounts, per-match saves and conflict checks. See [shared coach setup](docs/SHARED-COACHES.md).
+- Clickable player and rotation names open match histories, progress charts and CSV downloads. Filter rotation analysis by the actual setter. See [player and rotation details](docs/PLAYER-ROTATION-DETAILS.md).
 - Automatic discovery of published scorecard and roster PDF links on official result pages. No Kampskema API, AI service, API key or paid OCR service is needed.
 - A GitHub Actions workflow that refreshes results, collects PDFs, validates them and publishes GitHub Pages.
 
@@ -51,6 +52,7 @@ The included results are a **22 September 2026 snapshot of the current 2026/27 l
 |---|---|
 | `index.html` | Original results/standings application and navigation into analysis. |
 | `analysis-panel.js`, `analysis.css` | Team analysis interface, filters, setter controls and downloads. |
+| `analysis-details.js` | Player/rotation detail windows, per-match charts, scope selection and history downloads. |
 | `analysis-engine.js` | Shared serving/rotation calculations and configuration validation, used by browser and Node. |
 | `shared-coaches.js`, `shared-coaches-config.json` | Google shared-choice client and public web app URL. Never store the coach code here. |
 | `apps-script/Code.gs` | Paste into the Sheet's Apps Script project. The coach code lives in private Script properties. |
