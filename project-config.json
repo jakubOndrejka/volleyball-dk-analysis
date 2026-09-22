@@ -1,0 +1,21 @@
+{
+  "leagueIds": [
+    4128,
+    4125,
+    4133,
+    4139,
+    4118,
+    4130,
+    4132,
+    4136,
+    4137
+  ],
+  "trackedTeamPrefixes": [],
+  "maxPdfMatchesPerRun": 16,
+  "recentRecheckHours": 6,
+  "olderRecheckDays": 30,
+  "bestOfThreeLeagueIds": [
+    4136,
+    4137
+  ]
+}

@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KSV — matches, results, and standings for the club's teams." />
+  <meta property="og:title" content="KSV — Matches and standings" />
+  <meta property="og:description" content="Matches, results, and standings for KSV's teams." />
+  <meta property="og:type" content="website" />
+  <title>KSV — Matches and standings</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #181818;
+      --surface2: #222222;
+      --border: #2e2e2e;
+      --accent: #f97316;
+      --accent2: #fb923c;
+      --green: #34d399;
+      --red: #f87171;
+      --text: #f0ede8;
+      --muted: #7a7370;
+      --radius: 12px;
+    }
+
+    html.light {
+      --bg: #f5f3f0;
+      --surface: #ffffff;
+      --surface2: #ede9e4;
+      --border: #ddd8d2;
+      --text: #1c1917;
+      --muted: #78716c;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 36px;
+    }
+
+    .league-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    header h1 span {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+      padding-left: 2px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    /* Standings table */
+    .standings-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .standings-table {
+      width: 100%;
+      max-width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .standings-table thead tr {
+      background: var(--surface2);
+    }
+
+    .standings-table th {
+      padding: 9px 10px;
+      text-align: right;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .standings-table th:last-child,
+    .standings-table td:last-child {
+      padding-right: 16px;
+    }
+
+    .standings-table th.left,
+    .standings-table td.left { text-align: left; }
+
+    .standings-table th:first-child,
+    .standings-table td:first-child { text-align: center; }
+
+    .standings-table tbody tr {
+      border-top: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .standings-table tbody tr:hover { background: var(--surface2); }
+
+    .standings-table td {
+      padding: 11px 10px;
+      text-align: right;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .standings-table td.pos {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      width: 28px;
+    }
+
+    .standings-table td.team-name {
+      font-weight: 600;
+      text-align: left;
+      min-width: 0;
+    }
+
+    .team-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--surface2);
+      flex-shrink: 0;
+      border: 1.5px solid var(--border);
+    }
+
+    .team-name-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fixture-team-inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .fixture-team.home .fixture-team-inner { flex-direction: row-reverse; }
+
+    .fixture-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--surface2);
+      flex-shrink: 0;
+      border: 1.5px solid var(--border);
+    }
+
+    .team-link {
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .team-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    .standings-table tbody tr.selected { background: rgba(249, 115, 22, 0.08); }
+    .standings-table tbody tr.selected td.team-name .team-link { color: var(--accent); }
+
+    .standings-table td.pts {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .standings-table td.sets {
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Zero-state row indicator */
+    .standings-table tbody tr.zero td.team-name::after {
+      content: "";
+    }
+
+    .status-pill {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 8px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .pill-pending {
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--accent);
+    }
+
+    .season-notice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: rgba(249, 115, 22, 0.07);
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .season-notice svg { flex-shrink: 0; }
+
+    /* Fixtures */
+    .fixture-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fixture-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 12px;
+      transition: border-color 0.15s;
+    }
+
+    .fixture-card:hover { border-color: var(--accent); }
+
+    .fixture-team {
+      font-size: 14px;
+      font-weight: 600;
+      min-width: 0;
+    }
+
+    .fixture-team.home { text-align: right; }
+    .fixture-team.away { text-align: left; }
+
+    .fixture-team-inner {
+      min-width: 0;
+    }
+
+    .fixture-team-inner > :last-child {
+      overflow-wrap: anywhere;
+    }
+
+    .fixture-center {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      min-width: 90px;
+    }
+
+    .fixture-score {
+      font-size: 18px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .fixture-score.pending {
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .fixture-meta {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .fixture-venue {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 4px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      grid-column: 1 / -1;
+    }
+
+    .venue-link {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .venue-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* Team filter tag */
+    .team-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(249, 115, 22, 0.15);
+      border: 1px solid rgba(249, 115, 22, 0.4);
+      color: #fb923c;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .team-tag-clear {
+      background: none;
+      border: none;
+      color: #fb923c;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      padding: 0;
+      opacity: 0.7;
+      transition: opacity 0.15s;
+    }
+
+    .team-tag-clear:hover { opacity: 1; }
+
+    /* Filter bar */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .filter-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* Header controls */
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .header-controls {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .lang-btn, .theme-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 5px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .theme-btn { padding: 5px 10px; }
+
+    .lang-btn:hover, .theme-btn:hover { border-color: var(--accent); color: var(--text); }
+
+    /* Footer */
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* Category / League nav */
+    .cat-tabs {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .cat-tab {
+      flex: 1;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .cat-tab:hover { border-color: var(--accent); color: var(--text); }
+    .cat-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    .league-tabs-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      margin-bottom: 28px;
+    }
+
+    .league-tabs-wrap::-webkit-scrollbar { display: none; }
+
+    .league-tabs {
+      display: flex;
+      gap: 6px;
+      padding-bottom: 2px;
+    }
+
+    .league-tab {
+      white-space: nowrap;
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .league-tab:hover { border-color: var(--accent); color: var(--text); }
+    .league-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    @media (max-width: 480px) {
+      .standings-card {
+        border-radius: 10px;
+      }
+
+      .standings-table {
+        table-layout: fixed;
+        font-size: 12px;
+      }
+
+      .standings-table th,
+      .standings-table td {
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+
+      .standings-table th:nth-child(1),
+      .standings-table td:nth-child(1) {
+        width: 8%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .standings-table th:nth-child(2),
+      .standings-table td:nth-child(2) { width: 43%; }
+
+      .standings-table th:nth-child(3),
+      .standings-table td:nth-child(3),
+      .standings-table th:nth-child(4),
+      .standings-table td:nth-child(4),
+      .standings-table th:nth-child(5),
+      .standings-table td:nth-child(5) { width: 7%; }
+
+      .standings-table th:nth-child(6),
+      .standings-table td:nth-child(6) { width: 19%; }
+
+      .standings-table th:nth-child(7),
+      .standings-table td:nth-child(7) { width: 10%; }
+
+      .standings-table th:last-child,
+      .standings-table td:last-child {
+        padding-right: 12px;
+      }
+
+      .team-logo {
+        width: 26px;
+        height: 26px;
+      }
+
+      .team-name-cell {
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .team-name-cell .team-link {
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .fixture-card {
+        padding: 12px 10px;
+        gap: 6px;
+      }
+
+      .fixture-team {
+        font-size: 12px;
+        line-height: 1.25;
+      }
+
+      .fixture-team-inner {
+        gap: 6px;
+      }
+
+      .fixture-logo {
+        width: 28px;
+        height: 28px;
+      }
+
+      .fixture-score { font-size: 17px; }
+      .fixture-center { min-width: 58px; }
+      .fixture-meta { font-size: 10px; }
+      .fixture-venue { padding-top: 8px; }
+    }
+
+    @media (max-width: 340px) {
+      .fixture-list {
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+
+      .fixture-card {
+        min-width: 300px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./analysis.css">
+  <script type="module" src="./analysis-panel.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="header-top">
+        <div class="league-badge">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <circle cx="5" cy="5" r="4.5" stroke="white" stroke-width="1"/>
+            <circle cx="5" cy="5" r="2" fill="white"/>
+          </svg>
+          <span id="i18n-badge">Volleyball Danmark</span>
+        </div>
+        <div class="header-controls">
+          <button class="theme-btn" id="theme-toggle" title="Toggle light/dark mode">
+            <svg id="theme-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+          </button>
+          <button class="lang-btn" id="lang-toggle">EN</button>
+        </div>
+      </div>
+      <h1><span id="i18n-h1-line1"></span><br><span id="i18n-h1-line2"></span></h1>
+      <div class="cat-tabs" id="cat-tabs"></div>
+      <div class="league-tabs-wrap"><div class="league-tabs" id="league-tabs"></div></div>
+    </header>
+
+    <nav class="view-tabs" aria-label="Page view"><button type="button" data-view="results" aria-pressed="true">Results</button><button type="button" data-view="analysis" aria-pressed="false">Team analysis ↗</button></nav>
+    <div id="results-view">
+    <!-- Standings -->
+    <section>
+      <p class="section-title" id="i18n-standings">Stilling</p>
+      <div class="standings-card">
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th class="left" style="width:32px">#</th>
+              <th class="left" id="i18n-col-team">Hold</th>
+              <th id="i18n-col-played" title="Kampe">K</th>
+              <th id="i18n-col-won" title="Vundet">V</th>
+              <th id="i18n-col-lost" title="Tabt">T</th>
+              <th id="i18n-col-sets">Sæt</th>
+              <th id="i18n-col-pts">Pt</th>
+            </tr>
+          </thead>
+          <tbody id="standings-body">
+            <!-- rendered by JS -->
+          </tbody>
+        </table>
+        <div class="season-notice">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <circle cx="7" cy="7" r="6" stroke="#7b82a0" stroke-width="1.2"/>
+            <line x1="7" y1="5" x2="7" y2="7.5" stroke="#7b82a0" stroke-width="1.4" stroke-linecap="round"/>
+            <circle cx="7" cy="9.5" r="0.7" fill="#7b82a0"/>
+          </svg>
+          <span id="i18n-season-notice">Sæsonen er endnu ikke begyndt — alle hold står på 0 point.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section>
+      <p class="section-title" id="i18n-schedule">Kampprogram</p>
+      <div id="team-tag"></div>
+      <div class="filter-bar" id="filter-bar"><!-- rendered by JS --></div>
+      <div class="fixture-list" id="fixture-list"><!-- rendered by JS --></div>
+    </section>
+
+    </div>
+    <section id="analysis-panel" class="analysis-panel" hidden aria-label="Team analysis"></section>
+
+    <footer>
+      Data hentet fra <a href="https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Pulje-Stilling.aspx?PuljeId=4128" target="_blank">resultater.volleyball.dk</a>
+      &nbsp;·&nbsp; Opdateret 18. september 2026
+    </footer>
+
+  </div>
+
+  <script>
+    const LOGOS = {
+      "Aarby Volley":           "logos/aarby.png",
+      "CBS Sport":              "logos/cbs.png",
+      "Amager Volley":          "logos/amagervolley.jpg",
+      "Amager VK":              "logos/amagervolley.jpg",
+      "B1960":                  "logos/b1960.webp",
+      "Brøndby VK":             "logos/brondby-VK.jpg",
+      "Brøndby VK Wildcard":    "logos/brondby-VK.jpg",
+      "DTU Volley":             "logos/DTU.jpg",
+      "Enghave VK":             "logos/enghave.jpg",
+      "Farum-Holte":            "logos/Farum-Holte_.jpg",
+      "Farum VK":               "logos/farum.jpg",
+      "Farum VK 2":             "logos/farum.jpg",
+      "Frederiksberg Volley":   "logos/frederiksberg.jpg",
+      "Gentofte Volley":        "logos/genrofte.jpg",
+      "Glostrup IC":            "logos/glostrup.png",
+      "Grøndal EV":             "logos/grondal.jpg",
+      "Helsingør VK":           "logos/helsingor.jpg",
+      "Hillerød G&I":           "logos/hillerod.png",
+      "Hvidovre VK":            "logos/hvidovre-vk.jpg",
+      "Ishøj Volley":           "logos/ishoj.jpg",
+      "Kanalbyens IF":          "logos/Kanalbyens_IF.png",
+      "KSV":                    "logos/KSV.png",
+      "KV 61":                  "logos/kv61.jpg",
+      "Lyngby-Gladsaxe Volley": "logos/lyngby_gladsaxe.jpg",
+      "Lyngby-Gladsaxe WC":     "logos/lyngby_gladsaxe.jpg",
+      "Lynge Uggeløse":         "logos/lynge.svg",
+      "Pan Volley":             "logos/pan.png",
+      "Rosenlund Volley":       "logos/roselund.png",
+      "Roskilde VK":            "logos/roskilde.png",
+      "RS Rødovre":             "logos/rs_rodovre.png",
+      "Tårnfalkene":            "logos/taarnfalkene.jpg",
+      "Taastrup IK":            "logos/taastrup_ik.png",
+      "Team Køge":              "logos/team_koge.jpg",
+      "VK Holbæk":              "logos/holbaek.jpg",
+      "VK Næstved":             "logos/vk_naestved.png",
+      "VK Vestsjælland":        "logos/vk_vestsjaelland.png",
+      "VLI":                    "logos/VLI.webp",
+    };
+
+    function logoFor(name) {
+      if (LOGOS[name]) return LOGOS[name];
+      // Strip ".N" suffix (e.g. "KSV.3" → "KSV")
+      const s1 = name.replace(/\.\d+$/, '').trim();
+      if (LOGOS[s1]) return LOGOS[s1];
+      // Strip trailing " N" (e.g. "Farum VK 2" → "Farum VK")
+      const s2 = name.replace(/\s+\d+$/, '').trim();
+      if (LOGOS[s2]) return LOGOS[s2];
+      return null;
+    }
+
+    const VENUES = {
+      "Idrætshuset":       "https://maps.google.com/maps?q=Gunnar+Nu+Hansens+Plads+7,+2100+K%C3%B8benhavn+%C3%98",
+      "Sundbyhal 1":       "https://maps.google.com/maps?q=Englandsvej+61,+2300+K%C3%B8benhavn+S",
+      "Sundbyhal 2":       "https://maps.google.com/maps?q=Englandsvej+61,+2300+K%C3%B8benhavn+S",
+      "Ny Holtehal":       "https://maps.google.com/maps?q=Kongevejen+464,+2840+Holte",
+      "Kildeskovshal 1":   "https://maps.google.com/maps?q=Adolphsvej+25,+2820+Gentofte",
+      "Lyngehallen":       "https://maps.google.com/maps?q=Idr%C3%A6tsvej+14,+3540+Lynge",
+      "Engelsborghallen":  "https://maps.google.com/maps?q=Engelsborgvej+93,+2800+Kgs.+Lyngby",
+      "Kedelhallen":       "https://maps.google.com/maps?q=Nyelandsvej+75,+2000+Frederiksberg",
+      "Bülowsvejhallen":   "https://maps.google.com/maps?q=B%C3%BClowsvej+34,+1870+Frederiksberg+C",
+      "Buddingehallen":    "https://maps.google.com/maps?q=Kildebakkeg%C3%A5rds+Alle+155,+2860+S%C3%B8borg",
+    };
+
+    // ---- League config ------------------------------------------------------
+    const GROUPS = [
+      { key: 'women', label: { da: 'Damer',  en: 'Women' } },
+      { key: 'men',   label: { da: 'Herrer', en: 'Men'   } },
+      { key: 'mix',   label: { da: 'Mix',    en: 'Mix'   } },
+    ];
+
+    const LEAGUES = [
+      { id: 4128, group: 'women', tab: { da: 'D1 & D2', en: 'D1 & D2' }, h1: { da: '1. Division Kvinder',  en: '1st Division Women' }, h2: { da: 'Øst — 2026/27',        en: 'East — 2026/27'        } },
+      { id: 4125, group: 'women', tab: { da: 'D3',     en: 'D3'     }, h1: { da: '2. Division Kvinder',  en: '2nd Division Women' }, h2: { da: 'Øst — 2026/27',        en: 'East — 2026/27'        } },
+      { id: 4133, group: 'women', tab: { da: 'D4',     en: 'D4'     }, h1: { da: 'Danmarksserie Damer',  en: 'Danmarksserie Women'}, h2: { da: 'Sjælland — 2026/27',   en: 'Sjælland — 2026/27'   } },
+      { id: 4139, group: 'women', tab: { da: 'D5',     en: 'D5'     }, h1: { da: 'Serie 3 Damer',        en: 'Serie 3 Women'      }, h2: { da: 'Sjælland — 2026/27',   en: 'Sjælland — 2026/27'   } },
+      { id: 4118, group: 'men',   tab: { da: 'H1',     en: 'H1'     }, h1: { da: '1. Division Herrer',   en: '1st Division Men'   }, h2: { da: 'Øst — 2026/27',        en: 'East — 2026/27'        } },
+      { id: 4130, group: 'men',   tab: { da: 'H2',     en: 'H2'     }, h1: { da: 'Danmarksserie Herrer', en: 'Danmarksserie Men'  }, h2: { da: 'Sjælland — 2026/27',   en: 'Sjælland — 2026/27'   } },
+      { id: 4132, group: 'men',   tab: { da: 'H3',     en: 'H3'     }, h1: { da: 'Serie 3 Herrer',       en: 'Serie 3 Men'        }, h2: { da: 'Sjælland — 2026/27',   en: 'Sjælland — 2026/27'   } },
+      { id: 4136, group: 'mix',   tab: { da: 'Mix 1',  en: 'Mix 1'  }, h1: { da: 'Mix 1',                en: 'Mix 1'              }, h2: { da: 'Sjælland — 2026/27',   en: 'Sjælland — 2026/27'   } },
+      { id: 4137, group: 'mix',   tab: { da: 'Mix 2',  en: 'Mix 2'  }, h1: { da: 'Mix 2',                en: 'Mix 2'              }, h2: { da: 'Sjælland — 2026/27',   en: 'Sjælland — 2026/27'   } },
+    ];
+
+    // ---- i18n ---------------------------------------------------------------
+    const STRINGS = {
+      da: {
+        badge:        'Volleyball Danmark',
+        h1Line1:      '1. Division Kvinder',
+        h1Line2:      'Øst — 2026/27',
+        subtitle:     'Sæsonen starter 27. september 2026',
+        standings:    'Stilling',
+        colTeam:      'Hold',
+        colPlayed:    'K', colPlayedTitle: 'Kampe',
+        colWon:       'V', colWonTitle:    'Vundet',
+        colLost:      'T', colLostTitle:   'Tabt',
+        colSets:      'Sæt',
+        colPts:       'Pt',
+        seasonNotice: 'Sæsonen er endnu ikke begyndt — alle hold står på 0 point.',
+        schedule:     'Kampprogram',
+        all:          'Alle',
+        upcoming:     'Kommende',
+        noMatches:    'Ingen kampe fundet.',
+        loading:      'Henter data…',
+        noData:       'Ingen data fundet.',
+        updatedAt:    'Sidst opdateret',
+        months:       ['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'],
+        fmtDate:      (d,m,y) => `${+d}. ${ ['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'][+m-1]} ${y}`,
+        fmtMonth:     (y,mo)  => `${ ['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'][+mo-1]} ${y}`,
+      },
+      en: {
+        badge:        'Volleyball Denmark',
+        h1Line1:      '1st Division Women',
+        h1Line2:      'East — 2026/27',
+        subtitle:     'Season starts 27 September 2026',
+        standings:    'Standings',
+        colTeam:      'Team',
+        colPlayed:    'P', colPlayedTitle: 'Played',
+        colWon:       'W', colWonTitle:    'Won',
+        colLost:      'L', colLostTitle:   'Lost',
+        colSets:      'Sets',
+        colPts:       'Pts',
+        seasonNotice: 'The season has not started yet — all teams are on 0 points.',
+        schedule:     'Schedule',
+        all:          'All',
+        upcoming:     'Upcoming',
+        noMatches:    'No matches found.',
+        loading:      'Loading data…',
+        noData:       'No data found.',
+        updatedAt:    'Last updated',
+        months:       ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        fmtDate:      (d,m,y) => `${ ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m-1]} ${+d}, ${y}`,
+        fmtMonth:     (y,mo)  => `${ ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+mo-1]} ${y}`,
+      },
+    };
+
+    // ---- Theme --------------------------------------------------------------
+    const MOON_PATH = '<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>';
+    const SUN_PATH  = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+
+    let theme = localStorage.getItem('theme') || 'light';
+
+    function applyTheme() {
+      document.documentElement.classList.toggle('light', theme === 'light');
+      document.getElementById('theme-icon').innerHTML = theme === 'dark' ? SUN_PATH : MOON_PATH;
+    }
+
+    function toggleTheme() {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', theme);
+      applyTheme();
+    }
+
+    let lang = localStorage.getItem('lang') || 'da';
+
+    function t(key) { return STRINGS[lang][key]; }
+
+    function fmtDate(dateStr) {
+      const [y, m, d] = dateStr.split('-');
+      return STRINGS[lang].fmtDate(d, m, y);
+    }
+
+    function fmtUpdated(iso) {
+      const dt = new Date(iso);
+      const mo = STRINGS[lang].months[dt.getMonth()];
+      const hh = String(dt.getHours()).padStart(2,'0');
+      const mm = String(dt.getMinutes()).padStart(2,'0');
+      if (lang === 'en') return `${mo} ${dt.getDate()}, ${dt.getFullYear()}, ${hh}:${mm}`;
+      return `${dt.getDate()}. ${mo} ${dt.getFullYear()}, ${hh}:${mm}`;
+    }
+
+    function applyTranslations() {
+      document.getElementById('i18n-badge').textContent         = t('badge');
+      document.getElementById('i18n-standings').textContent     = t('standings');
+      document.getElementById('i18n-col-team').textContent      = t('colTeam');
+      const cp = document.getElementById('i18n-col-played');
+      cp.textContent = t('colPlayed'); cp.title = t('colPlayedTitle');
+      const cw = document.getElementById('i18n-col-won');
+      cw.textContent = t('colWon');    cw.title = t('colWonTitle');
+      const cl = document.getElementById('i18n-col-lost');
+      cl.textContent = t('colLost');   cl.title = t('colLostTitle');
+      document.getElementById('i18n-col-sets').textContent      = t('colSets');
+      document.getElementById('i18n-col-pts').textContent       = t('colPts');
+      document.getElementById('i18n-season-notice').textContent = t('seasonNotice');
+      document.getElementById('i18n-schedule').textContent      = t('schedule');
+      document.getElementById('lang-toggle').textContent        = lang === 'da' ? 'EN' : 'DA';
+      document.documentElement.lang                             = lang;
+      document.querySelector('[data-view=results]').textContent = lang === 'da' ? 'Resultater' : 'Results';
+      document.querySelector('[data-view=analysis]').textContent = lang === 'da' ? 'Holdanalyse ↗' : 'Team analysis ↗';
+    }
+
+    function setLang(newLang) {
+      lang = newLang;
+      localStorage.setItem('lang', lang);
+      applyTranslations();
+      renderCatTabs();
+      renderLeagueTabs();
+      updateLeagueHeading();
+      // Rebuild month filter buttons with new labels, preserving selected month
+      if (allFixtures.length) {
+        const saved = activeMonth;
+        buildFilterBar(allFixtures);
+        if (saved) {
+          activeMonth = saved;
+          const btn = document.querySelector(`[data-month="${saved}"]`);
+          if (btn) setActiveMonth(btn);
+        }
+        renderFixtures();
+      }
+    }
+
+    // ---- State --------------------------------------------------------------
+    const monthOf = dateStr => dateStr.slice(0, 7);
+
+    let leagueTeams = [];
+    function notifyAnalysis() {
+      if (!leagueTeams.length) return;
+      window.volleyballContext = {leagueId:activeLeagueId,teams:leagueTeams,fixtures:allFixtures,team:activeTeam,lang};
+      window.dispatchEvent(new CustomEvent('volleyball-context',{detail:window.volleyballContext}));
+    }
+
+    let activeMonth    = null;
+    let activeTeam     = null;
+    let allFixtures    = [];
+    let updatedAt      = null;
+    let activeCategory = 'women';
+    let activeLeagueId = 4128;
+
+    // ---- League heading -----------------------------------------------------
+    function updateLeagueHeading() {
+      const league = LEAGUES.find(l => l.id === activeLeagueId);
+      if (!league) return;
+      document.getElementById('i18n-h1-line1').textContent = league.h1[lang];
+      document.getElementById('i18n-h1-line2').textContent = league.h2[lang];
+    }
+
+    // ---- Nav ----------------------------------------------------------------
+    function renderCatTabs() {
+      const el = document.getElementById('cat-tabs');
+      el.innerHTML = '';
+      GROUPS.forEach(g => {
+        const btn = document.createElement('button');
+        btn.className = 'cat-tab' + (g.key === activeCategory ? ' active' : '');
+        btn.textContent = g.label[lang];
+        btn.onclick = () => selectCategory(g.key);
+        el.appendChild(btn);
+      });
+    }
+
+    function renderLeagueTabs() {
+      const el = document.getElementById('league-tabs');
+      el.innerHTML = '';
+      LEAGUES.filter(l => l.group === activeCategory).forEach(l => {
+        const btn = document.createElement('button');
+        btn.className = 'league-tab' + (l.id === activeLeagueId ? ' active' : '');
+        btn.textContent = l.tab[lang];
+        btn.dataset.id = l.id;
+        btn.onclick = () => selectLeague(l.id);
+        el.appendChild(btn);
+      });
+    }
+
+    function selectCategory(key) {
+      activeCategory = key;
+      renderCatTabs();
+      const first = LEAGUES.find(l => l.group === key);
+      if (first) selectLeague(first.id);
+      else renderLeagueTabs();
+    }
+
+    function selectLeague(id) {
+      activeLeagueId = id;
+      localStorage.setItem('leagueId', id);
+      activeCategory = LEAGUES.find(l => l.id === id).group;
+      renderLeagueTabs();
+      updateLeagueHeading();
+      loadLeagueData(id);
+    }
+
+    // ---- Load league data ---------------------------------------------------
+    async function loadLeagueData(id) {
+      activeTeam  = null;
+      activeMonth = null;
+      allFixtures = [];
+      document.getElementById('team-tag').innerHTML = '';
+      document.getElementById('standings-body').innerHTML = '';
+      document.getElementById('fixture-list').innerHTML =
+        `<p style="color:var(--muted);font-size:14px;padding:12px 2px">${t('loading')}</p>`;
+
+      let data;
+      try {
+        const res = await fetch(`./data/data-${id}.json`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        data = await res.json();
+      } catch {
+        document.getElementById('fixture-list').innerHTML =
+          `<p style="color:var(--muted);font-size:14px;padding:12px 2px">
+            ${t('noData')} ${lang==='da'?'Kør':'Run'}
+            <code style="background:var(--surface2);padding:2px 6px;border-radius:4px">npm run scrape</code>
+            ${lang==='da'?'og vis siden med':'then serve with'}
+            <code style="background:var(--surface2);padding:2px 6px;border-radius:4px">npm run serve</code>.
+          </p>`;
+        return;
+      }
+
+      if (id !== activeLeagueId) return;
+      leagueTeams = data.teams;
+      updatedAt = data.updatedAt || null;
+      renderStandings(data.teams);
+      setupFixtures(data.fixtures);
+      renderFooter();
+      notifyAnalysis();
+    }
+
+    // ---- Render standings ---------------------------------------------------
+    function renderStandings(teams) {
+      const tbody = document.getElementById("standings-body");
+      tbody.innerHTML = "";
+
+      teams.forEach(t => {
+        const tr = document.createElement("tr");
+        tr.dataset.team = t.name;
+        const logoSrc  = logoFor(t.name);
+        const logoHtml = logoSrc
+          ? `<img class="team-logo" src="${logoSrc}" alt="">`
+          : `<span style="width:32px;height:32px;border-radius:50%;background:var(--surface2);display:inline-block;flex-shrink:0;border:1.5px solid var(--border)"></span>`;
+        tr.innerHTML = `
+          <td class="pos">${t.pos}</td>
+          <td class="left team-name">
+            <div class="team-name-cell">${logoHtml}<span class="team-link">${t.name}</span></div>
+          </td>
+          <td>${t.k}</td><td>${t.v}</td><td>${t.t}</td>
+          <td class="sets">${t.sets}</td>
+          <td class="pts">${t.pts}</td>
+        `;
+        tr.querySelector(".team-link").addEventListener("click", () => {
+          selectTeam(activeTeam === t.name ? null : t.name);
+          document.getElementById("fixture-list").scrollIntoView({ behavior:"smooth", block:"start" });
+        });
+        tbody.appendChild(tr);
+      });
+
+      document.querySelector(".season-notice").style.display =
+        teams.some(t => t.k > 0) ? "none" : "";
+    }
+
+    // ---- Filter bar ---------------------------------------------------------
+    function buildFilterBar(fixtures) {
+      const filterBar = document.getElementById("filter-bar");
+      filterBar.innerHTML = "";
+
+      const months = [...new Set(fixtures.map(f => monthOf(f.date)))];
+
+      const allBtn = document.createElement("button");
+      allBtn.className = "filter-btn" + (activeMonth ? "" : " active");
+      allBtn.textContent = t('all');
+      allBtn.onclick = () => { activeMonth = null; renderFixtures(); setActiveMonth(allBtn); };
+      filterBar.appendChild(allBtn);
+
+      months.forEach(m => {
+        const [y, mo] = m.split("-");
+        const btn = document.createElement("button");
+        btn.className = "filter-btn" + (activeMonth === m ? " active" : "");
+        btn.textContent = STRINGS[lang].fmtMonth(y, mo);
+        btn.dataset.month = m;
+        btn.onclick = () => { activeMonth = m; renderFixtures(); setActiveMonth(btn); };
+        filterBar.appendChild(btn);
+      });
+    }
+
+    function setActiveMonth(el) {
+      document.getElementById("filter-bar").querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      el.classList.add("active");
+    }
+
+    function setupFixtures(fixtures) {
+      allFixtures = fixtures;
+      buildFilterBar(fixtures);
+      renderFixtures();
+    }
+
+    // ---- Team filter --------------------------------------------------------
+    function selectTeam(name) {
+      activeTeam = name;
+      notifyAnalysis();
+      document.getElementById("standings-body").querySelectorAll("tr").forEach(r =>
+        r.classList.toggle("selected", r.dataset.team === name)
+      );
+      const tag = document.getElementById("team-tag");
+      if (name) {
+        tag.innerHTML = `<span class="team-tag">${name}<button class="team-tag-clear" title="${lang==='da'?'Fjern filter':'Clear filter'}">×</button></span>`;
+        tag.querySelector(".team-tag-clear").onclick = () => selectTeam(null);
+      } else {
+        tag.innerHTML = "";
+      }
+      renderFixtures();
+    }
+
+    // ---- Render fixtures ----------------------------------------------------
+    function renderFixtures() {
+      const list = document.getElementById("fixture-list");
+      list.innerHTML = "";
+
+      let shown = allFixtures;
+      if (activeTeam)  shown = shown.filter(f => f.home === activeTeam || f.away === activeTeam);
+      if (activeMonth) shown = shown.filter(f => monthOf(f.date) === activeMonth);
+
+      if (!shown.length) {
+        list.innerHTML = `<p style="color:var(--muted);font-size:14px;padding:12px 2px">${t('noMatches')}</p>`;
+        return;
+      }
+
+      const byDate = {};
+      shown.forEach(f => { (byDate[f.date] = byDate[f.date] || []).push(f); });
+
+      Object.entries(byDate).forEach(([date, matches]) => {
+        const dateLabel = document.createElement("p");
+        dateLabel.style.cssText = "font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;padding-left:2px;margin-top:4px";
+        dateLabel.textContent = fmtDate(date);
+        list.appendChild(dateLabel);
+
+        matches.forEach(f => {
+          const card       = document.createElement("div");
+          card.className   = "fixture-card";
+          const homeLogo   = logoFor(f.home) ? `<img class="fixture-logo" src="${logoFor(f.home)}" alt="">` : "";
+          const awayLogo   = logoFor(f.away) ? `<img class="fixture-logo" src="${logoFor(f.away)}" alt="">` : "";
+          const homeLabel  = `<span class="team-link">${activeTeam === f.home ? `<strong>${f.home}</strong>` : f.home}</span>`;
+          const awayLabel  = `<span class="team-link">${activeTeam === f.away ? `<strong>${f.away}</strong>` : f.away}</span>`;
+          const scoreHtml  = f.score
+            ? `<span class="fixture-score">${f.score}</span>`
+            : `<span class="fixture-score pending">vs</span>`;
+          const venueUrl   = f.mapsUrl || VENUES[f.venue];
+          const venueHtml  = venueUrl
+            ? `<a class="venue-link" href="${venueUrl}" target="_blank" rel="noopener">📍 ${f.venue}</a>`
+            : `📍 ${f.venue}`;
+          const statusHtml = f.score
+            ? ""
+            : `<span class="status-pill pill-pending">${t('upcoming')}</span>`;
+          card.innerHTML = `
+            <div class="fixture-team home"><div class="fixture-team-inner">${homeLogo}${homeLabel}</div></div>
+            <div class="fixture-center">
+              ${scoreHtml}
+              <span class="fixture-meta">${f.time}</span>
+              ${statusHtml}
+            </div>
+            <div class="fixture-team away"><div class="fixture-team-inner">${awayLogo}${awayLabel}</div></div>
+            <div class="fixture-venue">${venueHtml}</div>
+          `;
+          card.querySelectorAll(".team-link").forEach(link => {
+            const team = link.textContent.trim();
+            link.addEventListener("click", () => selectTeam(activeTeam === team ? null : team));
+          });
+          list.appendChild(card);
+        });
+
+        const spacer = document.createElement("div");
+        spacer.style.height = "4px";
+        list.appendChild(spacer);
+      });
+    }
+
+    // ---- Footer -------------------------------------------------------------
+    function renderFooter() {
+      const src = `<a href="https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Pulje-Stilling.aspx?PuljeId=${activeLeagueId}" target="_blank">resultater.volleyball.dk</a>`;
+      document.querySelector("footer").innerHTML = updatedAt
+        ? `${lang==='da'?'Data hentet fra':'Data from'} ${src} &nbsp;·&nbsp; ${t('updatedAt')} ${fmtUpdated(updatedAt)}`
+        : `${lang==='da'?'Data hentet fra':'Data from'} ${src}`;
+    }
+
+    // ---- Language toggle (called from HTML) ---------------------------------
+    function toggleLang() { setLang(lang === 'da' ? 'en' : 'da'); renderFooter(); }
+
+    // ---- Bootstrap ----------------------------------------------------------
+    async function init() {
+      applyTheme();
+
+      // Restore last viewed league
+      const savedId     = parseInt(new URLSearchParams(location.search).get('league')) || parseInt(localStorage.getItem('leagueId')) || 4128;
+      const savedLeague = LEAGUES.find(l => l.id === savedId) || LEAGUES[0];
+      activeLeagueId    = savedLeague.id;
+      activeCategory    = savedLeague.group;
+
+      applyTranslations();
+      renderCatTabs();
+      renderLeagueTabs();
+      updateLeagueHeading();
+
+      document.getElementById('theme-toggle').onclick = toggleTheme;
+      document.getElementById('lang-toggle').onclick  = toggleLang;
+
+      await loadLeagueData(activeLeagueId);
+    }
+
+    init();
+  </script>
+</body>
+</html>

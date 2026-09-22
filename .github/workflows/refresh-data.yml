@@ -1,0 +1,69 @@
+name: Refresh and publish volleyball
+
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: volleyball-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Test calculations and interface
+        run: npm test
+      - name: Refresh results
+        id: results
+        continue-on-error: true
+        run: npm run scrape
+      - name: Collect published PDFs
+        run: npm run collect
+      - name: Build shared analysis
+        run: npm run analyze
+      - name: Record a source outage
+        if: steps.results.outcome == 'failure'
+        run: echo '::warning::Results refresh failed. Existing results were preserved; inspect the refresh step.'
+      - name: Commit data changes
+        run: |
+          git add data/
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh volleyball results and PDF analysis'
+            git pull --rebase
+            git push
+          fi
+      - name: Build static site
+        run: npm run build
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
