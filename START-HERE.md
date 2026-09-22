@@ -2,6 +2,8 @@
 
 This is the complete results website, extended with **Team analysis**.
 
+Already have the site running and want coaches to save without sending files? Follow [Google shared coach setup](docs/SHARED-COACHES.md). It adds a shared-code save button; coaches do not need accounts.
+
 ## Try it on your computer
 
 Install **Node.js 24 or newer**, then open a terminal inside this folder:
@@ -19,7 +21,7 @@ Open **http://localhost:3000/?league=4125#analysis**. The included current-seaso
 4. Click **Save setters**. The rotation table updates immediately. Without a setter, rallies stay **Unconfirmed**.
 5. Read the serving and rotation tables. Use **Download CSV** to take either table into a spreadsheet.
 
-Setter choices are saved in this browser. **Export setter choices** downloads a backup. To share the choices with everyone visiting your site, replace `data/analysis-config.json` in your GitHub repository with that file.
+With no Google endpoint configured, setter choices are saved in this browser. **Export setter choices** downloads a backup. To share in this local-only mode, replace `data/analysis-config.json` in your GitHub repository with that file. With [Google sharing](docs/SHARED-COACHES.md) enabled, use **Save for all coaches** instead; no manual file merging is needed.
 
 ## Put it on your own GitHub
 

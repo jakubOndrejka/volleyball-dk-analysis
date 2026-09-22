@@ -12,6 +12,7 @@ The original standings and fixtures website from [sidiropoulos/volleyball-dk](ht
 - Your requested rotation table: S1–S6 and **Unconfirmed**, rallies, points won/lost, net points per 100, serves/wins/%, received/side-outs/%.
 - Per-match setters, backup setters, optional per-set overrides, and explicit back-row/front-row rules for teams using two setters.
 - CSV downloads, local setter persistence, and configuration import/export for sharing.
+- Optional shared coach editing through a Google Sheet and Apps Script: one coach code, no coach accounts, per-match saves and conflict checks. See [shared coach setup](docs/SHARED-COACHES.md).
 - Automatic discovery of published scorecard and roster PDF links on official result pages. No Kampskema API, AI service, API key or paid OCR service is needed.
 - A GitHub Actions workflow that refreshes results, collects PDFs, validates them and publishes GitHub Pages.
 
@@ -51,6 +52,8 @@ The included results are a **22 September 2026 snapshot of the current 2026/27 l
 | `index.html` | Original results/standings application and navigation into analysis. |
 | `analysis-panel.js`, `analysis.css` | Team analysis interface, filters, setter controls and downloads. |
 | `analysis-engine.js` | Shared serving/rotation calculations and configuration validation, used by browser and Node. |
+| `shared-coaches.js`, `shared-coaches-config.json` | Google shared-choice client and public web app URL. Never store the coach code here. |
+| `apps-script/Code.gs` | Paste into the Sheet's Apps Script project. The coach code lives in private Script properties. |
 | `scraper.js` | Original official league scraper, extended to preserve match IDs/links and handle source failures. |
 | `collect-analysis.js` | PDF discovery, retry timing, parsing, validation and coverage status. |
 | `lib/pdf-parser.js` | Reads PDF text coordinates and reconstructs individual rallies. |
@@ -61,13 +64,15 @@ The included results are a **22 September 2026 snapshot of the current 2026/27 l
 | `data/analysis/index.json` | Available matches and ready / queued / pending / review status. |
 | `data/analysis/matches/` | Validated roster, lineup, substitution and rally data for each physical match. |
 | `data/analysis/summary.json` | Reports using the committed, shared setter choices. |
-| `data/analysis-config.json` | Shared setter choices. Replace with the UI's exported file. |
+| `data/analysis-config.json` | Legacy committed setter choices; fallback when a match has no Google record. |
 | `logos/` | Original club logos, including KSV. |
 | `tests/` | Calculation/UI tests and real PDF regression fixtures. |
 | `.github/workflows/` | Scheduled refresh + Pages publishing and pull-request tests. |
 | `docs/` | Metric definitions, validation notes and original README. |
 
-The browser recalculates the tables using any personal setter choices, so they update immediately without waiting for a GitHub workflow. The saved summary uses only the committed shared choices. There is no database or shared web editing account: browser choices become shared only after you commit the exported configuration.
+The browser recalculates the tables immediately. With Google sharing enabled, shared matches take priority over old browser and committed choices. Coaches click **Save for all coaches**, without exporting or committing a file. Other open pages pick up changes with **Refresh shared choices**; newly opened pages load them automatically. Conflicting edits to the same team's match are rejected until the coach refreshes. Different teams and matches are independent.
+
+Without a configured endpoint, the original browser-only and export workflow still works. The generated `data/analysis/summary.json` continues to use only committed `data/analysis-config.json`; it does not fetch Google choices. The website's displayed rotation tables do use Google choices. Read [shared coach setup](docs/SHARED-COACHES.md) for installation, migration and privacy limits.
 
 ## Publish on GitHub Pages
 

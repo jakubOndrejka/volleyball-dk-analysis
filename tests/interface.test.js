@@ -9,6 +9,7 @@ test('team panel, setter persistence, overrides, filters, exports, import reject
   const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));const dom=new JSDOM(html,{url:'http://localhost/my-volleyball/?league=4125#analysis',runScripts:'outside-only',virtualConsole:vc});const w=dom.window;
   for(const key of ['window','document','location','history','localStorage','CustomEvent'])globalThis[key]=key==='window'?w:w[key];
   const files={'./data/data-4125.json':league,'./data/analysis/index.json':{version:1,lastCheckedAt:'2026-09-22T12:00:00Z',matches:[entry]},'./data/analysis-config.json':{version:1,teams:{}},'./data/analysis/matches/76141.json':match};
+  files['./shared-coaches-config.json']={endpoint:''};
   w.fetch=globalThis.fetch=async url=>new Response(JSON.stringify(files[url]||{}),{status:files[url]?200:404});w.structuredClone=structuredClone;
   const inline=[...w.document.querySelectorAll('script')].find(s=>!s.src).textContent;w.eval(inline);await import('../analysis-panel.js?interface-test');
   const $=s=>w.document.querySelector(s), text=()=>$('#analysis-panel').textContent;const change=(selector,value)=>{const el=$(selector);assert.ok(el,selector);el.value=value;el.dispatchEvent(new w.Event('change',{bubbles:true}));};
