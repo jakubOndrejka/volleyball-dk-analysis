@@ -89,14 +89,14 @@
       "matchNumber": "149403",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76641",
       "status": "review",
-      "nextCheckAt": "2026-09-22T20:40:07.295Z",
+      "nextCheckAt": "2026-09-23T01:14:11.950Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76641",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76641"
       },
-      "failures": 1,
+      "failures": 2,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-22T18:40:07.295Z",
+      "lastCheckedAt": "2026-09-22T21:14:11.950Z",
       "parserVersion": 1,
       "bestOf": 5
     },
@@ -265,13 +265,22 @@
       "score": "0-2",
       "matchNumber": "150363",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78033",
-      "status": "pending",
-      "nextCheckAt": "2026-09-22T20:40:07.295Z",
-      "failures": 1,
-      "reason": "fetch failed",
-      "lastCheckedAt": "2026-09-22T18:40:07.295Z",
+      "status": "ready",
+      "nextCheckAt": "2026-09-23T03:14:11.950Z",
+      "failures": 0,
+      "reason": null,
+      "lastCheckedAt": "2026-09-22T21:14:11.950Z",
       "parserVersion": 1,
-      "bestOf": 3
+      "bestOf": 3,
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78033",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78033",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78033",
+        "sha256": "de8580d50fd25d78b99875c1da179dd7a9a0f58707e0fd41f1d5d02d1f3f9b24",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "file": "matches/78033.json",
+      "sets": 2
     },
     {
       "id": "78034",
@@ -282,13 +291,22 @@
       "score": "0-2",
       "matchNumber": "150364",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78034",
-      "status": "pending",
-      "nextCheckAt": "2026-09-22T20:40:07.295Z",
-      "failures": 1,
-      "reason": "fetch failed",
-      "lastCheckedAt": "2026-09-22T18:40:07.295Z",
+      "status": "ready",
+      "nextCheckAt": "2026-09-23T03:14:11.950Z",
+      "failures": 0,
+      "reason": null,
+      "lastCheckedAt": "2026-09-22T21:14:11.950Z",
       "parserVersion": 1,
-      "bestOf": 3
+      "bestOf": 3,
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78034",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78034",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78034",
+        "sha256": "9ae24c467c86d659eb7ac5fdbe5031ed4df9714d468bb3bb2737f9f7760fa627",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "file": "matches/78034.json",
+      "sets": 2
     },
     {
       "id": "78035",
@@ -299,13 +317,17 @@
       "score": "1-2",
       "matchNumber": "150365",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78035",
-      "status": "pending",
-      "nextCheckAt": "2026-09-22T20:40:07.295Z",
-      "failures": 1,
-      "reason": "fetch failed",
-      "lastCheckedAt": "2026-09-22T18:40:07.295Z",
+      "status": "review",
+      "nextCheckAt": "2026-09-23T01:14:11.950Z",
+      "failures": 2,
+      "reason": "A starting player is missing or unreadable.",
+      "lastCheckedAt": "2026-09-22T21:14:11.950Z",
       "parserVersion": 1,
-      "bestOf": 3
+      "bestOf": 3,
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78035",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78035"
+      }
     },
     {
       "id": "78036",
@@ -316,13 +338,22 @@
       "score": "2-0",
       "matchNumber": "150366",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78036",
-      "status": "pending",
-      "nextCheckAt": "2026-09-22T20:40:07.295Z",
-      "failures": 1,
-      "reason": "fetch failed",
-      "lastCheckedAt": "2026-09-22T18:40:07.295Z",
+      "status": "ready",
+      "nextCheckAt": "2026-09-23T03:14:11.950Z",
+      "failures": 0,
+      "reason": null,
+      "lastCheckedAt": "2026-09-22T21:14:11.950Z",
       "parserVersion": 1,
-      "bestOf": 3
+      "bestOf": 3,
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78036",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78036",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78036",
+        "sha256": "7063bb3be6b7c3489a66037844a3cc80af4f51be6e8d372a57a7aecc4c60c653",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "file": "matches/78036.json",
+      "sets": 2
     },
     {
       "id": "77566",
@@ -333,13 +364,17 @@
       "score": "3-1",
       "matchNumber": "150140",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77566",
-      "status": "pending",
-      "nextCheckAt": "2026-09-22T20:40:07.295Z",
-      "failures": 1,
-      "reason": "fetch failed",
-      "lastCheckedAt": "2026-09-22T18:40:07.295Z",
+      "status": "review",
+      "nextCheckAt": "2026-09-23T01:14:11.950Z",
+      "failures": 2,
+      "reason": "Service endpoints exceed the final score.",
+      "lastCheckedAt": "2026-09-22T21:14:11.950Z",
       "parserVersion": 1,
-      "bestOf": 5
+      "bestOf": 5,
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77566",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77566"
+      }
     },
     {
       "id": "77724",
@@ -368,5 +403,5 @@
       "sets": 5
     }
   ],
-  "lastCheckedAt": "2026-09-22T18:55:43.104Z"
+  "lastCheckedAt": "2026-09-22T21:14:11.950Z"
 }
