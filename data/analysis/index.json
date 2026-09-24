@@ -89,14 +89,14 @@
       "matchNumber": "149403",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76641",
       "status": "review",
-      "nextCheckAt": "2026-09-24T07:05:08.200Z",
+      "nextCheckAt": "2026-09-25T11:56:58.370Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76641",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76641"
       },
-      "failures": 4,
+      "failures": 5,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-23T15:05:08.200Z",
+      "lastCheckedAt": "2026-09-24T11:56:58.370Z",
       "parserVersion": 1,
       "bestOf": 5
     },
@@ -318,10 +318,10 @@
       "matchNumber": "150365",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78035",
       "status": "review",
-      "nextCheckAt": "2026-09-24T07:05:08.200Z",
-      "failures": 4,
+      "nextCheckAt": "2026-09-25T11:56:58.370Z",
+      "failures": 5,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-09-23T15:05:08.200Z",
+      "lastCheckedAt": "2026-09-24T11:56:58.370Z",
       "parserVersion": 1,
       "bestOf": 3,
       "source": {
@@ -365,10 +365,10 @@
       "matchNumber": "150140",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77566",
       "status": "review",
-      "nextCheckAt": "2026-09-24T07:05:08.200Z",
-      "failures": 4,
+      "nextCheckAt": "2026-09-25T11:56:58.370Z",
+      "failures": 5,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-23T15:05:08.200Z",
+      "lastCheckedAt": "2026-09-24T11:56:58.370Z",
       "parserVersion": 1,
       "bestOf": 5,
       "source": {
@@ -403,5 +403,5 @@
       "sets": 5
     }
   ],
-  "lastCheckedAt": "2026-09-24T06:13:41.587Z"
+  "lastCheckedAt": "2026-09-24T11:56:58.370Z"
 }
