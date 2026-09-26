@@ -2,6 +2,32 @@
   "version": 1,
   "matches": [
     {
+      "id": "76635",
+      "leagueId": 4133,
+      "home": "Taastrup IK",
+      "away": "Hvidovre VK.2",
+      "date": "2026-09-26",
+      "score": "1-3",
+      "matchNumber": "149397",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76635",
+      "status": "ready",
+      "nextCheckAt": "2026-09-26T22:29:29.923Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76635",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76635",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76635",
+        "sha256": "886ed92b510987c51993dd6e1bf5eef50234da56084a0a8ea7ab0706daeb0a88",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "file": "matches/76635.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 4,
+      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
+      "parserVersion": 1
+    },
+    {
       "id": "77562",
       "leagueId": 4132,
       "home": "VK Holbæk.2",
@@ -115,14 +141,14 @@
       "matchNumber": "149403",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76641",
       "status": "review",
-      "nextCheckAt": "2026-09-26T15:21:15.058Z",
+      "nextCheckAt": "2026-09-27T16:29:29.923Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76641",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76641"
       },
-      "failures": 6,
+      "failures": 7,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-25T15:21:15.058Z",
+      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
       "parserVersion": 1,
       "bestOf": 5
     },
@@ -344,10 +370,10 @@
       "matchNumber": "150365",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78035",
       "status": "review",
-      "nextCheckAt": "2026-09-26T15:21:15.058Z",
-      "failures": 6,
+      "nextCheckAt": "2026-09-27T16:29:29.923Z",
+      "failures": 7,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-09-25T15:21:15.058Z",
+      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
       "parserVersion": 1,
       "bestOf": 3,
       "source": {
@@ -391,10 +417,10 @@
       "matchNumber": "150140",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77566",
       "status": "review",
-      "nextCheckAt": "2026-09-26T15:21:15.058Z",
-      "failures": 6,
+      "nextCheckAt": "2026-09-27T16:29:29.923Z",
+      "failures": 7,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-25T15:21:15.058Z",
+      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
       "parserVersion": 1,
       "bestOf": 5,
       "source": {
@@ -429,5 +455,5 @@
       "sets": 5
     }
   ],
-  "lastCheckedAt": "2026-09-26T11:51:39.929Z"
+  "lastCheckedAt": "2026-09-26T16:29:29.923Z"
 }
