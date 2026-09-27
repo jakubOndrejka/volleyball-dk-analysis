@@ -1,8 +1,26 @@
 {
-  "updatedAt": "2026-09-22T18:39:47.320Z",
+  "updatedAt": "2026-09-27T15:55:58.211Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Lyngby-Gladsaxe Volley",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "3-2",
+      "pts": 3
+    },
+    {
+      "pos": 2,
+      "name": "KV 61",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "2-3",
+      "pts": 1
+    },
+    {
+      "pos": 3,
       "name": "Amager Volley",
       "k": 0,
       "v": 0,
@@ -11,7 +29,7 @@
       "pts": 0
     },
     {
-      "pos": 2,
+      "pos": 4,
       "name": "Amager Volley.2",
       "k": 0,
       "v": 0,
@@ -20,16 +38,7 @@
       "pts": 0
     },
     {
-      "pos": 3,
-      "name": "KV 61",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 4,
+      "pos": 5,
       "name": "Farum VK 2",
       "k": 0,
       "v": 0,
@@ -38,17 +47,8 @@
       "pts": 0
     },
     {
-      "pos": 5,
-      "name": "Gentofte Volley.2",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 6,
-      "name": "Lyngby-Gladsaxe Volley",
+      "name": "Gentofte Volley.2",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -103,8 +103,8 @@
       "away": "Lyngby-Gladsaxe Volley",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76249",

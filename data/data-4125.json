@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-09-22T18:39:36.366Z",
+  "updatedAt": "2026-09-27T15:55:58.969Z",
   "teams": [
     {
       "pos": 1,
+      "name": "KSV.3",
+      "k": 2,
+      "v": 2,
+      "t": 0,
+      "sets": "6-1",
+      "pts": 6
+    },
+    {
+      "pos": 2,
       "name": "Enghave VK",
       "k": 1,
       "v": 1,
       "t": 0,
       "sets": "3-0",
-      "pts": 3
-    },
-    {
-      "pos": 2,
-      "name": "KSV.3",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-1",
       "pts": 3
     },
     {
@@ -48,15 +48,6 @@
     },
     {
       "pos": 6,
-      "name": "Lyngby-Gladsaxe WC",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 7,
       "name": "Rosenlund Volley",
       "k": 0,
       "v": 0,
@@ -65,7 +56,7 @@
       "pts": 0
     },
     {
-      "pos": 8,
+      "pos": 7,
       "name": "VLI.2",
       "k": 1,
       "v": 0,
@@ -74,8 +65,17 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "name": "Frederiksberg Volley",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "0-3",
+      "pts": 0
+    },
+    {
+      "pos": 9,
+      "name": "Lyngby-Gladsaxe WC",
       "k": 1,
       "v": 0,
       "t": 1,
@@ -120,8 +120,8 @@
       "away": "Lyngby-Gladsaxe WC",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76143",
