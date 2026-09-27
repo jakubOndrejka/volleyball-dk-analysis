@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T12:10:33.024Z",
+  "updatedAt": "2026-09-27T17:02:42.066Z",
   "teams": [
     {
       "pos": 1,
@@ -30,6 +30,15 @@
     },
     {
       "pos": 4,
+      "name": "Aarby Volley",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "3-2",
+      "pts": 3
+    },
+    {
+      "pos": 5,
       "name": "Gentofte Volley.4",
       "k": 2,
       "v": 1,
@@ -38,7 +47,16 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
+      "name": "Glostrup IC.2",
+      "k": 2,
+      "v": 0,
+      "t": 2,
+      "sets": "2-6",
+      "pts": 1
+    },
+    {
+      "pos": 7,
       "name": "Farum VK.3",
       "k": 0,
       "v": 0,
@@ -47,26 +65,8 @@
       "pts": 0
     },
     {
-      "pos": 6,
-      "name": "Aarby Volley",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 7,
-      "name": "VLI.4",
-      "k": 1,
-      "v": 0,
-      "t": 1,
-      "sets": "0-3",
-      "pts": 0
-    },
-    {
       "pos": 8,
-      "name": "Glostrup IC.2",
+      "name": "VLI.4",
       "k": 1,
       "v": 0,
       "t": 1,
@@ -159,8 +159,8 @@
       "away": "Aarby Volley",
       "venue": "Hvissingehallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77674",

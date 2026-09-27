@@ -189,14 +189,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-09-27T16:56:00.196Z",
+      "nextCheckAt": "2026-09-27T18:02:43.001Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-09-27T15:56:00.196Z",
+      "lastCheckedAt": "2026-09-27T17:02:43.001Z",
       "parserVersion": 1
     },
     {
@@ -249,6 +249,32 @@
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-09-27T12:10:34.201Z",
+      "parserVersion": 1
+    },
+    {
+      "id": "77720",
+      "leagueId": 4139,
+      "home": "Glostrup IC.2",
+      "away": "Aarby Volley",
+      "date": "2026-09-27",
+      "score": "2-3",
+      "matchNumber": "150294",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77720",
+      "status": "ready",
+      "nextCheckAt": "2026-09-27T23:02:43.001Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77720",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77720",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77720",
+        "sha256": "2c7d8141d43b8fb30df456e793ffe1d58ca94729603b02a135c3e9e7b4b96f87",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "file": "matches/77720.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 5,
+      "lastCheckedAt": "2026-09-27T17:02:43.001Z",
       "parserVersion": 1
     },
     {
@@ -391,14 +417,14 @@
       "matchNumber": "149403",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76641",
       "status": "review",
-      "nextCheckAt": "2026-09-27T16:29:29.923Z",
+      "nextCheckAt": "2026-09-28T17:02:43.001Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76641",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76641"
       },
-      "failures": 7,
+      "failures": 8,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
+      "lastCheckedAt": "2026-09-27T17:02:43.001Z",
       "parserVersion": 1,
       "bestOf": 5
     },
@@ -620,10 +646,10 @@
       "matchNumber": "150365",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78035",
       "status": "review",
-      "nextCheckAt": "2026-09-27T16:29:29.923Z",
-      "failures": 7,
+      "nextCheckAt": "2026-09-28T17:02:43.001Z",
+      "failures": 8,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
+      "lastCheckedAt": "2026-09-27T17:02:43.001Z",
       "parserVersion": 1,
       "bestOf": 3,
       "source": {
@@ -667,10 +693,10 @@
       "matchNumber": "150140",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77566",
       "status": "review",
-      "nextCheckAt": "2026-09-27T16:29:29.923Z",
-      "failures": 7,
+      "nextCheckAt": "2026-09-28T17:02:43.001Z",
+      "failures": 8,
       "reason": "Service endpoints exceed the final score.",
-      "lastCheckedAt": "2026-09-26T16:29:29.923Z",
+      "lastCheckedAt": "2026-09-27T17:02:43.001Z",
       "parserVersion": 1,
       "bestOf": 5,
       "source": {
@@ -705,5 +731,5 @@
       "sets": 5
     }
   ],
-  "lastCheckedAt": "2026-09-27T15:56:00.196Z"
+  "lastCheckedAt": "2026-09-27T17:02:43.001Z"
 }
