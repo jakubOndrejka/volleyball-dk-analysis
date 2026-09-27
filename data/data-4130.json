@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T18:39:38.971Z",
+  "updatedAt": "2026-09-27T12:10:33.360Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Amager Volley.3",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "3-1",
+      "pts": 3
+    },
+    {
+      "pos": 3,
       "name": "Gentofte Volley.3",
       "k": 1,
       "v": 1,
@@ -20,22 +29,13 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 4,
       "name": "Farum-Holte.2",
       "k": 1,
       "v": 0,
       "t": 1,
       "sets": "2-3",
       "pts": 1
-    },
-    {
-      "pos": 4,
-      "name": "Amager Volley.3",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
     },
     {
       "pos": 5,
@@ -57,7 +57,7 @@
     },
     {
       "pos": 7,
-      "name": "Grøndal EV",
+      "name": "KSV.2",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -66,11 +66,11 @@
     },
     {
       "pos": 8,
-      "name": "KSV.2",
-      "k": 0,
+      "name": "Grøndal EV",
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 1,
+      "sets": "1-3",
       "pts": 0
     },
     {
@@ -120,8 +120,8 @@
       "away": "Grøndal EV",
       "venue": "Sundbyhal 2",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77410",

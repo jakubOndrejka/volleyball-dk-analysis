@@ -1,17 +1,26 @@
 {
-  "updatedAt": "2026-09-22T18:39:37.678Z",
+  "updatedAt": "2026-09-27T12:10:33.024Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Gentofte Volley.4",
-      "k": 1,
-      "v": 1,
+      "name": "Hvidovre VK.3",
+      "k": 2,
+      "v": 2,
       "t": 0,
-      "sets": "3-0",
-      "pts": 3
+      "sets": "6-2",
+      "pts": 6
     },
     {
       "pos": 2,
+      "name": "Kanalbyens IF",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "5-3",
+      "pts": 4
+    },
+    {
+      "pos": 3,
       "name": "KSV.5",
       "k": 1,
       "v": 1,
@@ -20,34 +29,16 @@
       "pts": 3
     },
     {
-      "pos": 3,
-      "name": "Hvidovre VK.3",
-      "k": 1,
+      "pos": 4,
+      "name": "Gentofte Volley.4",
+      "k": 2,
       "v": 1,
-      "t": 0,
-      "sets": "3-2",
+      "t": 1,
+      "sets": "3-3",
       "pts": 3
     },
     {
-      "pos": 4,
-      "name": "Kanalbyens IF",
-      "k": 1,
-      "v": 0,
-      "t": 1,
-      "sets": "2-3",
-      "pts": 1
-    },
-    {
       "pos": 5,
-      "name": "Frederiksberg Volley.4",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 6,
       "name": "Farum VK.3",
       "k": 0,
       "v": 0,
@@ -56,7 +47,7 @@
       "pts": 0
     },
     {
-      "pos": 7,
+      "pos": 6,
       "name": "Aarby Volley",
       "k": 0,
       "v": 0,
@@ -65,7 +56,7 @@
       "pts": 0
     },
     {
-      "pos": 8,
+      "pos": 7,
       "name": "VLI.4",
       "k": 1,
       "v": 0,
@@ -74,8 +65,17 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "name": "Glostrup IC.2",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "0-3",
+      "pts": 0
+    },
+    {
+      "pos": 9,
+      "name": "Frederiksberg Volley.4",
       "k": 1,
       "v": 0,
       "t": 1,
@@ -133,8 +133,8 @@
       "away": "Hvidovre VK.3",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77691",
@@ -146,8 +146,8 @@
       "away": "Kanalbyens IF",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77720",
