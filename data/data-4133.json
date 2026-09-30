@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T20:12:25.256Z",
+  "updatedAt": "2026-09-30T15:58:03.775Z",
   "teams": [
     {
       "pos": 1,
@@ -436,19 +436,6 @@
       "completed": false
     },
     {
-      "matchId": "76624",
-      "matchNumber": "149386",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76624",
-      "date": "2026-11-29",
-      "time": "16:30",
-      "home": "VLI.3",
-      "away": "Tårnfalkene",
-      "venue": "Kedelhallen",
-      "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "76621",
       "matchNumber": "149383",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76621",
@@ -471,6 +458,19 @@
       "away": "Hillerød G&I",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "76624",
+      "matchNumber": "149386",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76624",
+      "date": "2026-12-06",
+      "time": "16:00",
+      "home": "VLI.3",
+      "away": "Tårnfalkene",
+      "venue": "Kedelhallen",
+      "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
       "score": null,
       "completed": false
     },
