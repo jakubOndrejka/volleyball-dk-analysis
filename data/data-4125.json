@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T15:55:58.969Z",
+  "updatedAt": "2026-10-01T21:16:58.011Z",
   "teams": [
     {
       "pos": 1,
@@ -21,21 +21,21 @@
     },
     {
       "pos": 3,
-      "name": "Brøndby VK Wildcard",
-      "k": 0,
-      "v": 0,
+      "name": "DTU Volley",
+      "k": 1,
+      "v": 1,
       "t": 0,
-      "sets": "—",
-      "pts": 0
+      "sets": "3-1",
+      "pts": 3
     },
     {
       "pos": 4,
-      "name": "DTU Volley",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
+      "name": "Lyngby-Gladsaxe WC",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-4",
+      "pts": 3
     },
     {
       "pos": 5,
@@ -49,10 +49,10 @@
     {
       "pos": 6,
       "name": "Rosenlund Volley",
-      "k": 0,
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 1,
+      "sets": "1-3",
       "pts": 0
     },
     {
@@ -66,16 +66,16 @@
     },
     {
       "pos": 8,
-      "name": "Frederiksberg Volley",
+      "name": "Brøndby VK Wildcard",
       "k": 1,
       "v": 0,
       "t": 1,
-      "sets": "0-3",
+      "sets": "1-3",
       "pts": 0
     },
     {
       "pos": 9,
-      "name": "Lyngby-Gladsaxe WC",
+      "name": "Frederiksberg Volley",
       "k": 1,
       "v": 0,
       "t": 1,
@@ -133,8 +133,8 @@
       "away": "DTU Volley",
       "venue": "Ny Rosenlundhal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "76144",
@@ -146,8 +146,8 @@
       "away": "Lyngby-Gladsaxe WC",
       "venue": "Stadionhal 1",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "76146",
