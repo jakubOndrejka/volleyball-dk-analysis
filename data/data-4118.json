@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T18:39:38.372Z",
+  "updatedAt": "2026-10-01T13:57:32.692Z",
   "teams": [
     {
       "pos": 1,
@@ -154,32 +154,6 @@
       "home": "Team Køge",
       "away": "Gentofte Volley.2",
       "venue": "Spar Nord Arena",
-      "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "75338",
-      "matchNumber": "148100",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75338",
-      "date": "2026-10-11",
-      "time": "10:00",
-      "home": "KSV",
-      "away": "DTU Volley",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "75334",
-      "matchNumber": "148096",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75334",
-      "date": "2026-10-11",
-      "time": "11:00",
-      "home": "RS Rødovre",
-      "away": "Hvidovre VK.2",
-      "venue": "Rødovrehallen",
       "mapsUrl": null,
       "score": null,
       "completed": false
@@ -419,6 +393,19 @@
       "completed": false
     },
     {
+      "matchId": "75334",
+      "matchNumber": "148096",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75334",
+      "date": "2026-11-11",
+      "time": "19:00",
+      "home": "RS Rødovre",
+      "away": "Hvidovre VK.2",
+      "venue": "Rødovrehallen",
+      "mapsUrl": null,
+      "score": null,
+      "completed": false
+    },
+    {
       "matchId": "75356",
       "matchNumber": "148118",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75356",
@@ -506,6 +493,19 @@
       "away": "VLI",
       "venue": "Rødovrehallen",
       "mapsUrl": null,
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "75338",
+      "matchNumber": "148100",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75338",
+      "date": "2026-11-29",
+      "time": "18:00",
+      "home": "KSV",
+      "away": "DTU Volley",
+      "venue": "Idrætshuset",
+      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
       "score": null,
       "completed": false
     },
