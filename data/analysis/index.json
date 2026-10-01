@@ -12,14 +12,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76143",
       "status": "review",
-      "nextCheckAt": "2026-10-01T23:17:00.002Z",
+      "nextCheckAt": "2026-10-02T03:27:23.345Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76143",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76143"
       },
-      "failures": 1,
+      "failures": 2,
       "reason": "Sanctions entered on scoresheet: review required before attributing points to serves.",
-      "lastCheckedAt": "2026-10-01T21:17:00.002Z",
+      "lastCheckedAt": "2026-10-01T23:27:23.345Z",
       "parserVersion": 2
     },
     {
@@ -33,14 +33,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76144",
       "status": "review",
-      "nextCheckAt": "2026-10-01T23:17:00.002Z",
+      "nextCheckAt": "2026-10-02T03:27:23.345Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76144",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76144"
       },
-      "failures": 1,
+      "failures": 2,
       "reason": "Sanctions entered on scoresheet: review required before attributing points to serves.",
-      "lastCheckedAt": "2026-10-01T21:17:00.002Z",
+      "lastCheckedAt": "2026-10-01T23:27:23.345Z",
       "parserVersion": 2
     },
     {
@@ -262,14 +262,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-01T22:17:00.002Z",
+      "nextCheckAt": "2026-10-02T00:27:23.345Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-01T21:17:00.002Z",
+      "lastCheckedAt": "2026-10-01T23:27:23.345Z",
       "parserVersion": 2
     },
     {
@@ -804,5 +804,5 @@
       "sets": 5
     }
   ],
-  "lastCheckedAt": "2026-10-01T21:17:00.002Z"
+  "lastCheckedAt": "2026-10-01T23:27:23.345Z"
 }
