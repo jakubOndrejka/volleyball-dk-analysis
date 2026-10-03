@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:15:43.188Z",
+  "updatedAt": "2026-10-03T18:44:02.405Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "Enghave VK",
-      "k": 1,
-      "v": 1,
+      "k": 2,
+      "v": 2,
       "t": 0,
-      "sets": "2-0",
-      "pts": 2
+      "sets": "4-1",
+      "pts": 4
     },
     {
       "pos": 3,
@@ -31,10 +31,10 @@
     {
       "pos": 4,
       "name": "KSV.2",
-      "k": 1,
+      "k": 2,
       "v": 1,
-      "t": 0,
-      "sets": "2-1",
+      "t": 1,
+      "sets": "3-3",
       "pts": 2
     },
     {
@@ -181,8 +181,8 @@
       "away": "KSV.2",
       "venue": "Bavnehøjhallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-1",
+      "completed": true
     },
     {
       "matchId": "78043",
