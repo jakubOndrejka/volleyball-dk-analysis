@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-03T11:47:06.783Z",
+  "updatedAt": "2026-10-03T15:15:42.960Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Gentofte Volley",
-      "k": 1,
-      "v": 1,
+      "name": "DTU Volley",
+      "k": 2,
+      "v": 2,
       "t": 0,
-      "sets": "2-1",
-      "pts": 2
+      "sets": "4-0",
+      "pts": 4
     },
     {
       "pos": 2,
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "Gentofte Volley",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "2-3",
+      "pts": 2
+    },
+    {
+      "pos": 4,
       "name": "Farum-Holte",
       "k": 0,
       "v": 0,
@@ -29,7 +38,7 @@
       "pts": 0
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "Grøndal EV",
       "k": 0,
       "v": 0,
@@ -38,7 +47,7 @@
       "pts": 0
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "CBS Sport",
       "k": 0,
       "v": 0,
@@ -47,17 +56,8 @@
       "pts": 0
     },
     {
-      "pos": 6,
-      "name": "Tårnfalkene",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 7,
-      "name": "DTU Volley",
+      "name": "Tårnfalkene",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -67,10 +67,10 @@
     {
       "pos": 8,
       "name": "KSV",
-      "k": 1,
+      "k": 2,
       "v": 0,
-      "t": 1,
-      "sets": "1-2",
+      "t": 2,
+      "sets": "1-4",
       "pts": 0
     }
   ],
@@ -111,8 +111,8 @@
       "away": "KSV",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "77847",
@@ -124,8 +124,8 @@
       "away": "Gentofte Volley",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "77852",

@@ -1,17 +1,35 @@
 {
-  "updatedAt": "2026-09-27T15:55:58.211Z",
+  "updatedAt": "2026-10-03T15:15:41.819Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Lyngby-Gladsaxe Volley",
+      "name": "Amager Volley",
       "k": 1,
       "v": 1,
       "t": 0,
-      "sets": "3-2",
+      "sets": "3-1",
       "pts": 3
     },
     {
       "pos": 2,
+      "name": "Farum VK 2",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "3-1",
+      "pts": 3
+    },
+    {
+      "pos": 3,
+      "name": "Lyngby-Gladsaxe Volley",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "4-5",
+      "pts": 3
+    },
+    {
+      "pos": 4,
       "name": "KV 61",
       "k": 1,
       "v": 0,
@@ -20,26 +38,8 @@
       "pts": 1
     },
     {
-      "pos": 3,
-      "name": "Amager Volley",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 4,
-      "name": "Amager Volley.2",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 5,
-      "name": "Farum VK 2",
+      "name": "Amager Volley.2",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -75,7 +75,7 @@
     },
     {
       "pos": 9,
-      "name": "KSV.2",
+      "name": "KSV",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -84,11 +84,11 @@
     },
     {
       "pos": 10,
-      "name": "KSV",
-      "k": 0,
+      "name": "KSV.2",
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 1,
+      "sets": "1-3",
       "pts": 0
     }
   ],
@@ -116,8 +116,8 @@
       "away": "Lyngby-Gladsaxe Volley",
       "venue": "Sundbyhal 2",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "76252",
@@ -129,8 +129,8 @@
       "away": "KSV.2",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "76251",

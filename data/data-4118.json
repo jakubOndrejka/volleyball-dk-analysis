@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-10-01T13:57:32.692Z",
+  "updatedAt": "2026-10-03T15:15:42.661Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Amager Volley.2",
-      "k": 0,
-      "v": 0,
+      "name": "Hvidovre VK.2",
+      "k": 1,
+      "v": 1,
       "t": 0,
-      "sets": "—",
-      "pts": 0
+      "sets": "3-0",
+      "pts": 3
     },
     {
       "pos": 2,
-      "name": "Hvidovre VK.2",
-      "k": 0,
-      "v": 0,
+      "name": "RS Rødovre",
+      "k": 1,
+      "v": 1,
       "t": 0,
-      "sets": "—",
-      "pts": 0
+      "sets": "3-0",
+      "pts": 3
     },
     {
       "pos": 3,
@@ -48,24 +48,6 @@
     },
     {
       "pos": 6,
-      "name": "RS Rødovre",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 7,
-      "name": "Enghave VK",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 8,
       "name": "VLI",
       "k": 0,
       "v": 0,
@@ -74,7 +56,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 7,
       "name": "Team Køge",
       "k": 0,
       "v": 0,
@@ -83,12 +65,30 @@
       "pts": 0
     },
     {
-      "pos": 10,
+      "pos": 8,
       "name": "KSV",
       "k": 0,
       "v": 0,
       "t": 0,
       "sets": "—",
+      "pts": 0
+    },
+    {
+      "pos": 9,
+      "name": "Amager Volley.2",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "0-3",
+      "pts": 0
+    },
+    {
+      "pos": 10,
+      "name": "Enghave VK",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "0-3",
       "pts": 0
     }
   ],
@@ -103,8 +103,8 @@
       "away": "Enghave VK",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75329",
@@ -116,8 +116,8 @@
       "away": "RS Rødovre",
       "venue": "Sundbyhal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "75332",

@@ -1,35 +1,26 @@
 {
-  "updatedAt": "2026-10-03T11:47:06.126Z",
+  "updatedAt": "2026-10-03T15:15:42.477Z",
   "teams": [
     {
       "pos": 1,
       "name": "Hvidovre VK.3",
-      "k": 2,
-      "v": 2,
+      "k": 3,
+      "v": 3,
       "t": 0,
-      "sets": "6-2",
-      "pts": 6
+      "sets": "9-2",
+      "pts": 9
     },
     {
       "pos": 2,
       "name": "Kanalbyens IF",
-      "k": 2,
-      "v": 1,
+      "k": 3,
+      "v": 2,
       "t": 1,
-      "sets": "5-3",
-      "pts": 4
+      "sets": "8-3",
+      "pts": 7
     },
     {
       "pos": 3,
-      "name": "KSV.5",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
-    },
-    {
-      "pos": 4,
       "name": "Farum VK.3",
       "k": 1,
       "v": 1,
@@ -38,21 +29,30 @@
       "pts": 3
     },
     {
-      "pos": 5,
-      "name": "Aarby Volley",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-2",
-      "pts": 3
-    },
-    {
-      "pos": 6,
+      "pos": 4,
       "name": "Gentofte Volley.4",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "3-3",
+      "pts": 3
+    },
+    {
+      "pos": 5,
+      "name": "KSV.5",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-3",
+      "pts": 3
+    },
+    {
+      "pos": 6,
+      "name": "Aarby Volley",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-5",
       "pts": 3
     },
     {
@@ -185,8 +185,8 @@
       "away": "Aarby Volley",
       "venue": "Sluseholmen Skole",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77699",
@@ -198,8 +198,8 @@
       "away": "Hvidovre VK.3",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77666",

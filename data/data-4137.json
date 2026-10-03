@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T18:39:40.872Z",
+  "updatedAt": "2026-10-03T15:15:43.188Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Enghave VK",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "2-0",
+      "pts": 2
+    },
+    {
+      "pos": 3,
       "name": "Grøndal EV.2",
       "k": 2,
       "v": 1,
@@ -20,7 +29,16 @@
       "pts": 2
     },
     {
-      "pos": 3,
+      "pos": 4,
+      "name": "KSV.2",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "2-1",
+      "pts": 2
+    },
+    {
+      "pos": 5,
       "name": "Farum-Holte.2",
       "k": 2,
       "v": 1,
@@ -29,7 +47,7 @@
       "pts": 2
     },
     {
-      "pos": 4,
+      "pos": 6,
       "name": "DTU Volley.2",
       "k": 0,
       "v": 0,
@@ -38,34 +56,7 @@
       "pts": 0
     },
     {
-      "pos": 5,
-      "name": "Enghave VK",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 6,
-      "name": "Frederiksberg Volley",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 7,
-      "name": "KSV.2",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 8,
       "name": "Grøndal EV.3",
       "k": 0,
       "v": 0,
@@ -74,12 +65,21 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "name": "Helsingør VK",
       "k": 0,
       "v": 0,
       "t": 0,
       "sets": "—",
+      "pts": 0
+    },
+    {
+      "pos": 9,
+      "name": "Frederiksberg Volley",
+      "k": 2,
+      "v": 0,
+      "t": 2,
+      "sets": "1-4",
       "pts": 0
     },
     {
@@ -155,8 +155,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Bavnehøjhallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "78039",
@@ -168,8 +168,8 @@
       "away": "KSV.2",
       "venue": "Bavnehøjhallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "78038",
