@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-09-22T18:39:40.243Z",
+  "updatedAt": "2026-10-03T11:47:06.783Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Amager Volley",
-      "k": 0,
-      "v": 0,
+      "name": "Gentofte Volley",
+      "k": 1,
+      "v": 1,
       "t": 0,
-      "sets": "—",
-      "pts": 0
+      "sets": "2-1",
+      "pts": 2
     },
     {
       "pos": 2,
-      "name": "Farum-Holte",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
+      "name": "Amager Volley",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-3",
+      "pts": 2
     },
     {
       "pos": 3,
-      "name": "Gentofte Volley",
+      "name": "Farum-Holte",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -48,15 +48,6 @@
     },
     {
       "pos": 6,
-      "name": "KSV",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 7,
       "name": "Tårnfalkene",
       "k": 0,
       "v": 0,
@@ -65,12 +56,21 @@
       "pts": 0
     },
     {
-      "pos": 8,
+      "pos": 7,
       "name": "DTU Volley",
       "k": 0,
       "v": 0,
       "t": 0,
       "sets": "—",
+      "pts": 0
+    },
+    {
+      "pos": 8,
+      "name": "KSV",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "1-2",
       "pts": 0
     }
   ],
@@ -85,8 +85,8 @@
       "away": "Gentofte Volley",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "77846",
@@ -98,8 +98,8 @@
       "away": "KSV",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-1",
+      "completed": true
     },
     {
       "matchId": "77848",
