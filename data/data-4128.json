@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:15:41.819Z",
+  "updatedAt": "2026-10-04T12:53:07.987Z",
   "teams": [
     {
       "pos": 1,
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "VLI",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "3-1",
+      "pts": 3
+    },
+    {
+      "pos": 4,
       "name": "Lyngby-Gladsaxe Volley",
       "k": 2,
       "v": 1,
@@ -29,16 +38,16 @@
       "pts": 3
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "KV 61",
-      "k": 1,
+      "k": 2,
       "v": 0,
-      "t": 1,
-      "sets": "2-3",
+      "t": 2,
+      "sets": "3-6",
       "pts": 1
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "Amager Volley.2",
       "k": 0,
       "v": 0,
@@ -47,7 +56,7 @@
       "pts": 0
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "Gentofte Volley.2",
       "k": 0,
       "v": 0,
@@ -56,17 +65,8 @@
       "pts": 0
     },
     {
-      "pos": 7,
-      "name": "Lynge Uggeløse",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 8,
-      "name": "VLI",
+      "name": "Lynge Uggeløse",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -142,8 +142,8 @@
       "away": "VLI",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "76253",

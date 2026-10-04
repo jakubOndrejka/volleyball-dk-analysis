@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-03T15:15:42.661Z",
+  "updatedAt": "2026-10-04T12:53:08.627Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Hvidovre VK.2",
+      "name": "DTU Volley",
       "k": 1,
       "v": 1,
       "t": 0,
@@ -12,7 +12,7 @@
     },
     {
       "pos": 2,
-      "name": "RS Rødovre",
+      "name": "Hvidovre VK.2",
       "k": 1,
       "v": 1,
       "t": 0,
@@ -21,24 +21,33 @@
     },
     {
       "pos": 3,
-      "name": "Frederiksberg Volley",
-      "k": 0,
-      "v": 0,
+      "name": "RS Rødovre",
+      "k": 1,
+      "v": 1,
       "t": 0,
-      "sets": "—",
-      "pts": 0
+      "sets": "3-0",
+      "pts": 3
     },
     {
       "pos": 4,
-      "name": "DTU Volley",
-      "k": 0,
-      "v": 0,
+      "name": "Frederiksberg Volley",
+      "k": 1,
+      "v": 1,
       "t": 0,
-      "sets": "—",
-      "pts": 0
+      "sets": "3-2",
+      "pts": 3
     },
     {
       "pos": 5,
+      "name": "VLI",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "2-3",
+      "pts": 1
+    },
+    {
+      "pos": 6,
       "name": "Gentofte Volley.2",
       "k": 0,
       "v": 0,
@@ -47,25 +56,7 @@
       "pts": 0
     },
     {
-      "pos": 6,
-      "name": "VLI",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 7,
-      "name": "Team Køge",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
-      "pos": 8,
       "name": "KSV",
       "k": 0,
       "v": 0,
@@ -74,7 +65,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "name": "Amager Volley.2",
       "k": 1,
       "v": 0,
@@ -83,8 +74,17 @@
       "pts": 0
     },
     {
-      "pos": 10,
+      "pos": 9,
       "name": "Enghave VK",
+      "k": 1,
+      "v": 0,
+      "t": 1,
+      "sets": "0-3",
+      "pts": 0
+    },
+    {
+      "pos": 10,
+      "name": "Team Køge",
       "k": 1,
       "v": 0,
       "t": 1,
@@ -129,8 +129,8 @@
       "away": "Team Køge",
       "venue": "Engelsborghallen",
       "mapsUrl": "https://maps.google.com/maps?q=Engelsborgvej%2093%2C%202800%20Kgs.%20Lyngby",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75331",
@@ -142,8 +142,8 @@
       "away": "VLI",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "75337",
