@@ -335,14 +335,14 @@
       "bestOf": 3,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77848",
       "status": "review",
-      "nextCheckAt": "2026-10-03T22:44:02.782Z",
+      "nextCheckAt": "2026-10-04T08:43:38.416Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77848",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77848"
       },
-      "failures": 2,
+      "failures": 3,
       "reason": "Substitution creates a duplicate player.",
-      "lastCheckedAt": "2026-10-03T18:44:02.782Z",
+      "lastCheckedAt": "2026-10-04T00:43:38.416Z",
       "parserVersion": 2
     },
     {
@@ -403,14 +403,14 @@
       "bestOf": 3,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78039",
       "status": "review",
-      "nextCheckAt": "2026-10-03T22:44:02.782Z",
+      "nextCheckAt": "2026-10-04T08:43:38.416Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78039",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78039"
       },
-      "failures": 2,
+      "failures": 3,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-10-03T18:44:02.782Z",
+      "lastCheckedAt": "2026-10-04T00:43:38.416Z",
       "parserVersion": 2
     },
     {
@@ -674,14 +674,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-03T22:50:07.186Z",
+      "nextCheckAt": "2026-10-04T01:43:38.416Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-03T21:50:07.186Z",
+      "lastCheckedAt": "2026-10-04T00:43:38.416Z",
       "parserVersion": 2
     },
     {
@@ -1216,5 +1216,5 @@
       "sets": 5
     }
   ],
-  "lastCheckedAt": "2026-10-03T21:50:07.186Z"
+  "lastCheckedAt": "2026-10-04T00:43:38.416Z"
 }
