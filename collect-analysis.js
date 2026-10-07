@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { parseRoster, parseScorecard, PARSER_VERSION } from './lib/pdf-parser.js';
 import { fetchBytes, discoverPdfs, crossCheckHistory, BASE } from './lib/results-source.js';
 import { addLiberoTracking } from './lib/libero-events.js';
+import { refreshLiberoHistory } from './lib/libero-refresh.js';
 import { validateMatch } from './analysis-engine.js';
 const settings=JSON.parse(await fs.readFile('project-config.json','utf8'));
 const force=process.argv.includes('--force'), offline=process.argv.includes('--cached');
@@ -24,6 +25,7 @@ for(const leagueId of settings.leagueIds) {
     entries.set(id,{...old,id,leagueId,home:f.home,away:f.away,date:f.date,score:f.score,matchNumber:f.matchNumber,bestOf:setsToWin*2-1,matchUrl:f.matchUrl||`${BASE}/Kamp-Information.aspx?KampId=${id}`,status:changed?'queued':old?.status||'queued',nextCheckAt:changed?null:old?.nextCheckAt||null});
   }
 }
+const htmlByMatch=new Map();
 let attempted=0;
 const now=new Date();
 for(const entry of [...entries.values()].sort((a,b)=>(a.status==='ready')-(b.status==='ready')||b.date.localeCompare(a.date))) {
@@ -35,6 +37,7 @@ for(const entry of [...entries.values()].sort((a,b)=>(a.status==='ready')-(b.sta
     let html;
     if(offline)html=await fs.readFile(`.cache/pdf/${entry.id}.html`,'utf8');
     else {html=(await fetchBytes(entry.matchUrl)).toString('utf8');await fs.writeFile(`.cache/pdf/${entry.id}.html`,html);}
+    htmlByMatch.set(entry.id,html);
     const links=discoverPdfs(html,entry.matchUrl);
     entry.source={...entry.source,scorecardUrl:links.scorecard||null,rosterUrl:links.roster||null};
     if(!links.scorecard||!links.roster) {
@@ -50,6 +53,8 @@ for(const entry of [...entries.values()].sort((a,b)=>(a.status==='ready')-(b.sta
       const match=await parseScorecard(scorecard,{...entry,matchId:entry.id},rosters);
       match.source={...entry.source,matchUrl:entry.matchUrl,sha256:createHash('sha256').update(scorecard).digest('hex'),check:crossCheckHistory(html,match)};
       addLiberoTracking(match,html);
+      match.liberoTracking.checkedAt=now.toISOString();
+      entry.liberoNextCheckAt=null;delete entry.liberoRefreshWarning;
       validateMatch(match);
       const file=`data/analysis/matches/${entry.id}.json`;
       await fs.writeFile(file+'.tmp',JSON.stringify(match)+'\n');await fs.rename(file+'.tmp',file);
@@ -67,7 +72,8 @@ for(const entry of [...entries.values()].sort((a,b)=>(a.status==='ready')-(b.sta
   entry.nextCheckAt=new Date(now.getTime()+hours*3600000).toISOString();
   console.log(`[${entry.id}] ${entry.home} vs ${entry.away}: ${entry.status}${entry.reason?' — '+entry.reason:''}`);
 }
+const liberoRefresh=await refreshLiberoHistory([...entries.values()],{only,offline,htmlByMatch,maxMatches:settings.maxLiberoMatchesPerRun??100});
 index.matches=[...entries.values()].sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
-if(attempted)index.lastCheckedAt=now.toISOString();
+if(attempted||liberoRefresh.checked)index.lastCheckedAt=now.toISOString();
 await fs.writeFile(path+'.tmp',JSON.stringify(index,null,2)+'\n');await fs.rename(path+'.tmp',path);
 console.log(`Checked ${attempted} PDF matches. ${index.matches.filter(m=>m.status==='ready').length} available.`);

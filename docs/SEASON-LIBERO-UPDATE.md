@@ -28,7 +28,7 @@ S1–S6 still means the setter's position before the rally. Libero presence can 
 
 ## When libero data appears
 
-The parser version is bumped to reprocess existing matches. The current workflow processes at most 16 matches per run, so all older matches can take several runs to gain court-presence data. Until then they show **unknown**, while existing serving statistics still work. No extra Google setup is needed for match events; GitHub reads the official public page.
+The PDF collector processes at most 16 matches per run. Libero history for already-readable matches is now refreshed separately from public HTML, with up to 100 matches per run and three concurrent downloads. It does not wait for the PDF retry date or PDF batch limit. Unprocessed history is labelled **awaiting refresh**, separately from genuinely unknown source events. No extra Google setup is needed for match events. See [the libero refresh correction](LIBERO-REFRESH-FIX.md).
 
 If you use the project locally, one match can be refreshed with:
 
