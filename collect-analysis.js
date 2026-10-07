@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { parseRoster, parseScorecard, PARSER_VERSION } from './lib/pdf-parser.js';
 import { fetchBytes, discoverPdfs, crossCheckHistory, BASE } from './lib/results-source.js';
+import { addLiberoTracking } from './lib/libero-events.js';
 import { validateMatch } from './analysis-engine.js';
 const settings=JSON.parse(await fs.readFile('project-config.json','utf8'));
 const force=process.argv.includes('--force'), offline=process.argv.includes('--cached');
@@ -48,6 +49,7 @@ for(const entry of [...entries.values()].sort((a,b)=>(a.status==='ready')-(b.sta
       const rosters=await parseRoster(roster,entry);
       const match=await parseScorecard(scorecard,{...entry,matchId:entry.id},rosters);
       match.source={...entry.source,matchUrl:entry.matchUrl,sha256:createHash('sha256').update(scorecard).digest('hex'),check:crossCheckHistory(html,match)};
+      addLiberoTracking(match,html);
       validateMatch(match);
       const file=`data/analysis/matches/${entry.id}.json`;
       await fs.writeFile(file+'.tmp',JSON.stringify(match)+'\n');await fs.rename(file+'.tmp',file);

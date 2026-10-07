@@ -10,9 +10,10 @@ The original standings and fixtures website from [sidiropoulos/volleyball-dk](ht
 - Your requested serving table: serving turns, first rallies won, first-rally win %, zero-point turns, 1 / 2 / 3–4 / 5+ point bins, 3+ run %, and best point run.
 - Additional playing-time context: sets, matches, serves, serve win %, serves per set and points per turn. Rates use pooled counts; percentages are not averaged across matches.
 - Your requested rotation table: S1–S6 and **Unconfirmed**, rallies, points won/lost, net points per 100, serves/wins/%, received/side-outs/%.
-- Per-match setters, backup setters, optional per-set overrides, and explicit back-row/front-row rules for teams using two setters.
+- Season-wide setters and backups, with match/set overrides and explicit back-row/front-row rules for teams using two setters.
+- Starting rotations split by serving/receiving first, inferred player roles, rally-based court time, and rotation outcomes filtered by the libero recorded on court. See [the season/libero update guide](docs/SEASON-LIBERO-UPDATE.md).
 - CSV downloads, local setter persistence, and configuration import/export for sharing.
-- Optional shared coach editing through a Google Sheet and Apps Script: one coach code, no coach accounts, per-match saves and conflict checks. See [shared coach setup](docs/SHARED-COACHES.md).
+- Optional shared coach editing through a Google Sheet and Apps Script: one coach code, no coach accounts, separate season/match saves and conflict checks. See [shared coach setup](docs/SHARED-COACHES.md).
 - Clickable player and rotation names open match histories, progress charts and CSV downloads. Filter rotation analysis by the actual setter. See [player and rotation details](docs/PLAYER-ROTATION-DETAILS.md).
 - Automatic discovery of published scorecard and roster PDF links on official result pages. No Kampskema API, AI service, API key or paid OCR service is needed.
 - A GitHub Actions workflow that refreshes results, collects PDFs, validates them and publishes GitHub Pages.
@@ -52,6 +53,8 @@ The included results are a **22 September 2026 snapshot of the current 2026/27 l
 |---|---|
 | `index.html` | Original results/standings application and navigation into analysis. |
 | `analysis-panel.js`, `analysis.css` | Team analysis interface, filters, setter controls and downloads. |
+| `analysis-extras.js` | Set-start summaries, inferred roles, playing time and libero rotation tables. |
+| `lib/libero-events.js` | Matches official public event history to PDF rallies and reconstructs recorded libero court presence. |
 | `analysis-details.js` | Player/rotation detail windows, per-match charts, scope selection and history downloads. |
 | `analysis-engine.js` | Shared serving/rotation calculations and configuration validation, used by browser and Node. |
 | `shared-coaches.js`, `shared-coaches-config.json` | Google shared-choice client and public web app URL. Never store the coach code here. |
@@ -98,7 +101,7 @@ It is intentionally conservative:
 - A missing PDF or network failure is **pending**, with retries. Missing data is never presented as zero performance.
 - Reconstructed scores must match the PDF and published match result. All observed serving endpoints must be accounted for. Players must match the roster. If the match page displays a complete point history, every reconstructed rally is compared against it.
 - A changed sheet that fails validation is excluded. A temporary download failure can retain the previously validated report, with a visible refresh warning.
-- PDFs omit libero exchanges. Rotation positions follow the six regular lineup slots; libero appearances cannot be counted. Select setters who remain in those regular rotation slots. A libero cannot be selected as setter in this version.
+- Libero exchanges come from the public match event table, not the PDF. A complete matching point sequence and explicit exchanges are required for confirmed court presence. Missing/contradictory history is unknown. S1–S6 still follows the chosen setter’s position; libero filters compare team rally outcomes, not individual passing quality. A roster libero cannot be selected as setter.
 - The sheet records team outcomes during a server's turn. It cannot separate aces, service errors, passing quality or attacking performance.
 
 Details: [metric definitions](docs/METRICS.md) and [validation notes](docs/VALIDATION.md).

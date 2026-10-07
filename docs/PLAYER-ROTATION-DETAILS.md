@@ -17,7 +17,7 @@ The rotation section has a **Setter** dropdown. **All setters** includes the tea
 
 The player serving table and team overview remain team-wide within the main match/set selection. A note beside the rotation filter states its scope and rally count.
 
-Setter choices come from **Who was setting?**, including Google shared choices, match-level settings, set overrides and configured backups. A player appears in the dropdown once by their existing stable player ID, even if their shirt number changes across games. The option lists the numbers they used when configured as setter or backup.
+Setter choices come from **Who was setting?**, including Google shared choices, season defaults, match settings, set overrides and configured backups. A player appears in the dropdown once by their existing stable player ID, even if their shirt number changes across games. The option lists the numbers they used when configured as setter or backup.
 
 The filter identifies the active setter for each rally:
 
@@ -38,7 +38,7 @@ Rates with no attempts are shown as a dash and a gap in the chart, never as 0%. 
 
 Summary percentages pool the underlying attempts across the chosen matches. They are not averages of match percentages. Opponents, lineups and sample sizes can explain changes; a higher line alone does not establish improvement caused by training or a setter.
 
-The existing PDF limitations still apply: libero exchanges are absent, so this cannot infer every libero appearance, reception quality, aces or individual serve errors. Unsupported or unavailable scoresheets are omitted from the sample. “All available matches” does not mean all matches played if PDFs are missing.
+Libero-filtered rotation histories now use the public match event table; missing or contradictory court presence remains unknown. The original player serving history follows regular lineup slots. The new playing-time section separately reports confirmed actual court rallies, including liberos. Neither source measures reception quality, aces or individual serve errors. Unsupported or unavailable scoresheets are omitted from the sample. “All available matches” does not mean all matches played if PDFs are missing.
 
 ## Update files
 

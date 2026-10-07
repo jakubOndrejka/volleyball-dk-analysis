@@ -2,6 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import { JSDOM, VirtualConsole } from "jsdom";
+import {addLiberoTracking} from "../lib/libero-events.js";
+import {analyseTeam} from "../analysis-engine.js";
 import { backend, saveRequest } from "./helpers/apps-script-harness.js";
 
 const endpoint = "https://script.google.com/macros/s/test-deployment/exec";
@@ -24,7 +26,7 @@ async function until(fn) {
   assert.fail("Shared interface did not settle.");
 }
 let count = 0;
-async function openPage(server, { personal, failRead = false } = {}) {
+async function openPage(server, { personal, failRead = false, game = match } = {}) {
   const errors = [],
     vc = new VirtualConsole();
   vc.on("jsdomError", (e) => errors.push(e.message));
@@ -48,15 +50,15 @@ async function openPage(server, { personal, failRead = false } = {}) {
       "volleyball-analysis:setters:v1",
       JSON.stringify(personal),
     );
-  const entry = { ...match, status: "ready", file: "matches/76141.json" };
+  const entry = { ...game, status: "ready", file: `matches/${game.id}.json` };
   const files = {
     "./shared-coaches-config.json": { endpoint },
     "./data/analysis-config.json": { version: 1, teams: {} },
     "./data/analysis/index.json": { version: 1, matches: [entry] },
-    "./data/analysis/matches/76141.json": match,
+    [`./data/analysis/matches/${game.id}.json`]: game,
     "./data/data-4125.json": {
       teams: [{ name: "KSV.3" }, { name: "VLI.2" }],
-      fixtures: [{ ...entry, matchId: match.id, completed: true }],
+      fixtures: [{ ...entry, matchId: game.id, completed: true }],
     },
   };
   w.structuredClone = structuredClone;
@@ -114,6 +116,7 @@ test("shared UI: migration, wrong code, confirmed saves, stale conflict, overrid
   };
   const page = await openPage(server, { personal });
   const { $, input, text } = page;
+  input("#a-setup-scope", "match");
   assert.equal($('[data-shirt="10"]').value, "setter");
   assert.equal($('[data-shirt="8"]').value, "");
   assert.match(text(), /0 rallies Unconfirmed/);
@@ -193,6 +196,7 @@ test("shared UI: migration, wrong code, confirmed saves, stale conflict, overrid
   const fresh = await openPage(server, { personal });
   assert.match(fresh.text(), /175 rallies Unconfirmed/);
   assert.equal(fresh.$("#a-coach-code").value, "");
+  fresh.input("#a-setup-scope", "match");
   assert.equal(fresh.$('[data-shirt="8"]').value, "");
   assert.deepEqual(fresh.errors, []);
   fresh.dom.window.close();
@@ -207,4 +211,46 @@ test("failed initial Google read leaves stats visible but disables shared saving
   assert.ok(page.$("#a-refresh-shared"));
   assert.deepEqual(page.errors, []);
   page.dom.window.close();
+});
+
+test('season UI saves identities, resolves overrides, and keeps libero histories filtered', async()=>{
+  const game=addLiberoTracking(JSON.parse(await fs.readFile(new URL('fixtures/76192-match.json',import.meta.url),'utf8')),
+    await fs.readFile(new URL('fixtures/76192-events.html',import.meta.url),'utf8'));
+  const server=backend(),page=await openPage(server,{game}),{$,input,text}=page;
+  assert.equal($('#a-setup-scope').value,'season');
+  assert.equal($('#a-setup-match').parentElement.parentElement.hidden,true);
+  const setter=game.rosters.home.find(p=>p.number==='5');
+  input(`[data-shirt="${setter.id}"]`,'setter');
+  input('#a-coach-name','Season coach');input('#a-coach-code','test-only-code');$('#a-save').click();
+  await until(()=>$('#a-save-message').textContent.includes('Saved for everyone'));
+  const seasonRecord=server.get({action:'read'}).records[0];
+  assert.equal(seasonRecord.matchId,'season');
+  assert.deepEqual(seasonRecord.choices.setters,[setter.id]);
+  assert.equal(seasonRecord.choices.playerIds,true);
+  assert.match(text(),/0 rallies Unconfirmed/);
+  input('#a-setup-scope','match');
+  assert.equal($('[data-shirt="5"]').value,'setter');
+  assert.match(text(),/Using: Season default/);
+  input('#a-setup-set','1');input('[data-shirt="5"]','');$('#a-save').click();
+  await until(()=>$('#a-save-message').textContent.includes('Saved for everyone'));
+  assert.match(text(),/30 rallies Unconfirmed/);
+  input('#a-setup-set','');$('#a-use-season').click();
+  await until(()=>$('#a-save-message').textContent.includes('Saved for everyone'));
+  assert.match(text(),/0 rallies Unconfirmed/);
+  assert.equal(server.get({action:'read'}).records.find(r=>r.matchId===game.id).choices.inheritSeason,true);
+  const libero=game.rosters.home.find(p=>p.number==='15');
+  input('#a-libero-filter',libero.id);
+  assert.match($('#a-libero-section').textContent,/19 rallies in this filter/);
+  const button=$('#a-libero-section [data-rotation="S1"]');
+  button.click();
+  assert.match($('#a-detail').textContent,/Lara Philine Buechler/);
+  const config={version:1,teams:{'4125:KSV.3':{matches:{season:seasonRecord.choices}}}};
+  const expected=analyseTeam([game],'KSV.3',config,null,{liberoId:libero.id}).rotation[0].rallies;
+  assert.equal(Number($('#a-detail .a-metrics').children[1].querySelector('strong').textContent),expected);
+  $('#a-detail-close').click();assert.equal($('#a-detail'),null);
+  assert.deepEqual(page.errors,[]);page.dom.window.close();
+  const fresh=await openPage(server,{game});
+  assert.equal(fresh.$(`[data-shirt="${setter.id}"]`).value,'setter');
+  assert.match(fresh.text(),/0 rallies Unconfirmed/);
+  fresh.dom.window.close();
 });

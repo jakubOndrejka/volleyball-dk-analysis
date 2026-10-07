@@ -4,7 +4,9 @@ import {
   teamKey,
   validateConfig,
   listSetters,
+  resolveSelection,
 } from "./analysis-engine.js";
+import { teamPlayers, renderExtras } from "./analysis-extras.js";
 import { SharedCoaches } from "./shared-coaches.js";
 import { openAnalysisDetail } from "./analysis-details.js";
 const root = document.getElementById("analysis-panel");
@@ -48,6 +50,8 @@ let context = null,
   selectedSet = "",
   setupMatch = "",
   setupSet = "",
+  setupScope = "season",
+  liberoFilter = "active",
   request = 0,
   loaded = [],
   minTurns = 0,
@@ -204,11 +208,6 @@ function entries() {
 function matchLabel(m) {
   return `${m.date} · ${m.home} vs ${m.away} · ${m.score}`;
 }
-function getSelection(matchId, setNumber = "") {
-  const m =
-    merged().teams[teamKey(context.leagueId, team)]?.matches?.[matchId] || {};
-  return setNumber ? m.sets?.[setNumber] || m : m;
-}
 function saveLocal() {
   localStorage.setItem(storageKey, JSON.stringify(local));
 }
@@ -239,8 +238,9 @@ function renderSetup(draft = null) {
     side = match.home === team ? "home" : "away",
     leagueId = String(context.leagueId),
     matchTeam = team,
-    matchId = setupMatch,
-    setNumber = setupSet,
+    isSeason = setupScope === "season",
+    matchId = isSeason ? "season" : setupMatch,
+    setNumber = isSeason ? "" : setupSet,
     key = teamKey(leagueId, matchTeam),
     record = shared.get(leagueId, matchTeam, matchId),
     expectedRevision = record?.revision || 0,
@@ -250,25 +250,35 @@ function renderSetup(draft = null) {
           setters: [],
           fallbacks: [],
           system: "single",
+          ...(isSeason ? {playerIds:true} : {inheritSeason:true}),
         },
     ),
-    selection = setNumber ? previous.sets?.[setNumber] || previous : previous,
+    selectionConfig = merged(),
+    selection = (() => {
+      selectionConfig.teams[key] ??= {matches:{}};
+      selectionConfig.teams[key].matches[matchId] = previous;
+      return isSeason ? previous : resolveSelection(match,matchTeam,selectionConfig,setNumber);
+    })(),
+    setupPlayers = isSeason ? teamPlayers(ready,team).filter(p=>!p.alwaysLibero) : match.rosters[side].filter(p=>!p.libero),
     hasOverride = !!previous.sets?.[setNumber],
     personal = local.teams[key]?.matches?.[matchId];
   let conflicted = false;
-  target.innerHTML = `<div class="a-filter"><label>Match to configure<select id="a-setup-match">${ready.map((m) => `<option value="${esc(m.id)}" ${m.id === setupMatch ? "selected" : ""}>${esc(matchLabel(m))}</option>`).join("")}</select></label><label>Apply to<select id="a-setup-set"><option value="">Whole match</option>${match.sets.map((s) => `<option value="${s.number}" ${String(s.number) === setupSet ? "selected" : ""}>Set ${s.number} override</option>`).join("")}</select></label></div>
-<div class="a-filter"><label>When two selected setters are on court<select id="a-system"><option value="single" ${selection.system === "single" || !selection.system ? "selected" : ""}>Leave ambiguous rotations Unconfirmed</option><option value="back-row" ${selection.system === "back-row" ? "selected" : ""}>Use the back-row setter (6–2)</option><option value="front-row" ${selection.system === "front-row" ? "selected" : ""}>Use the front-row setter (4–2)</option></select></label></div>
-<p class="a-note">Choose your setters for this match. A backup is used only when no selected setter is in the rotation lineup. ${setupSet && !hasOverride ? "This set currently inherits the whole-match choices. Saving here creates an override." : ""}</p>
-<div class="a-setters">${match.rosters[side]
-    .filter((p) => !p.libero)
+  target.innerHTML = `<div class="a-filter"><label>Configure<select id="a-setup-scope"><option value="season" ${isSeason ? "selected" : ""}>Season defaults</option><option value="match" ${!isSeason ? "selected" : ""}>Match / set override</option></select></label></div>
+<p class="a-note">${isSeason ? "Choose once for this team in this season’s competition. Players are matched by identity across shirt-number changes. Existing match overrides are preserved." : `Using: <strong>${esc(selection.source)}</strong>. Changes here apply only to this match or set.`}</p>
+${shared.enabled && shared.ready && !shared.supportsSeason ? '<div class="a-notice">The owner must update Apps Script for season defaults. Existing saved match choices are still shown.</div>' : ''}
+<div class="a-filter" ${isSeason ? 'hidden' : ''}><label>Match to configure<select id="a-setup-match">${ready.map((m) => `<option value="${esc(m.id)}" ${m.id === setupMatch ? "selected" : ""}>${esc(matchLabel(m))}</option>`).join("")}</select></label><label>Apply to<select id="a-setup-set"><option value="">Whole match</option>${match.sets.map((s) => `<option value="${s.number}" ${String(s.number) === setupSet ? "selected" : ""}>Set ${s.number} override</option>`).join("")}</select></label></div>
+<div class="a-filter"><label>When two selected setters are on court<select id="a-system"><option value="single" ${selection.system === "single" || !selection.system ? "selected" : ""}>Leave Unconfirmed</option><option value="back-row" ${selection.system === "back-row" ? "selected" : ""}>Back-row setter (6–2)</option><option value="front-row" ${selection.system === "front-row" ? "selected" : ""}>Front-row setter (4–2)</option></select></label></div>
+<div class="a-filter"><label>Service order after the setter<select id="a-role-order"><option value="outside-next" ${selection.roleOrder !== 'middle-next' ? 'selected' : ''}>Outside → middle</option><option value="middle-next" ${selection.roleOrder === 'middle-next' ? 'selected' : ''}>Middle → outside</option></select></label></div>
+<p class="a-note">Choose your setters. A backup is used only when no selected setter is in the rotation lineup. ${setNumber && !hasOverride ? "This set currently inherits the whole-match choices. Saving here creates an override." : ""}</p>
+<div class="a-setters">${setupPlayers
     .map(
       (p) =>
-        `<label class="a-player-role"><span><b>#${esc(p.number)}</b>${esc(p.name)}</span><select data-shirt="${esc(p.number)}" aria-label="Role for ${esc(p.name)}">${roleOptions(selection.setters?.includes(p.number) ? "setter" : selection.fallbacks?.includes(p.number) ? "backup" : "")}</select></label>`,
+        `<label class="a-player-role"><span><b>#${esc(p.number)}</b>${esc(p.name)}</span><select data-shirt="${esc(isSeason ? p.id : p.number)}" aria-label="Role for ${esc(p.name)}">${roleOptions(selection.setters?.includes(isSeason ? p.id : p.number) ? "setter" : selection.fallbacks?.includes(isSeason ? p.id : p.number) ? "backup" : "")}</select></label>`,
     )
     .join("")}</div>
-${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No account needed</small><input id="a-coach-name" type="text" maxlength="60" autocomplete="nickname" value="${esc(coachName)}" placeholder="e.g. Jakub"></label><label>Coach code <small>Kept only while this page is open</small><input id="a-coach-code" type="password" autocomplete="off" placeholder="Shared coach code"></label></div><p class="a-note">${draft ? "Previous browser choices loaded for review. Nothing has been shared yet." : record ? `Shared choices · saved by ${esc(record.updatedBy)} · ${esc(new Date(record.updatedAt).toLocaleString())}` : "Not shared yet. Save this match to make its choices available to everyone."}</p>` : ""}
-<div class="a-actions"><button id="a-save" class="a-primary">${shared.enabled ? "Save for all coaches" : "Save setters"}</button>${setupSet ? '<button id="a-inherit">Use whole-match choices</button>' : '<button id="a-clear">Clear this match’s setters</button>'}${shared.enabled && personal && record ? '<button id="a-previous-local">Review my browser choices</button>' : ""}<button id="a-load-latest" hidden>Load latest choices (discard draft)</button><span class="a-save-message" id="a-save-message" role="status" aria-live="polite"></span></div>
-<p class="a-note">${shared.enabled ? "Saving, clearing or restoring whole-match choices updates this team’s match for everyone. Other teams and matches are not changed." : "Saved on this browser. Export setter choices below to share them with teammates."} Libero exchanges are absent from the PDF; choose setters who stay in the regular rotation lineup.</p>`;
+${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No account needed</small><input id="a-coach-name" type="text" maxlength="60" autocomplete="nickname" value="${esc(coachName)}" placeholder="e.g. Jakub"></label><label>Coach code <small>Kept only while this page is open</small><input id="a-coach-code" type="password" autocomplete="off" placeholder="Shared coach code"></label></div><p class="a-note">${draft ? "Previous browser choices loaded for review. Nothing has been shared yet." : record ? `Shared choices · saved by ${esc(record.updatedBy)} · ${esc(new Date(record.updatedAt).toLocaleString())}` : "Not shared yet. Save these choices to make them available to everyone."}</p>` : ""}
+<div class="a-actions"><button id="a-save" class="a-primary">${shared.enabled ? "Save for all coaches" : "Save setters"}</button>${setNumber ? '<button id="a-inherit">Use whole-match choices</button>' : isSeason ? '<button id="a-clear">Clear season defaults</button>' : '<button id="a-use-season">Use season defaults for this match</button><button id="a-clear">Leave this match Unconfirmed</button>'}${shared.enabled && personal && record ? '<button id="a-previous-local">Review my browser choices</button>' : ""}<button id="a-load-latest" hidden>Load latest choices (discard draft)</button><span class="a-save-message" id="a-save-message" role="status" aria-live="polite"></span></div>
+<p class="a-note">${shared.enabled ? "Season defaults apply to this team’s matches without overrides. Match and set choices take priority. Saving updates the selected scope for everyone." : "Saved on this browser. Export setter choices below to share them with teammates."} Libero court presence is read separately from the official match event history.</p>`;
   const nameInput = target.querySelector("#a-coach-name");
   if (nameInput)
     nameInput.oninput = () => {
@@ -289,7 +299,7 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
       !busy &&
       (sharedError || (shared.enabled && !shared.ready) || conflicted)
     ) {
-      for (const id of ["a-save", "a-clear", "a-inherit"]) {
+      for (const id of ["a-save", "a-clear", "a-inherit", "a-use-season"]) {
         const el = target.querySelector(`#${id}`);
         if (el) el.disabled = true;
       }
@@ -300,6 +310,7 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
     .querySelector("#a-previous-local")
     ?.addEventListener("click", () => renderSetup(personal));
   target.querySelector("#a-load-latest").onclick = refreshShared;
+  target.querySelector("#a-setup-scope").onchange = e => { setupScope=e.target.value; setupSet=""; renderSetup(); };
   target.querySelector("#a-setup-match").onchange = (e) => {
     setupMatch = e.target.value;
     setupSet = "";
@@ -309,7 +320,7 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
     setupSet = e.target.value;
     renderSetup();
   };
-  const write = async (clear = false, inherit = false) => {
+  const write = async (clear = false, inherit = false, useSeason = false) => {
     if (saving || sharedError || conflicted) return;
     const message = target.querySelector("#a-save-message");
     let matchChoices = structuredClone(previous);
@@ -317,6 +328,8 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
       setters: [],
       fallbacks: [],
       system: target.querySelector("#a-system").value,
+      roleOrder: target.querySelector("#a-role-order").value,
+      ...(isSeason ? {playerIds:true} : {}),
     };
     if (!clear)
       target.querySelectorAll("[data-shirt]").forEach((s) => {
@@ -331,8 +344,9 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
       else matchChoices.sets[setNumber] = next;
     } else
       matchChoices = clear
-        ? { setters: [], fallbacks: [], system: "single" }
+        ? { setters: [], fallbacks: [], system: "single", ...(isSeason ? {playerIds:true} : {}) }
         : { ...next, ...(previous.sets ? { sets: previous.sets } : {}) };
+    if (useSeason) matchChoices = {setters:[], fallbacks:[], system:"single", inheritSeason:true};
     if (shared.enabled) {
       coachName = nameInput.value.trim();
       coachPassword = codeInput.value;
@@ -397,6 +411,7 @@ ${shared.enabled ? `<div class="a-coach-fields"><label>Your name <small>No accou
     }
   };
   target.querySelector("#a-save").onclick = () => write();
+  target.querySelector("#a-use-season")?.addEventListener("click", () => write(false,false,true));
   target
     .querySelector("#a-clear")
     ?.addEventListener("click", () => write(true));
@@ -471,6 +486,8 @@ ${r.confirmedPct < 100 ? '<div class="a-notice">Some rotations are <strong>Uncon
     .join(
       "",
     )}</div>${stuck ? `<div class="a-notice"><strong>${stuck.rotation}</strong> has the lowest observed side-out rate: <strong>${pct(stuck.sideOutPct)}</strong> (${stuck.sideOuts}/${stuck.received}). Its longest receiving spell lost ${stuck.longestReceivingRun} consecutive points. Compare rotations with similar sample sizes.</div>` : '<p class="a-note">The comparison appears once a confirmed rotation has at least 10 received rallies.</p>'}${chosenSetter && !rotations.total.rallies ? '<div class="a-notice">No rallies are attributed to this setter in the selected match/set. Check the setter choices or select more matches.</div>' : ""}${table(rotations.rotation, rotationColumns, "Rotation analysis")}<p class="a-note">Net points / 100 = 100 × (won − lost) / rallies. A dash means no observations. ${r.serving.reduce((n, p) => n + p.setEndingTurns, 0)} serving turns ended with a set-winning point; their runs stop at the set boundary.</p></section>`;
+  renderExtras({target,matches,team,config:merged(),setFilter:selectedSet || null,table,rotationColumns,csv,download,
+    liberoFilter,setLiberoFilter:value => {liberoFilter=value;renderReport();root.querySelector('#a-libero-filter')?.focus();}});
   target.querySelector("#a-rotation-setter").onchange = (event) => {
     rotationSetterId = event.target.value;
     renderReport();
@@ -489,8 +506,10 @@ ${r.confirmedPct < 100 ? '<div class="a-notice">Some rotations are <strong>Uncon
           currentMatches: matches,
           setFilter: selectedSet || null,
           config: merged(),
-          setterId: rotationSetterId || null,
-          setterName: chosenSetter ? setterName(chosenSetter) : "All setters",
+          setterId: button.dataset.liberoId ? null : rotationSetterId || null,
+          liberoId: button.dataset.liberoId || null,
+          liberoName: button.dataset.liberoName || null,
+          setterName: !button.dataset.liberoId && chosenSetter ? setterName(chosenSetter) : "All setters",
           opener: button,
           table,
           serveColumns,
@@ -538,8 +557,8 @@ function render() {
 <p class="a-status"><strong>${ready.length} of ${completed} finished matches available</strong> · ${list.filter((m) => m.status === "review").length} need review · Last analysis refresh: ${index?.lastCheckedAt ? esc(new Date(index.lastCheckedAt).toLocaleString()) : "not yet checked"}</p>
 ${loadError ? `<div class="a-notice error" role="alert">${esc(loadError)} <button id="a-retry" class="a-small">Retry</button></div>` : ""}
 ${shared.enabled || sharedError ? `<div class="a-notice a-shared-status ${sharedError ? "error" : ""}"><div><strong>${sharedError ? "Shared choices unavailable" : "One team sheet. Everyone in sync."}</strong><p>${sharedError ? esc(sharedError) + " Shared saving is disabled until a refresh succeeds. Displayed choices may be older or browser-only." : "Choices load from Google when you open this page. Refresh to pick up newer changes; this replaces any unsaved selection."}</p></div><button id="a-refresh-shared" ${saving ? "disabled" : ""}>Refresh shared choices</button></div>` : ""}
-<details class="a-card a-setup" ${loaded.length && selectedMatch !== "all" ? "open" : ""}><summary>Who was setting? <small>Choose once for each match</small></summary><div id="a-setup-content"></div></details><div id="a-report"></div>
-<details class="a-card a-help"><summary>How to read this</summary><dl><dt>Serving turn</dt><dd>A player’s consecutive serves, ending when their team loses the rally, the server changes or the set ends. A receiving point is not counted as a serve.</dd><dt>First-rally win %</dt><dd>The share of serving turns in which your team won the first served rally. This and points / turn make unequal playing time easier to compare.</dd><dt>Point-run bins</dt><dd>Team points won while that player serves. Every turn enters exactly one bin: 0, 1, 2, 3–4 or 5+. Set-ending runs are limited by the end of the set.</dd><dt>Unconfirmed</dt><dd>No selected setter is in the six rotation slots, the lineup is missing, or more than one setter fits your setting system. No setter position is guessed.</dd><dt>Sets played</dt><dd>Sets in which the player appears in a starting lineup or plays a rally after a substitution. Libero appearances and substitutions after the final rally cannot be counted here.</dd><dt>What the PDF cannot tell us</dt><dd>Aces, serve errors, serve speed, pass quality and attack efficiency. Libero exchanges are absent. Scans and unsupported layouts require review; they are not included as zero-stat matches.</dd></dl></details>
+<details class="a-card a-setup" ${loaded.length && selectedMatch !== "all" ? "open" : ""}><summary>Who was setting? <small>Season defaults · match and set overrides</small></summary><div id="a-setup-content"></div></details><div id="a-report"></div>
+<details class="a-card a-help"><summary>How to read this</summary><dl><dt>Serving turn</dt><dd>A player’s consecutive serves, ending when their team loses the rally, the server changes or the set ends. A receiving point is not counted as a serve.</dd><dt>First-rally win %</dt><dd>The share of serving turns in which your team won the first served rally. This and points / turn make unequal playing time easier to compare.</dd><dt>Point-run bins</dt><dd>Team points won while that player serves. Every turn enters exactly one bin: 0, 1, 2, 3–4 or 5+. Set-ending runs are limited by the end of the set.</dd><dt>Unconfirmed</dt><dd>No selected setter is in the six rotation slots, the lineup is missing, or more than one setter fits your setting system. No setter position is guessed.</dd><dt>Sets played</dt><dd>Sets in which the player appears in a starting lineup or plays a rally after a substitution. This serving table follows regular rotation slots. The playing-time section includes recorded libero appearances.</dd><dt>What the PDF cannot tell us</dt><dd>Aces, serve errors, serve speed, pass quality and attack efficiency. Libero exchanges require a matching public event history. Scans and unsupported layouts require review; they are not included as zero-stat matches.</dd></dl></details>
 <details class="a-card"><summary>Scoresheets & data coverage</summary><div class="a-source-list">${list.map((m) => `<div class="a-source-row"><div><strong>${esc(m.home)} vs ${esc(m.away)}</strong><p>${esc(m.date)} · ${esc(m.status)}${m.reason ? " · " + esc(m.reason) : ""}${m.refreshWarning ? " · " + esc(m.refreshWarning) : ""}</p></div><div class="a-actions"><a href="${esc(safeUrl(m.matchUrl))}" target="_blank" rel="noopener">Result ↗</a>${m.source?.scorecardUrl ? `<a href="${esc(safeUrl(m.source.scorecardUrl))}" target="_blank" rel="noopener">PDF ↗</a>` : ""}</div></div>`).join("") || '<p class="a-note">No completed match PDFs have been collected for this team yet.</p>'}</div></details>
 <div class="a-card"><div class="a-card-head"><div><h3>${shared.enabled ? "A backup, just in case." : "Keep everyone on the same page."}</h3><p>Export your setter choices, or import a previous backup.</p></div></div><div class="a-actions"><button id="a-export">Export setter choices ↓</button><button id="a-import">Import setter choices ↑</button><input id="a-import-file" type="file" accept=".json,application/json" hidden><span id="a-import-message" class="a-save-message" role="status"></span></div><p class="a-note">${shared.enabled ? "Shared choices take priority over older browser copies. Import only stages choices in this browser; it does not upload them. Select a match, use ‘Review my browser choices’ if shown, then Save for all coaches. No GitHub edits needed for normal coaching." : "To publish these choices for everyone, replace <code>data/analysis-config.json</code> in your repository with the exported file. Personal choices in this browser take precedence."}</p></div>`;
   root
@@ -548,6 +567,8 @@ ${shared.enabled || sharedError ? `<div class="a-notice a-shared-status ${shared
   root.querySelector("#a-team").onchange = (e) => {
     team = e.target.value;
     rotationSetterId = "";
+    liberoFilter = "active";
+    setupScope = "season";
     selectedMatch = "all";
     selectedSet = "";
     setupSet = "";
@@ -557,6 +578,7 @@ ${shared.enabled || sharedError ? `<div class="a-notice a-shared-status ${shared
     selectedMatch = e.target.value;
     selectedSet = "";
     setupMatch = selectedMatch === "all" ? setupMatch : selectedMatch;
+    setupScope = selectedMatch === "all" ? "season" : "match";
     setupSet = "";
     render();
   };
@@ -645,6 +667,8 @@ function setContext(c) {
   context = c;
   if (changed || !c.teams.some((t) => t.name === team)) {
     rotationSetterId = "";
+    liberoFilter = "active";
+    setupScope = "season";
     team =
       (firstContext && params.get("team")) ||
       c.team ||
@@ -657,6 +681,8 @@ function setContext(c) {
     setupSet = "";
   } else if (c.team && c.team !== team) {
     rotationSetterId = "";
+    liberoFilter = "active";
+    setupScope = "season";
     team = c.team;
     selectedMatch = "all";
     selectedSet = "";

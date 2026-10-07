@@ -162,6 +162,8 @@ export function openAnalysisDetail({
   config,
   setterId,
   setterName,
+  liberoId = null,
+  liberoName = null,
   opener,
   table,
   serveColumns,
@@ -211,10 +213,11 @@ export function openAnalysisDetail({
     const useSet = scope === "all" ? null : setFilter;
     const options = player
       ? { playerId: id, setFilter: useSet }
-      : { rotation: id, setterId, setFilter: useSet };
+      : { rotation: id, setterId, liberoId, setFilter: useSet };
     const rows = matchHistory(useMatches, team, config, options);
     const aggregate = analyseTeam(useMatches, team, config, useSet, {
       setterId: player ? null : setterId,
+      liberoId: player ? null : liberoId,
     });
     const total = player
       ? aggregate.serving.find((p) => p.id === id)
@@ -251,7 +254,7 @@ export function openAnalysisDetail({
           ["Side-out rate", number(total?.sideOutPct, "%")],
           ["Net points / 100", number(total?.netPointsPer100)],
         ];
-    dialog.innerHTML = `<div class="a-detail-head"><div><p class="a-eyebrow">${player ? "PLAYER SPOTLIGHT" : "ROTATION SPOTLIGHT"}</p><h2 id="a-detail-title">${esc(title)}</h2><p>${esc(team)}${player ? "" : ` · ${esc(setterName || "All setters")}`}</p></div><button id="a-detail-close" aria-label="Close analysis">Close ×</button></div>
+    dialog.innerHTML = `<div class="a-detail-head"><div><p class="a-eyebrow">${player ? "PLAYER SPOTLIGHT" : "ROTATION SPOTLIGHT"}</p><h2 id="a-detail-title">${esc(title)}</h2><p>${esc(team)}${player ? "" : ` · ${esc(setterName || "All setters")}${liberoName ? ` · ${esc(liberoName)}` : ""}`}</p></div><button id="a-detail-close" aria-label="Close analysis">Close ×</button></div>
       <div class="a-toolbar a-detail-controls"><label>Match scope <select id="a-detail-scope"><option value="all" ${scope === "all" ? "selected" : ""}>All available matches</option><option value="current" ${scope === "current" ? "selected" : ""}>Current match / set selection</option></select></label><button id="a-detail-csv" class="a-small">Download match history CSV ↓</button></div>
       <p class="a-note">${scope === "all" ? "All available matches for this team in the selected league, all sets. The main match/set filter does not limit this view." : `Uses the main page’s match selection${setFilter ? `, set ${esc(setFilter)}` : ", all sets"}.`}${player ? " Only observed appearances are included; bench-only roster entries are omitted." : setterId ? " Only rallies attributed to this setter are included; ambiguous rallies are excluded." : " Each match is included only if this rotation has recorded rallies."}</p>
       <div class="a-metrics">${cards.map(([label, value]) => `<div class="a-metric"><span>${esc(label)}</span><strong>${esc(value)}</strong></div>`).join("")}</div>
@@ -268,7 +271,7 @@ export function openAnalysisDetail({
     };
     dialog.querySelector("#a-detail-csv").onclick = () =>
       download(
-        `${team}-${player ? "player" : "rotation"}-${id}${!player && setterId ? "-setter-" + setterId : ""}-${scope}-history.csv`,
+        `${team}-${player ? "player" : "rotation"}-${id}${!player && setterId ? "-setter-" + setterId : ""}-${!player && liberoId ? "-libero-" + liberoId + "-" : ""}${scope}-history.csv`,
         csv(rows, columns),
         "text/csv;charset=utf-8",
       );

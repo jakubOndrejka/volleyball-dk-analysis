@@ -28,6 +28,33 @@ export function rotationSetter(lineup, selection = {}) {
 export function rotationLabel(lineup, selection = {}) {
   return rotationSetter(lineup, selection).rotation;
 }
+/** Season defaults use stable roster IDs; existing match/set choices stay compatible. */
+export function resolveSelection(match, team, config = {}, setNumber = null) {
+  const choices = config.teams?.[teamKey(match.leagueId, team)]?.matches || {};
+  const specific = choices[match.id];
+  const base = specific && !specific.inheritSeason ? specific : choices.season || {};
+  const selected = specific?.sets?.[setNumber] || base;
+  const side = match.home === team ? "home" : "away";
+  const numbers = values => (values || []).flatMap(value => {
+    const p = match.rosters[side].find(p => !p.libero && String(selected.playerIds ? p.id : p.number) === String(value));
+    return p ? [String(p.number)] : [];
+  });
+  return {...selected, setters:numbers(selected.setters), fallbacks:numbers(selected.fallbacks),
+    source:specific?.sets?.[setNumber] ? "Set override" : specific && !specific.inheritSeason ? "Match override" : "Season default"};
+}
+export function rallySetter(rally, side, selection) {
+  const present = n => !rally.onCourt?.[side] || rally.onCourt[side].includes(String(n));
+  return rotationSetter(rally.lineups?.[side], {...selection,
+    setters:selection.setters?.filter(present), fallbacks:selection.fallbacks?.filter(present)});
+}
+export function matchesLibero(rally, side, roster, filter) {
+  if (!filter) return true;
+  const presence = rally.libero?.[side];
+  if (filter === "unknown") return !presence || presence.status === "unknown";
+  if (filter === "none") return presence?.status === "none";
+  if (filter === "active") return presence?.status === "active";
+  return presence?.status === "active" && roster.find(p => p.number === presence.number)?.id === filter;
+}
 const emptyRotation = (rotation) => ({
   rotation,
   rallies: 0,
@@ -109,7 +136,7 @@ export function analyseTeam(
   team,
   config = {},
   setFilter = null,
-  { setterId = null } = {},
+  { setterId = null, liberoId = null } = {},
 ) {
   const players = new Map(),
     buckets = new Map(ROTATIONS.map((label) => [label, emptyRotation(label)]));
@@ -143,8 +170,6 @@ export function analyseTeam(
     seen.add(String(match.id));
     matchCount++;
     const side = match.home === team ? "home" : "away";
-    const setting =
-      config.teams?.[teamKey(match.leagueId, team)]?.matches?.[match.id] || {};
     const roster = new Map(
       match.rosters[side].map((p) => [String(p.number), p]),
     );
@@ -154,7 +179,7 @@ export function analyseTeam(
       let turn = null,
         receivingRun = 0,
         runLabel = null;
-      const chosen = setting.sets?.[set.number] || setting;
+      const chosen = resolveSelection(match, team, config, set.number);
       const eligible = {
         ...chosen,
         setters: chosen.setters?.filter((n) => !roster.get(String(n))?.libero),
@@ -181,12 +206,11 @@ export function analyseTeam(
           row.matches.add(String(match.id));
           row.sets.add(`${match.id}:${set.number}`);
         }
-        const active = rotationSetter(r.lineups?.[side], eligible),
+        const active = rallySetter(r, side, eligible),
           label = active.rotation,
           includeRotation =
-            !setterId ||
-            (active.number !== null &&
-              roster.get(active.number)?.id === setterId),
+            (!setterId || (active.number !== null && roster.get(active.number)?.id === setterId)) &&
+            matchesLibero(r, side, match.rosters[side], liberoId),
           b = buckets.get(label),
           won = r.winner === side,
           serving = r.serving === side;
@@ -290,10 +314,8 @@ export function listSetters(matches, team, config = {}) {
   for (const match of matches) {
     if (![match.home, match.away].includes(team)) continue;
     const side = match.home === team ? "home" : "away";
-    const selection =
-      config.teams?.[teamKey(match.leagueId, team)]?.matches?.[match.id] || {};
     for (const set of match.sets) {
-      const chosen = selection.sets?.[set.number] || selection;
+      const chosen = resolveSelection(match, team, config, set.number);
       const numbers = new Set(
         [...(chosen.setters || []), ...(chosen.fallbacks || [])].map(String),
       );
@@ -319,7 +341,7 @@ export function matchHistory(
   matches,
   team,
   config,
-  { playerId = null, rotation = null, setterId = null, setFilter = null } = {},
+  { playerId = null, rotation = null, setterId = null, liberoId = null, setFilter = null } = {},
 ) {
   if (Boolean(playerId) === Boolean(rotation))
     throw new Error("Choose a player or a rotation.");
@@ -331,6 +353,7 @@ export function matchHistory(
     seen.add(String(match.id));
     const report = analyseTeam([match], team, config, setFilter, {
       setterId: playerId ? null : setterId,
+      liberoId: playerId ? null : liberoId,
     });
     const row = playerId
       ? report.serving.find((p) => p.id === playerId)
@@ -365,6 +388,10 @@ export function validateConfig(value) {
     throw new Error("Expected a version 1 setter configuration.");
   const clean = { version: 1, teams: {} };
   const selection = (s) => {
+    if (!s || typeof s !== "object" || Array.isArray(s)) throw new Error("Invalid setter selection.");
+    for (const key of ["playerIds","inheritSeason"]) {
+      if (s[key] !== undefined && typeof s[key] !== "boolean") throw new Error("Invalid selection mode.");
+    }
     const out = {
       system: s.system || "single",
       setters: s.setters || [],
@@ -376,31 +403,41 @@ export function validateConfig(value) {
       if (
         !Array.isArray(out[key]) ||
         out[key].length > 20 ||
-        out[key].some((n) => !/^\d{1,2}$/.test(String(n)))
+        out[key].some((n) => !(s.playerIds ? /^[a-f0-9]{20}$/ : /^[1-9]\d?$/).test(String(n)))
       )
-        throw new Error("Setters must be shirt numbers.");
+        throw new Error(s.playerIds ? "Invalid player identity." : "Setters must be shirt numbers.");
       out[key] = [...new Set(out[key].map(String))];
     }
+    if (s.playerIds) out.playerIds = true;
+    if (s.inheritSeason) out.inheritSeason = true;
+    if (s.roleOrder !== undefined) {
+      if (!["outside-next","middle-next"].includes(s.roleOrder)) throw new Error("Invalid role order.");
+      out.roleOrder = s.roleOrder;
+    }
+    if (out.setters.some(n => out.fallbacks.includes(n))) throw new Error("A setter cannot also be a backup.");
     return out;
   };
   for (const [key, t] of Object.entries(value.teams)) {
     if (
       !/^\d+:.{1,150}$/.test(key) ||
       !t?.matches ||
-      typeof t.matches !== "object"
+      typeof t.matches !== "object" || Array.isArray(t.matches)
     )
       throw new Error("Invalid team configuration.");
     clean.teams[key] = { matches: {} };
     for (const [id, s] of Object.entries(t.matches)) {
-      if (!/^\d+$/.test(id)) throw new Error("Invalid match ID.");
+      if (id !== "season" && !/^\d+$/.test(id)) throw new Error("Invalid match ID.");
       const out = selection(s);
-      if (s.sets) {
+      if (s.sets !== undefined) {
+        if (!s.sets || typeof s.sets !== "object" || Array.isArray(s.sets)) throw new Error("Invalid set overrides.");
         out.sets = {};
         for (const [n, x] of Object.entries(s.sets)) {
           if (!/^[1-5]$/.test(n)) throw new Error("Invalid set number.");
+          if (x?.inheritSeason || x?.sets !== undefined) throw new Error("Invalid nested set override.");
           out.sets[n] = selection(x);
         }
       }
+      if (id === "season" && (!out.playerIds || out.inheritSeason || out.sets)) throw new Error("Season defaults must use player identities and have no overrides.");
       clean.teams[key].matches[id] = out;
     }
   }

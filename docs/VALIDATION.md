@@ -51,4 +51,4 @@ Both workflow files passed YAML parsing, the static build completed, and `git di
 
 ## Boundaries
 
-This validates the observed electronic PDF template, not arbitrary scanned or handwritten scoresheets. OCR, a manual correction editor, shared web accounts and complete libero tracking are not implemented. Source sheets with sanctions or inconsistencies are excluded until reviewed outside this version of the application. The scheduled workflow has been provided but is not enabled on a live repository by this download.
+This validates the observed electronic PDF template, not arbitrary scanned or handwritten scoresheets. OCR, a manual correction editor and individual coach accounts are not implemented. Libero court tracking is now supported when the public event history agrees with all PDF rallies; see SEASON-LIBERO-UPDATE.md for current validation. Non-scoring W warnings are supported; point-affecting or unsupported sanctions and inconsistent sheets still require review. The scheduled workflow has been provided but is not enabled on a live repository by this download.

@@ -57,12 +57,21 @@ function cleanSelection_(value, allowSets) {
     if (!Array.isArray(numbers) || numbers.length > 20) problem_('INVALID', 'Invalid shirt numbers.');
     numbers.forEach(function (number) {
       number = String(number);
-      if (!/^[1-9][0-9]?$/.test(number)) problem_('INVALID', 'Shirt numbers must be 1–99.');
+      if (!(value.playerIds ? /^[a-f0-9]{20}$/ : /^[1-9][0-9]?$/).test(number)) problem_('INVALID', 'Shirt numbers must be 1–99.');
       if (clean[key].indexOf(number) === -1) clean[key].push(number);
     });
   });
   if (clean.setters.some(function (n) { return clean.fallbacks.indexOf(n) !== -1; })) {
     problem_('INVALID', 'A player cannot be both setter and backup.');
+  }
+  if (value.playerIds !== undefined && typeof value.playerIds !== 'boolean') problem_('INVALID', 'Invalid player identity mode.');
+  if (value.playerIds) clean.playerIds = true;
+  if (value.inheritSeason !== undefined && typeof value.inheritSeason !== 'boolean') problem_('INVALID', 'Invalid inheritance choice.');
+  if (!allowSets && value.inheritSeason) problem_('INVALID', 'Remove the set override to restore inheritance.');
+  if (value.inheritSeason) clean.inheritSeason = true;
+  if (value.roleOrder !== undefined) {
+    if (['outside-next', 'middle-next'].indexOf(value.roleOrder) === -1) problem_('INVALID', 'Invalid role order.');
+    clean.roleOrder = value.roleOrder;
   }
   if (value.sets !== undefined) {
     if (!allowSets || !value.sets || typeof value.sets !== 'object' || Array.isArray(value.sets)) problem_('INVALID', 'Invalid set overrides.');
@@ -112,7 +121,7 @@ function doGet(e) {
   try {
     if (!p.action) return json_({ok: true, service: 'KSV shared coach choices', version: 1});
     if (p.action === 'read') {
-      return json_({ok: true, version: 1, records: rows_(sheet_()).map(record_)}, p.callback);
+      return json_({ok: true, version: 1, features: ['season-defaults'], records: rows_(sheet_()).map(record_)}, p.callback);
     }
     if (p.action === 'receipt' && /^[a-f0-9]{32}$/.test(p.requestId || '')) {
       var cached = CacheService.getScriptCache().get('receipt:' + p.requestId);
@@ -136,11 +145,12 @@ function doPost(e) {
     if (!expected) problem_('SETUP', 'The owner needs to set the coach password in Apps Script.');
     if (typeof request.password !== 'string' || request.password !== expected) problem_('PASSWORD', 'That coach code is not correct.');
     if (request.action !== 'save') problem_('INVALID', 'Unknown save action.');
-    if (!/^\d{1,12}$/.test(String(request.leagueId)) || !/^\d{1,12}$/.test(String(request.matchId))) problem_('INVALID', 'Invalid league or match ID.');
+    if (!/^\d{1,12}$/.test(String(request.leagueId)) || (request.matchId !== 'season' && !/^\d{1,12}$/.test(String(request.matchId)))) problem_('INVALID', 'Invalid league or match ID.');
     if (typeof request.team !== 'string' || !request.team.trim() || request.team.length > 150 || /[\u0000-\u001f]/.test(request.team)) problem_('INVALID', 'Invalid team name.');
     if (!Number.isSafeInteger(request.expectedRevision) || request.expectedRevision < 0) problem_('INVALID', 'Missing record revision.');
     if (typeof request.updatedBy !== 'string' || !request.updatedBy.trim() || request.updatedBy.length > 60 || /[\u0000-\u001f]/.test(request.updatedBy)) problem_('INVALID', 'Enter your name (up to 60 characters).');
     var choices = cleanSelection_(request.choices, true);
+    if (request.matchId === 'season' && (!choices.playerIds || choices.sets || choices.inheritSeason)) problem_('INVALID', 'Season choices must use player identities and have no overrides.');
     var lock = LockService.getScriptLock();
     if (!lock.tryLock(10000)) problem_('BUSY', 'Another save is in progress. Try again in a moment.');
     try {
@@ -152,7 +162,7 @@ function doPost(e) {
         result = {ok: true, requestId: request.requestId, record: previous};
       } else if ((previous ? previous.revision : 0) !== request.expectedRevision) {
         result = {ok: false, code: 'CONFLICT', requestId: request.requestId,
-          message: 'Another coach changed this match. Load the latest choices before saving again.', current: previous};
+          message: 'Another coach changed these choices. Load the latest choices before saving again.', current: previous};
       } else {
         var updatedAt = new Date().toISOString();
         var row = [key, String(request.leagueId), request.team, String(request.matchId),

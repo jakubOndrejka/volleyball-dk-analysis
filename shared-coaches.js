@@ -76,6 +76,7 @@ export class SharedCoaches {
     this.delay = delay;
     this.records = new Map();
     this.ready = false;
+    this.supportsSeason = false;
   }
   get enabled() {
     return Boolean(this.endpoint);
@@ -87,7 +88,7 @@ export class SharedCoaches {
     if (
       !record ||
       !/^\d+$/.test(String(record.leagueId)) ||
-      !/^\d+$/.test(String(record.matchId)) ||
+      (record.matchId !== "season" && !/^\d+$/.test(String(record.matchId))) ||
       !Number.isSafeInteger(record.revision) ||
       record.revision < 1
     )
@@ -122,6 +123,7 @@ export class SharedCoaches {
     candidate.records = new Map(this.records);
     for (const record of result.records) candidate.accept(record);
     this.records = candidate.records;
+    this.supportsSeason = result.features?.includes("season-defaults") || false;
     this.ready = true;
   }
   merge(published, personal) {
@@ -151,6 +153,9 @@ export class SharedCoaches {
   }) {
     if (!this.enabled || !this.ready)
       throw new Error("Load the shared choices before saving.");
+    if ((matchId === "season" || choices.inheritSeason || choices.roleOrder || choices.playerIds ||
+        Object.values(choices.sets || {}).some(s => s.roleOrder || s.playerIds)) && !this.supportsSeason)
+      throw new Error("Update Code.gs in Google Apps Script and deploy a new version of the existing web app, then Refresh shared choices to enable season settings.");
     const requestId = randomId();
     const body = JSON.stringify({
       action: "save",
