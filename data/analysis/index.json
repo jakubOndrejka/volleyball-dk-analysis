@@ -12,19 +12,19 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75331",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T05:59:03.567Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75331",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75331",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75331",
-        "sha256": "f4e67d5d6182b32583a688efd5722041533616493577a206dfcb78dec0a738df",
+        "sha256": "4eb01b598516f98028940f2f5c188ac5f28fc65704fbd63103e605f7bcf9d598",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/75331.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
-      "lastCheckedAt": "2026-10-08T23:59:03.567Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
       "liberoNextCheckAt": null
     },
@@ -39,23 +39,23 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75332",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T05:59:03.567Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75332",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75332",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75332",
-        "sha256": "79399f21d3c840cb611fa385fdc8ee9c66340787748bc26bbd98336123042dfc",
+        "sha256": "89b8a38af23bfdb16f7fa93467d3bc5b0e450dc351c49f5c89b0d839e7dc4630",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/75332.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T23:59:03.567Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76146",
@@ -89,23 +89,23 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76147",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T05:59:03.567Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76147",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76147",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76147",
-        "sha256": "f2de17a7b6e4d78eb878c115171acfb9f9717595de02522773d3805efcb84933",
+        "sha256": "634125f76b079ad6217f98f306af5ee1ec028d0cee78386885bb4f182113fe10",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/76147.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T23:59:03.567Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76251",
@@ -118,23 +118,23 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76251",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T05:59:03.567Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76251",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76251",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76251",
-        "sha256": "f4eda1238866526d3c87f99010af47b4c880288553b74ab08c5eb0f03f28c19f",
+        "sha256": "daffe7d3ad410dd9745659a575b93168e5785010e68820d114f25af1637324bb",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/76251.json",
       "reason": null,
       "failures": 0,
       "sets": 4,
-      "lastCheckedAt": "2026-10-08T23:59:03.567Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76253",
@@ -147,22 +147,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76253",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76253",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76253",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76253",
-        "sha256": "4da8107089e1155e941dba5d64fb66301137e727ff6b5e48373307dffe341cd2",
+        "sha256": "75c36116402d0a8e54e0be618d266c7109885c58dc7902bddf069f8f2e1d81d6",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/76253.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -176,22 +176,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76622",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76622",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76622",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76622",
-        "sha256": "8738ee6c722076baf54fea729431597e63865d00f81825bb1dedeb5616798e4a",
+        "sha256": "410db4ff597d8ae2ab3a9289c0ce3d706e3ae539594c93fe9520d320b95bd6ff",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/76622.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -205,22 +205,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76646",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76646",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76646",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76646",
-        "sha256": "49b2aae09a1ad1bc5317bac51a62b0669357af99a7c7f71e12bfada9b0452d7f",
+        "sha256": "7471b67b3074550d54b7061697ffeb31cfe439939fc7e81463ae4f6c7ab113ff",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/76646.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -234,19 +234,19 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77435",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77435",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77435",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77435",
-        "sha256": "5757394cf2d968566ddc53ad976741f52f8c22a77d65f1bfa5fdac6c1b338a5f",
+        "sha256": "64c5eb9780759c11a30e11979e383c7f3be25cceb300c4d96c50529996645577",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/77435.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
       "liberoNextCheckAt": null
     },
@@ -261,22 +261,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77453",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77453",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77453",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77453",
-        "sha256": "17856a933288e9736c690f8fd510e4c894b3add0d72988e31f86ecf080a89150",
+        "sha256": "1ae242b2d2f1f3fbb9b8768b8ef087dd9ebbe18079b36cd79c9e9c64264ae7ec",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/77453.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -290,19 +290,19 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77578",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77578",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77578",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77578",
-        "sha256": "1f3334a3602fc6417a6ccadd4e9ab3739c313bda35cc6d400a0ccca91ede0f04",
+        "sha256": "3eb59c716e7619290101083db5df86f3dc35e9933208de0a8e68298c1783b562",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/77578.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
       "liberoNextCheckAt": null
     },
@@ -317,19 +317,19 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77627",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77627",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77627",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77627",
-        "sha256": "2a9260dc8354e567924d9e18e53b378601e17e6016f66606556ca195f604e2ac",
+        "sha256": "133fa252265ab66297a55996b2f0f9eb9a98005ae2fc30544f599392e610bf2c",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/77627.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
       "liberoNextCheckAt": null
     },
@@ -344,22 +344,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77666",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77666",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77666",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77666",
-        "sha256": "59e9559112bc4ab572aad0ef43c2c27e7cd59055159987e8beb2a6a8e1668530",
+        "sha256": "d2a076b7cc211704247aeee5c6db0fd23b1b7c2da6983e954567c9c5ab6f8229",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/77666.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -373,22 +373,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75329",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75329",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75329",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75329",
-        "sha256": "2d2bfad95c03562dfa7eb766b3e76cb7c48998137c2dcc0316bf2700d63a8e97",
+        "sha256": "ea291322027325ca05e1ad05726164190415eae06610cd3d21fa36f8ad421b1a",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/75329.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -402,22 +402,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75330",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75330",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75330",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75330",
-        "sha256": "3b8c273d780f3563d42614e003e75d2f9c38651cd572c1de3ce733e2df8dc077",
+        "sha256": "7adc21fcc6e05e95a60167a1c2bad70c805edfe407bf8a9be0530a5c604d1b38",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/75330.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -431,22 +431,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76249",
       "status": "ready",
-      "nextCheckAt": "2026-10-09T01:30:50.163Z",
+      "nextCheckAt": "2026-10-09T12:17:58.955Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76249",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76249",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76249",
-        "sha256": "862cc90bf9e6b2b30669e6abf86606bae2a2d7364c406f57fe707b8e2941042a",
+        "sha256": "bc3c0632523afd64c699095b994590a95d6cf3134dee533681ed51562db5c74d",
         "check": "PDF checks + public point-history comparison"
       },
       "file": "matches/76249.json",
       "reason": null,
       "failures": 0,
       "sets": 4,
-      "lastCheckedAt": "2026-10-08T19:30:50.163Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -474,8 +474,8 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-08T19:30:50.163Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -503,8 +503,8 @@
       "sets": 5,
       "lastCheckedAt": "2026-10-08T19:30:50.163Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -580,8 +580,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-08T19:30:50.163Z",
       "parserVersion": 4,
-      "liberoNextCheckAt": "2026-10-09T01:31:17.358Z",
-      "liberoLastCheckedAt": "2026-10-08T19:31:17.358Z",
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1
     },
     {
@@ -609,9 +609,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-08T23:59:03.567Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77699",
@@ -638,9 +638,9 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-08T23:59:03.567Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77845",
@@ -709,9 +709,9 @@
       "sets": 2,
       "lastCheckedAt": "2026-10-08T23:59:03.567Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77848",
@@ -992,9 +992,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-07T13:34:08.737Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77425",
@@ -1050,9 +1050,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-07T13:34:08.737Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77606",
@@ -1079,9 +1079,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-07T13:34:08.737Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77613",
@@ -1094,14 +1094,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-09T00:59:03.567Z",
+      "nextCheckAt": "2026-10-09T07:17:58.955Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-08T23:59:03.567Z",
+      "lastCheckedAt": "2026-10-09T06:17:58.955Z",
       "parserVersion": 4
     },
     {
@@ -1129,9 +1129,9 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-07T13:34:08.737Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77691",
@@ -1187,9 +1187,9 @@
       "sets": 5,
       "lastCheckedAt": "2026-10-07T23:52:56.282Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76635",
@@ -1216,9 +1216,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-07T23:52:56.282Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77562",
@@ -1245,9 +1245,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-07T23:52:56.282Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76140",
@@ -1303,9 +1303,9 @@
       "lastCheckedAt": "2026-10-07T23:52:56.282Z",
       "parserVersion": 4,
       "bestOf": 5,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76630",
@@ -1332,9 +1332,9 @@
       "lastCheckedAt": "2026-10-07T23:52:56.282Z",
       "parserVersion": 4,
       "bestOf": 5,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "76641",
@@ -1411,9 +1411,9 @@
       "lastCheckedAt": "2026-10-08T23:59:03.567Z",
       "parserVersion": 4,
       "bestOf": 5,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77563",
@@ -1635,9 +1635,9 @@
       },
       "file": "matches/78036.json",
       "sets": 2,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     },
     {
       "id": "77566",
@@ -1685,10 +1685,10 @@
       },
       "file": "matches/77724.json",
       "sets": 5,
-      "liberoLastCheckedAt": "2026-10-08T23:59:33.502Z",
+      "liberoLastCheckedAt": "2026-10-09T06:18:28.702Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-09T05:59:33.502Z"
+      "liberoNextCheckAt": "2026-10-09T12:18:28.702Z"
     }
   ],
-  "lastCheckedAt": "2026-10-08T23:59:03.567Z"
+  "lastCheckedAt": "2026-10-09T06:17:58.955Z"
 }
