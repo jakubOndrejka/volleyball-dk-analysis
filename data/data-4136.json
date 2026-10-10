@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:15:42.960Z",
+  "updatedAt": "2026-10-10T09:58:07.842Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Grøndal EV",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "2-1",
+      "pts": 2
+    },
+    {
+      "pos": 3,
       "name": "Amager Volley",
       "k": 2,
       "v": 1,
@@ -20,7 +29,7 @@
       "pts": 2
     },
     {
-      "pos": 3,
+      "pos": 4,
       "name": "Gentofte Volley",
       "k": 2,
       "v": 1,
@@ -29,17 +38,8 @@
       "pts": 2
     },
     {
-      "pos": 4,
-      "name": "Farum-Holte",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 5,
-      "name": "Grøndal EV",
+      "name": "Farum-Holte",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -58,10 +58,10 @@
     {
       "pos": 7,
       "name": "Tårnfalkene",
-      "k": 0,
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 1,
+      "sets": "1-2",
       "pts": 0
     },
     {
@@ -137,8 +137,8 @@
       "away": "Tårnfalkene",
       "venue": "Nordregårdskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-1",
+      "completed": true
     },
     {
       "matchId": "77851",
