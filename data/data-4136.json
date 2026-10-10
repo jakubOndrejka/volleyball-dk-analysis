@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-10T09:58:07.842Z",
+  "updatedAt": "2026-10-10T15:54:03.780Z",
   "teams": [
     {
       "pos": 1,
-      "name": "DTU Volley",
+      "name": "CBS Sport",
       "k": 2,
       "v": 2,
       "t": 0,
@@ -12,15 +12,24 @@
     },
     {
       "pos": 2,
-      "name": "Grøndal EV",
-      "k": 1,
-      "v": 1,
+      "name": "DTU Volley",
+      "k": 2,
+      "v": 2,
       "t": 0,
-      "sets": "2-1",
-      "pts": 2
+      "sets": "4-0",
+      "pts": 4
     },
     {
       "pos": 3,
+      "name": "Grøndal EV",
+      "k": 2,
+      "v": 2,
+      "t": 0,
+      "sets": "4-2",
+      "pts": 4
+    },
+    {
+      "pos": 4,
       "name": "Amager Volley",
       "k": 2,
       "v": 1,
@@ -29,7 +38,7 @@
       "pts": 2
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "Gentofte Volley",
       "k": 2,
       "v": 1,
@@ -38,35 +47,26 @@
       "pts": 2
     },
     {
-      "pos": 5,
-      "name": "Farum-Holte",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 6,
-      "name": "CBS Sport",
-      "k": 0,
+      "name": "Tårnfalkene",
+      "k": 2,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 2,
+      "sets": "1-4",
       "pts": 0
     },
     {
       "pos": 7,
-      "name": "Tårnfalkene",
-      "k": 1,
+      "name": "KSV",
+      "k": 2,
       "v": 0,
-      "t": 1,
-      "sets": "1-2",
+      "t": 2,
+      "sets": "1-4",
       "pts": 0
     },
     {
       "pos": 8,
-      "name": "KSV",
+      "name": "Farum-Holte",
       "k": 2,
       "v": 0,
       "t": 2,
@@ -150,8 +150,8 @@
       "away": "Grøndal EV",
       "venue": "Nordregårdskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "77850",
@@ -163,8 +163,8 @@
       "away": "Tårnfalkene",
       "venue": "Nordregårdskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "77849",
@@ -176,8 +176,8 @@
       "away": "Farum-Holte",
       "venue": "Nordregårdskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "77853",

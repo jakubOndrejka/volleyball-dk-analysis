@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T12:53:08.627Z",
+  "updatedAt": "2026-10-10T15:54:03.425Z",
   "teams": [
     {
       "pos": 1,
@@ -12,7 +12,7 @@
     },
     {
       "pos": 2,
-      "name": "Hvidovre VK.2",
+      "name": "Gentofte Volley.2",
       "k": 1,
       "v": 1,
       "t": 0,
@@ -21,7 +21,7 @@
     },
     {
       "pos": 3,
-      "name": "RS Rødovre",
+      "name": "Hvidovre VK.2",
       "k": 1,
       "v": 1,
       "t": 0,
@@ -30,6 +30,15 @@
     },
     {
       "pos": 4,
+      "name": "RS Rødovre",
+      "k": 1,
+      "v": 1,
+      "t": 0,
+      "sets": "3-0",
+      "pts": 3
+    },
+    {
+      "pos": 5,
       "name": "Frederiksberg Volley",
       "k": 1,
       "v": 1,
@@ -38,22 +47,13 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "VLI",
       "k": 1,
       "v": 0,
       "t": 1,
       "sets": "2-3",
       "pts": 1
-    },
-    {
-      "pos": 6,
-      "name": "Gentofte Volley.2",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
     },
     {
       "pos": 7,
@@ -85,10 +85,10 @@
     {
       "pos": 10,
       "name": "Team Køge",
-      "k": 1,
+      "k": 2,
       "v": 0,
-      "t": 1,
-      "sets": "0-3",
+      "t": 2,
+      "sets": "0-6",
       "pts": 0
     }
   ],
@@ -155,8 +155,8 @@
       "away": "Gentofte Volley.2",
       "venue": "Spar Nord Arena",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "75336",

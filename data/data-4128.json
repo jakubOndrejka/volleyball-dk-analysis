@@ -1,8 +1,26 @@
 {
-  "updatedAt": "2026-10-09T13:50:14.038Z",
+  "updatedAt": "2026-10-10T15:54:02.200Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Lyngby-Gladsaxe Volley",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "7-6",
+      "pts": 6
+    },
+    {
+      "pos": 2,
+      "name": "KV 61",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "6-7",
+      "pts": 4
+    },
+    {
+      "pos": 3,
       "name": "KSV",
       "k": 1,
       "v": 1,
@@ -11,7 +29,7 @@
       "pts": 3
     },
     {
-      "pos": 2,
+      "pos": 4,
       "name": "Amager Volley",
       "k": 1,
       "v": 1,
@@ -20,7 +38,7 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 5,
       "name": "Farum VK 2",
       "k": 1,
       "v": 1,
@@ -29,7 +47,7 @@
       "pts": 3
     },
     {
-      "pos": 4,
+      "pos": 6,
       "name": "VLI",
       "k": 1,
       "v": 1,
@@ -38,39 +56,21 @@
       "pts": 3
     },
     {
-      "pos": 5,
-      "name": "Lyngby-Gladsaxe Volley",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "4-5",
-      "pts": 3
-    },
-    {
-      "pos": 6,
-      "name": "KV 61",
-      "k": 2,
-      "v": 0,
-      "t": 2,
-      "sets": "3-6",
-      "pts": 1
-    },
-    {
       "pos": 7,
       "name": "Amager Volley.2",
-      "k": 0,
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 1,
+      "sets": "1-3",
       "pts": 0
     },
     {
       "pos": 8,
       "name": "Lynge Uggeløse",
-      "k": 0,
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
+      "t": 1,
+      "sets": "1-3",
       "pts": 0
     },
     {
@@ -168,8 +168,8 @@
       "away": "KV 61",
       "venue": "Lyngehallen",
       "mapsUrl": "https://maps.google.com/maps?q=Idr%C3%A6tsvej%2014%2C%203540%20Lynge",
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "76254",
@@ -181,8 +181,8 @@
       "away": "Amager Volley.2",
       "venue": "Engelsborghallen",
       "mapsUrl": "https://maps.google.com/maps?q=Engelsborgvej%2093%2C%202800%20Kgs.%20Lyngby",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "76257",
