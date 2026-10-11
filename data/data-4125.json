@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T15:47:06.850Z",
+  "updatedAt": "2026-10-11T19:45:59.165Z",
   "teams": [
     {
       "pos": 1,
@@ -12,21 +12,21 @@
     },
     {
       "pos": 2,
+      "name": "Enghave VK",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "6-3",
+      "pts": 6
+    },
+    {
+      "pos": 3,
       "name": "KSV.3",
       "k": 3,
       "v": 2,
       "t": 1,
       "sets": "6-4",
       "pts": 6
-    },
-    {
-      "pos": 3,
-      "name": "Enghave VK",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-3",
-      "pts": 3
     },
     {
       "pos": 4,
@@ -66,20 +66,20 @@
     },
     {
       "pos": 8,
-      "name": "Brøndby VK Wildcard",
-      "k": 1,
-      "v": 0,
-      "t": 1,
-      "sets": "1-3",
-      "pts": 0
-    },
-    {
-      "pos": 9,
       "name": "Lyngby-Gladsaxe Volley.2",
       "k": 2,
       "v": 0,
       "t": 2,
       "sets": "2-6",
+      "pts": 0
+    },
+    {
+      "pos": 9,
+      "name": "Brøndby VK Wildcard",
+      "k": 2,
+      "v": 0,
+      "t": 2,
+      "sets": "1-6",
       "pts": 0
     }
   ],
@@ -211,8 +211,8 @@
       "away": "Brøndby VK Wildcard",
       "venue": "Bavnehøjhallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76158",

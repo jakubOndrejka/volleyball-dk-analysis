@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-11T15:47:06.420Z",
+  "updatedAt": "2026-10-11T19:45:59.862Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Amager Volley",
+      "k": 2,
+      "v": 2,
+      "t": 0,
+      "sets": "6-3",
+      "pts": 6
+    },
+    {
+      "pos": 2,
       "name": "Lyngby-Gladsaxe Volley",
       "k": 3,
       "v": 2,
@@ -11,7 +20,16 @@
       "pts": 6
     },
     {
-      "pos": 2,
+      "pos": 3,
+      "name": "VLI",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "5-4",
+      "pts": 4
+    },
+    {
+      "pos": 4,
       "name": "KV 61",
       "k": 3,
       "v": 1,
@@ -20,7 +38,7 @@
       "pts": 4
     },
     {
-      "pos": 3,
+      "pos": 5,
       "name": "KSV",
       "k": 1,
       "v": 1,
@@ -29,26 +47,8 @@
       "pts": 3
     },
     {
-      "pos": 4,
-      "name": "Amager Volley",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-1",
-      "pts": 3
-    },
-    {
-      "pos": 5,
-      "name": "Farum VK 2",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-1",
-      "pts": 3
-    },
-    {
       "pos": 6,
-      "name": "VLI",
+      "name": "Farum VK 2",
       "k": 1,
       "v": 1,
       "t": 0,
@@ -207,8 +207,8 @@
       "away": "Amager Volley",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76283",
