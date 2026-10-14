@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T17:38:02.777Z",
+  "updatedAt": "2026-10-14T12:07:06.007Z",
   "teams": [
     {
       "pos": 1,
@@ -21,20 +21,20 @@
     },
     {
       "pos": 3,
-      "name": "Gentofte Volley.4",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "6-3",
-      "pts": 6
-    },
-    {
-      "pos": 4,
       "name": "Farum VK.3",
       "k": 1,
       "v": 1,
       "t": 0,
       "sets": "3-1",
+      "pts": 3
+    },
+    {
+      "pos": 4,
+      "name": "Frederiksberg Volley.4",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-3",
       "pts": 3
     },
     {
@@ -57,6 +57,15 @@
     },
     {
       "pos": 7,
+      "name": "Gentofte Volley.4",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "3-6",
+      "pts": 3
+    },
+    {
+      "pos": 8,
       "name": "Glostrup IC.2",
       "k": 2,
       "v": 0,
@@ -65,21 +74,12 @@
       "pts": 1
     },
     {
-      "pos": 8,
+      "pos": 9,
       "name": "VLI.4",
       "k": 2,
       "v": 0,
       "t": 2,
       "sets": "1-6",
-      "pts": 0
-    },
-    {
-      "pos": 9,
-      "name": "Frederiksberg Volley.4",
-      "k": 2,
-      "v": 0,
-      "t": 2,
-      "sets": "0-6",
       "pts": 0
     }
   ],
@@ -211,7 +211,7 @@
       "away": "Gentofte Volley.4",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": "0-3",
+      "score": "3-0",
       "completed": true
     },
     {
