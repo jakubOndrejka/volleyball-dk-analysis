@@ -68,14 +68,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76149",
       "status": "review",
-      "nextCheckAt": "2026-10-14T17:10:15.459Z",
+      "nextCheckAt": "2026-10-15T17:19:00.753Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76149",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76149"
       },
-      "failures": 5,
+      "failures": 6,
       "reason": "Unsupported multi-page scoresheet: review required.",
-      "lastCheckedAt": "2026-10-13T17:10:15.459Z",
+      "lastCheckedAt": "2026-10-14T17:19:00.753Z",
       "parserVersion": 4
     },
     {
@@ -363,14 +363,14 @@
       "bestOf": 3,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77851",
       "status": "review",
-      "nextCheckAt": "2026-10-14T17:10:15.459Z",
+      "nextCheckAt": "2026-10-15T17:19:00.753Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77851",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77851"
       },
-      "failures": 6,
+      "failures": 7,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-10-13T17:10:15.459Z",
+      "lastCheckedAt": "2026-10-14T17:19:00.753Z",
       "parserVersion": 4
     },
     {
@@ -737,7 +737,7 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77666",
       "status": "review",
-      "nextCheckAt": "2026-10-14T14:07:06.971Z",
+      "nextCheckAt": "2026-10-14T21:19:00.753Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77666",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77666",
@@ -747,9 +747,9 @@
       },
       "file": "matches/77666.json",
       "reason": "PDF set result differs from the published match result.",
-      "failures": 1,
+      "failures": 2,
       "sets": 3,
-      "lastCheckedAt": "2026-10-14T12:07:06.971Z",
+      "lastCheckedAt": "2026-10-14T17:19:00.753Z",
       "parserVersion": 4,
       "liberoNextCheckAt": "2026-10-14T07:16:54.410Z",
       "liberoLastCheckedAt": "2026-10-14T01:16:54.410Z",
@@ -1400,7 +1400,7 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77425",
       "status": "review",
-      "nextCheckAt": "2026-10-14T14:15:38.570Z",
+      "nextCheckAt": "2026-10-15T09:19:00.753Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77425",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77425",
@@ -1410,9 +1410,9 @@
       },
       "file": "matches/77425.json",
       "reason": "PDF set result differs from the published match result.",
-      "failures": 3,
+      "failures": 4,
       "sets": 4,
-      "lastCheckedAt": "2026-10-14T06:15:38.570Z",
+      "lastCheckedAt": "2026-10-14T17:19:00.753Z",
       "parserVersion": 4,
       "liberoLastCheckedAt": "2026-10-07T11:26:56.242Z",
       "liberoVersion": 1,
@@ -1487,14 +1487,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-14T13:07:06.971Z",
+      "nextCheckAt": "2026-10-14T18:19:00.753Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-14T12:07:06.971Z",
+      "lastCheckedAt": "2026-10-14T17:19:00.753Z",
       "parserVersion": 4
     },
     {
@@ -2083,5 +2083,5 @@
       "liberoNextCheckAt": "2026-10-14T18:07:32.866Z"
     }
   ],
-  "lastCheckedAt": "2026-10-14T12:07:06.971Z"
+  "lastCheckedAt": "2026-10-14T17:19:00.753Z"
 }
