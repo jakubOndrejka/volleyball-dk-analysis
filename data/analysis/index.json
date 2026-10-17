@@ -1487,14 +1487,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-16T23:07:50.373Z",
+      "nextCheckAt": "2026-10-17T01:33:18.298Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-16T22:07:50.373Z",
+      "lastCheckedAt": "2026-10-17T00:33:18.298Z",
       "parserVersion": 4
     },
     {
@@ -2083,5 +2083,5 @@
       "liberoNextCheckAt": "2026-10-17T04:08:16.051Z"
     }
   ],
-  "lastCheckedAt": "2026-10-16T22:07:50.373Z"
+  "lastCheckedAt": "2026-10-17T00:33:18.298Z"
 }
