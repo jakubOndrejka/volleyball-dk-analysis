@@ -12,22 +12,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76283",
       "status": "ready",
-      "nextCheckAt": "2026-10-17T22:31:35.981Z",
+      "nextCheckAt": "2026-10-18T05:30:13.340Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76283",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76283",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76283",
-        "sha256": "b45a320cd87a0ea1572a68a9abfe9a7783364a327e52a3961204b732d3f9222b",
+        "sha256": "b33db8656bf27a130d8fdc0b7abcfdfacb2653b7e84ec7254eff114c1a18868f",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-17T22:31:41.301Z",
+      "liberoNextCheckAt": "2026-10-18T05:30:25.417Z",
       "file": "matches/76283.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-17T16:31:35.981Z",
+      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
       "parserVersion": 4,
-      "liberoLastCheckedAt": "2026-10-17T16:31:41.301Z",
+      "liberoLastCheckedAt": "2026-10-17T23:30:25.417Z",
       "liberoVersion": 1
     },
     {
@@ -41,14 +41,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77712",
       "status": "pending",
-      "nextCheckAt": "2026-10-17T22:30:55.541Z",
+      "nextCheckAt": "2026-10-18T00:30:13.340Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-17T21:30:55.541Z",
+      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
       "parserVersion": 4
     },
     {
@@ -118,14 +118,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76149",
       "status": "review",
-      "nextCheckAt": "2026-10-17T22:07:50.373Z",
+      "nextCheckAt": "2026-10-18T23:30:13.340Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76149",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76149"
       },
-      "failures": 8,
+      "failures": 9,
       "reason": "Unsupported multi-page scoresheet: review required.",
-      "lastCheckedAt": "2026-10-16T22:07:50.373Z",
+      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
       "parserVersion": 4
     },
     {
@@ -413,14 +413,14 @@
       "bestOf": 3,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77851",
       "status": "review",
-      "nextCheckAt": "2026-10-17T22:07:50.373Z",
+      "nextCheckAt": "2026-10-18T23:30:13.340Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77851",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77851"
       },
-      "failures": 9,
+      "failures": 10,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-10-16T22:07:50.373Z",
+      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
       "parserVersion": 4
     },
     {
@@ -1537,14 +1537,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-17T22:30:55.541Z",
+      "nextCheckAt": "2026-10-18T00:30:13.340Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-17T21:30:55.541Z",
+      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
       "parserVersion": 4
     },
     {
@@ -2133,5 +2133,5 @@
       "liberoNextCheckAt": "2026-10-18T03:31:10.844Z"
     }
   ],
-  "lastCheckedAt": "2026-10-17T21:30:55.541Z"
+  "lastCheckedAt": "2026-10-17T23:30:13.340Z"
 }
