@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-11T19:45:59.862Z",
+  "updatedAt": "2026-10-17T16:31:34.555Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Amager Volley",
+      "name": "KSV",
       "k": 2,
       "v": 2,
       "t": 0,
-      "sets": "6-3",
+      "sets": "6-0",
       "pts": 6
     },
     {
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "Amager Volley",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "6-6",
+      "pts": 6
+    },
+    {
+      "pos": 4,
       "name": "VLI",
       "k": 2,
       "v": 1,
@@ -29,22 +38,13 @@
       "pts": 4
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "KV 61",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "6-7",
       "pts": 4
-    },
-    {
-      "pos": 5,
-      "name": "KSV",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
     },
     {
       "pos": 6,
@@ -220,8 +220,8 @@
       "away": "Amager Volley",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76250",
