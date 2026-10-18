@@ -41,14 +41,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77712",
       "status": "pending",
-      "nextCheckAt": "2026-10-18T00:30:13.340Z",
+      "nextCheckAt": "2026-10-18T02:34:43.832Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
+      "lastCheckedAt": "2026-10-18T01:34:43.832Z",
       "parserVersion": 4
     },
     {
@@ -1479,7 +1479,7 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77579",
       "status": "review",
-      "nextCheckAt": "2026-10-18T01:28:12.796Z",
+      "nextCheckAt": "2026-10-19T01:34:43.832Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77579",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77579",
@@ -1489,9 +1489,9 @@
       },
       "file": "matches/77579.json",
       "reason": "PDF set result differs from the published match result.",
-      "failures": 4,
+      "failures": 5,
       "sets": 4,
-      "lastCheckedAt": "2026-10-17T09:28:12.796Z",
+      "lastCheckedAt": "2026-10-18T01:34:43.832Z",
       "parserVersion": 4,
       "liberoLastCheckedAt": "2026-10-16T05:55:54.995Z",
       "liberoVersion": 1,
@@ -1537,14 +1537,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-18T00:30:13.340Z",
+      "nextCheckAt": "2026-10-18T02:34:43.832Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-17T23:30:13.340Z",
+      "lastCheckedAt": "2026-10-18T01:34:43.832Z",
       "parserVersion": 4
     },
     {
@@ -2133,5 +2133,5 @@
       "liberoNextCheckAt": "2026-10-18T03:31:10.844Z"
     }
   ],
-  "lastCheckedAt": "2026-10-17T23:30:13.340Z"
+  "lastCheckedAt": "2026-10-18T01:34:43.832Z"
 }
