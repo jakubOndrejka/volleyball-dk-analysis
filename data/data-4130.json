@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T17:10:14.571Z",
+  "updatedAt": "2026-10-18T11:46:45.160Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Farum-Holte.2",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "5-4",
+      "pts": 4
+    },
+    {
+      "pos": 3,
       "name": "Grøndal EV",
       "k": 1,
       "v": 1,
@@ -20,7 +29,7 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 4,
       "name": "Aarby Volley",
       "k": 1,
       "v": 1,
@@ -29,7 +38,7 @@
       "pts": 3
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "B1960",
       "k": 2,
       "v": 1,
@@ -38,22 +47,13 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "Amager Volley.3",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "3-3",
       "pts": 3
-    },
-    {
-      "pos": 6,
-      "name": "Farum-Holte.2",
-      "k": 1,
-      "v": 0,
-      "t": 1,
-      "sets": "2-3",
-      "pts": 1
     },
     {
       "pos": 7,
@@ -67,10 +67,10 @@
     {
       "pos": 8,
       "name": "KSV.2",
-      "k": 1,
+      "k": 2,
       "v": 0,
-      "t": 1,
-      "sets": "0-3",
+      "t": 2,
+      "sets": "1-6",
       "pts": 0
     },
     {
@@ -198,8 +198,8 @@
       "away": "KSV.2",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77439",
