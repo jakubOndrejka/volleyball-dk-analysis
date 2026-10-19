@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T11:46:45.160Z",
+  "updatedAt": "2026-10-19T15:42:17.858Z",
   "teams": [
     {
       "pos": 1,
@@ -39,7 +39,7 @@
     },
     {
       "pos": 5,
-      "name": "B1960",
+      "name": "Hillerød G&I",
       "k": 2,
       "v": 1,
       "t": 1,
@@ -48,11 +48,11 @@
     },
     {
       "pos": 6,
-      "name": "Amager Volley.3",
+      "name": "B1960",
       "k": 2,
       "v": 1,
       "t": 1,
-      "sets": "3-3",
+      "sets": "4-3",
       "pts": 3
     },
     {
@@ -75,11 +75,11 @@
     },
     {
       "pos": 9,
-      "name": "Hillerød G&I",
+      "name": "Amager Volley.3",
       "k": 2,
       "v": 0,
       "t": 2,
-      "sets": "1-6",
+      "sets": "0-6",
       "pts": 0
     }
   ],
@@ -185,7 +185,7 @@
       "away": "Amager Volley.3",
       "venue": "Sophienborgskolen",
       "mapsUrl": null,
-      "score": "0-3",
+      "score": "3-0",
       "completed": true
     },
     {
