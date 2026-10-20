@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T12:53:07.903Z",
+  "updatedAt": "2026-10-20T22:43:45.149Z",
   "teams": [
     {
       "pos": 1,
@@ -12,21 +12,21 @@
     },
     {
       "pos": 2,
+      "name": "Tårnfalkene",
+      "k": 2,
+      "v": 2,
+      "t": 0,
+      "sets": "6-3",
+      "pts": 6
+    },
+    {
+      "pos": 3,
       "name": "Hvidovre VK.2",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "5-4",
       "pts": 4
-    },
-    {
-      "pos": 3,
-      "name": "Tårnfalkene",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-1",
-      "pts": 3
     },
     {
       "pos": 4,
@@ -58,11 +58,11 @@
     {
       "pos": 7,
       "name": "VK Vestsjælland",
-      "k": 0,
+      "k": 1,
       "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
+      "t": 1,
+      "sets": "2-3",
+      "pts": 1
     },
     {
       "pos": 8,
@@ -198,8 +198,8 @@
       "away": "VK Vestsjælland",
       "venue": "Nordregårdskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "76613",

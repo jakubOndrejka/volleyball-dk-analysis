@@ -2,6 +2,62 @@
   "version": 1,
   "matches": [
     {
+      "id": "76250",
+      "leagueId": 4128,
+      "home": "Amager Volley.2",
+      "away": "Lynge Uggeløse",
+      "date": "2026-10-20",
+      "score": "1-3",
+      "matchNumber": "149012",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76250",
+      "status": "ready",
+      "nextCheckAt": "2026-10-21T04:43:46.984Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76250",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76250",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76250",
+        "sha256": "45aef004ba4a864b537a32206eacc3f38321a478ef53fa7b3617d0da944df65c",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": "2026-10-21T04:43:55.051Z",
+      "file": "matches/76250.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 4,
+      "lastCheckedAt": "2026-10-20T22:43:46.984Z",
+      "parserVersion": 4,
+      "liberoLastCheckedAt": "2026-10-20T22:43:55.051Z",
+      "liberoVersion": 1
+    },
+    {
+      "id": "76619",
+      "leagueId": 4133,
+      "home": "Tårnfalkene",
+      "away": "VK Vestsjælland",
+      "date": "2026-10-20",
+      "score": "3-2",
+      "matchNumber": "149381",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76619",
+      "status": "ready",
+      "nextCheckAt": "2026-10-21T04:43:46.984Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76619",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76619",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76619",
+        "sha256": "14ff821945842c0b1b0a958a4fe48bac49ffed6e69fff7bf707dd15595b8d037",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": null,
+      "file": "matches/76619.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 5,
+      "lastCheckedAt": "2026-10-20T22:43:46.984Z",
+      "parserVersion": 4
+    },
+    {
       "id": "77451",
       "leagueId": 4130,
       "home": "Farum-Holte.2",
@@ -68,14 +124,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77712",
       "status": "pending",
-      "nextCheckAt": "2026-10-20T20:20:56.680Z",
+      "nextCheckAt": "2026-10-20T23:43:46.984Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-20T19:20:56.680Z",
+      "lastCheckedAt": "2026-10-20T22:43:46.984Z",
       "parserVersion": 4
     },
     {
@@ -461,14 +517,14 @@
       "bestOf": 3,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77852",
       "status": "review",
-      "nextCheckAt": "2026-10-20T20:44:20.957Z",
+      "nextCheckAt": "2026-10-21T22:43:46.984Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77852",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77852"
       },
-      "failures": 12,
+      "failures": 13,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-10-19T20:44:20.957Z",
+      "lastCheckedAt": "2026-10-20T22:43:46.984Z",
       "parserVersion": 4
     },
     {
@@ -1564,14 +1620,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-20T20:20:56.680Z",
+      "nextCheckAt": "2026-10-20T23:43:46.984Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-20T19:20:56.680Z",
+      "lastCheckedAt": "2026-10-20T22:43:46.984Z",
       "parserVersion": 4
     },
     {
@@ -2160,5 +2216,5 @@
       "liberoNextCheckAt": "2026-10-21T01:21:10.460Z"
     }
   ],
-  "lastCheckedAt": "2026-10-20T19:20:56.680Z"
+  "lastCheckedAt": "2026-10-20T22:43:46.984Z"
 }
