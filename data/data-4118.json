@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T15:47:07.190Z",
+  "updatedAt": "2026-10-20T19:20:55.850Z",
   "teams": [
     {
       "pos": 1,
@@ -263,19 +263,6 @@
       "completed": false
     },
     {
-      "matchId": "75347",
-      "matchNumber": "148109",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75347",
-      "date": "2026-10-31",
-      "time": "13:00",
-      "home": "Team Køge",
-      "away": "RS Rødovre",
-      "venue": "Spar Nord Arena",
-      "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "75345",
       "matchNumber": "148107",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75345",
@@ -324,6 +311,19 @@
       "away": "DTU Volley",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "75347",
+      "matchNumber": "148109",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75347",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "home": "Team Køge",
+      "away": "RS Rødovre",
+      "venue": "Spar Nord Arena",
+      "mapsUrl": null,
       "score": null,
       "completed": false
     },
