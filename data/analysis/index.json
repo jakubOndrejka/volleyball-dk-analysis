@@ -124,14 +124,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77712",
       "status": "pending",
-      "nextCheckAt": "2026-10-23T02:36:02.891Z",
+      "nextCheckAt": "2026-10-23T07:33:35.382Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-23T01:36:02.891Z",
+      "lastCheckedAt": "2026-10-23T06:33:35.382Z",
       "parserVersion": 4
     },
     {
@@ -1620,14 +1620,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-23T02:36:02.891Z",
+      "nextCheckAt": "2026-10-23T07:33:35.382Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-23T01:36:02.891Z",
+      "lastCheckedAt": "2026-10-23T06:33:35.382Z",
       "parserVersion": 4
     },
     {
@@ -2216,5 +2216,5 @@
       "liberoNextCheckAt": "2026-10-23T07:36:13.338Z"
     }
   ],
-  "lastCheckedAt": "2026-10-23T01:36:02.891Z"
+  "lastCheckedAt": "2026-10-23T06:33:35.382Z"
 }
