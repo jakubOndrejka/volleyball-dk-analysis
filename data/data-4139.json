@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-10-17T16:31:34.641Z",
+  "updatedAt": "2026-10-24T18:50:16.521Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Kanalbyens IF",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "11-3",
+      "pts": 10
+    },
+    {
+      "pos": 2,
       "name": "Hvidovre VK.3",
       "k": 3,
       "v": 3,
       "t": 0,
       "sets": "9-2",
       "pts": 9
-    },
-    {
-      "pos": 2,
-      "name": "Kanalbyens IF",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "8-3",
-      "pts": 7
     },
     {
       "pos": 3,
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "VLI.4",
-      "k": 2,
+      "k": 3,
       "v": 0,
-      "t": 2,
-      "sets": "1-6",
+      "t": 3,
+      "sets": "1-9",
       "pts": 0
     }
   ],
@@ -237,8 +237,8 @@
       "away": "VLI.4",
       "venue": "Sluseholmen Skole",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77708",
