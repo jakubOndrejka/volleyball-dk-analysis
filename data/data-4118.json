@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-20T19:20:55.850Z",
+  "updatedAt": "2026-10-24T16:04:51.353Z",
   "teams": [
     {
       "pos": 1,
+      "name": "DTU Volley",
+      "k": 2,
+      "v": 2,
+      "t": 0,
+      "sets": "6-0",
+      "pts": 6
+    },
+    {
+      "pos": 2,
       "name": "Frederiksberg Volley",
       "k": 2,
       "v": 2,
@@ -11,22 +20,13 @@
       "pts": 6
     },
     {
-      "pos": 2,
+      "pos": 3,
       "name": "VLI",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "5-4",
       "pts": 4
-    },
-    {
-      "pos": 3,
-      "name": "DTU Volley",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
     },
     {
       "pos": 4,
@@ -75,7 +75,7 @@
     },
     {
       "pos": 9,
-      "name": "Enghave VK",
+      "name": "Team Køge",
       "k": 2,
       "v": 0,
       "t": 2,
@@ -84,11 +84,11 @@
     },
     {
       "pos": 10,
-      "name": "Team Køge",
-      "k": 2,
+      "name": "Enghave VK",
+      "k": 3,
       "v": 0,
-      "t": 2,
-      "sets": "0-6",
+      "t": 3,
+      "sets": "0-9",
       "pts": 0
     }
   ],
@@ -194,8 +194,8 @@
       "away": "Enghave VK",
       "venue": "Engelsborghallen",
       "mapsUrl": "https://maps.google.com/maps?q=Engelsborgvej%2093%2C%202800%20Kgs.%20Lyngby",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75341",

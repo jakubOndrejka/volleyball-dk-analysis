@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T11:33:36.643Z",
+  "updatedAt": "2026-10-24T16:04:51.796Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "Kanalbyens IF",
-      "k": 2,
+      "k": 3,
       "v": 2,
-      "t": 0,
-      "sets": "6-2",
-      "pts": 6
+      "t": 1,
+      "sets": "8-5",
+      "pts": 7
     },
     {
       "pos": 3,
@@ -30,6 +30,15 @@
     },
     {
       "pos": 4,
+      "name": "Gentofte Volley.4",
+      "k": 4,
+      "v": 1,
+      "t": 3,
+      "sets": "7-11",
+      "pts": 4
+    },
+    {
+      "pos": 5,
       "name": "Hvidovre VK.4",
       "k": 1,
       "v": 1,
@@ -38,7 +47,7 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "VLI.4",
       "k": 2,
       "v": 1,
@@ -47,22 +56,13 @@
       "pts": 3
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "Glostrup IC.2",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "4-5",
       "pts": 3
-    },
-    {
-      "pos": 7,
-      "name": "Gentofte Volley.4",
-      "k": 3,
-      "v": 0,
-      "t": 3,
-      "sets": "4-9",
-      "pts": 1
     },
     {
       "pos": 8,
@@ -237,8 +237,8 @@
       "away": "Gentofte Volley.4",
       "venue": "Sluseholmen Skole",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77617",
