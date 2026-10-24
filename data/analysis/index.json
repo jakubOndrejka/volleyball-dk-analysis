@@ -124,14 +124,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77712",
       "status": "pending",
-      "nextCheckAt": "2026-10-24T00:34:29.949Z",
+      "nextCheckAt": "2026-10-24T03:01:00.635Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-23T23:34:29.949Z",
+      "lastCheckedAt": "2026-10-24T02:01:00.635Z",
       "parserVersion": 4
     },
     {
@@ -517,14 +517,14 @@
       "bestOf": 3,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77852",
       "status": "review",
-      "nextCheckAt": "2026-10-24T01:36:02.891Z",
+      "nextCheckAt": "2026-10-25T02:01:00.635Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77852",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77852"
       },
-      "failures": 15,
+      "failures": 16,
       "reason": "A starting player is missing or unreadable.",
-      "lastCheckedAt": "2026-10-23T01:36:02.891Z",
+      "lastCheckedAt": "2026-10-24T02:01:00.635Z",
       "parserVersion": 4
     },
     {
@@ -1620,14 +1620,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-24T00:34:29.949Z",
+      "nextCheckAt": "2026-10-24T03:01:00.635Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-23T23:34:29.949Z",
+      "lastCheckedAt": "2026-10-24T02:01:00.635Z",
       "parserVersion": 4
     },
     {
@@ -2216,5 +2216,5 @@
       "liberoNextCheckAt": "2026-10-24T02:31:22.481Z"
     }
   ],
-  "lastCheckedAt": "2026-10-23T23:34:29.949Z"
+  "lastCheckedAt": "2026-10-24T02:01:00.635Z"
 }
