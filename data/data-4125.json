@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T19:45:59.165Z",
+  "updatedAt": "2026-10-24T12:15:10.059Z",
   "teams": [
     {
       "pos": 1,
@@ -21,21 +21,21 @@
     },
     {
       "pos": 3,
-      "name": "KSV.3",
+      "name": "Rosenlund Volley",
       "k": 3,
       "v": 2,
       "t": 1,
-      "sets": "6-4",
+      "sets": "7-4",
       "pts": 6
     },
     {
       "pos": 4,
-      "name": "Rosenlund Volley",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "4-4",
-      "pts": 3
+      "name": "KSV.3",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "6-7",
+      "pts": 6
     },
     {
       "pos": 5,
@@ -224,8 +224,8 @@
       "away": "KSV.3",
       "venue": "Ny Rosenlundhal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76157",
