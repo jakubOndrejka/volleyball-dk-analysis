@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:47:21.702Z",
+  "updatedAt": "2026-10-25T19:43:28.828Z",
   "teams": [
     {
       "pos": 1,
@@ -31,23 +31,14 @@
     {
       "pos": 4,
       "name": "Frederiksberg Volley.4",
-      "k": 2,
-      "v": 1,
+      "k": 3,
+      "v": 2,
       "t": 1,
-      "sets": "3-3",
-      "pts": 3
+      "sets": "6-4",
+      "pts": 6
     },
     {
       "pos": 5,
-      "name": "KSV.5",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "4-6",
-      "pts": 3
-    },
-    {
-      "pos": 6,
       "name": "Gentofte Volley.4",
       "k": 3,
       "v": 1,
@@ -56,12 +47,21 @@
       "pts": 3
     },
     {
-      "pos": 7,
+      "pos": 6,
       "name": "Aarby Volley",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "4-8",
+      "pts": 3
+    },
+    {
+      "pos": 7,
+      "name": "KSV.5",
+      "k": 4,
+      "v": 1,
+      "t": 3,
+      "sets": "5-9",
       "pts": 3
     },
     {
@@ -276,8 +276,8 @@
       "away": "KSV.5",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77721",

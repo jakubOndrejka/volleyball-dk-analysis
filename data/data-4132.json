@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-25T16:52:36.815Z",
+  "updatedAt": "2026-10-25T19:43:29.692Z",
   "teams": [
     {
       "pos": 1,
       "name": "KSV.3",
-      "k": 4,
-      "v": 4,
+      "k": 5,
+      "v": 5,
       "t": 0,
-      "sets": "12-3",
-      "pts": 12
+      "sets": "15-5",
+      "pts": 15
     },
     {
       "pos": 2,
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "Glostrup IC.2",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "7-6",
+      "pts": 6
+    },
+    {
+      "pos": 4,
       "name": "Ishøj Volley.2",
       "k": 4,
       "v": 2,
@@ -29,31 +38,22 @@
       "pts": 6
     },
     {
-      "pos": 4,
+      "pos": 5,
+      "name": "Hvidovre VK.4",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "5-3",
+      "pts": 4
+    },
+    {
+      "pos": 6,
       "name": "Gentofte Volley.4",
       "k": 4,
       "v": 1,
       "t": 3,
       "sets": "7-11",
       "pts": 4
-    },
-    {
-      "pos": 5,
-      "name": "Hvidovre VK.4",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
-    },
-    {
-      "pos": 6,
-      "name": "VLI.4",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-3",
-      "pts": 3
     },
     {
       "pos": 7,
@@ -66,11 +66,11 @@
     },
     {
       "pos": 8,
-      "name": "Glostrup IC.2",
-      "k": 2,
+      "name": "VLI.4",
+      "k": 3,
       "v": 1,
-      "t": 1,
-      "sets": "4-5",
+      "t": 2,
+      "sets": "4-6",
       "pts": 3
     },
     {
@@ -263,8 +263,8 @@
       "away": "VLI.4",
       "venue": "Hvissingehallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77631",
@@ -276,8 +276,8 @@
       "away": "KSV.3",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77634",
