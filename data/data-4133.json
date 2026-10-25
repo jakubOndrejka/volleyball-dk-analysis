@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T22:43:45.149Z",
+  "updatedAt": "2026-10-25T12:47:21.286Z",
   "teams": [
     {
       "pos": 1,
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "KSV.4",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "6-5",
+      "pts": 6
+    },
+    {
+      "pos": 4,
       "name": "Hvidovre VK.2",
       "k": 2,
       "v": 1,
@@ -29,21 +38,12 @@
       "pts": 4
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "Glostrup IC",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "4-3",
-      "pts": 3
-    },
-    {
-      "pos": 5,
-      "name": "KSV.4",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-5",
       "pts": 3
     },
     {
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Roskilde VK",
-      "k": 2,
+      "k": 3,
       "v": 0,
-      "t": 2,
-      "sets": "0-6",
+      "t": 3,
+      "sets": "0-9",
       "pts": 0
     }
   ],
@@ -211,8 +211,8 @@
       "away": "KSV.4",
       "venue": "Roskilde Gym.",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76614",

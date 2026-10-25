@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T15:42:17.858Z",
+  "updatedAt": "2026-10-25T12:47:22.008Z",
   "teams": [
     {
       "pos": 1,
@@ -57,12 +57,12 @@
     },
     {
       "pos": 7,
-      "name": "VK Næstved",
-      "k": 1,
-      "v": 0,
-      "t": 1,
-      "sets": "0-3",
-      "pts": 0
+      "name": "Amager Volley.3",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "3-6",
+      "pts": 3
     },
     {
       "pos": 8,
@@ -75,7 +75,7 @@
     },
     {
       "pos": 9,
-      "name": "Amager Volley.3",
+      "name": "VK Næstved",
       "k": 2,
       "v": 0,
       "t": 2,
@@ -211,8 +211,8 @@
       "away": "Amager Volley.3",
       "venue": "Kobberbakkeskolen, afd. Sydby",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77432",

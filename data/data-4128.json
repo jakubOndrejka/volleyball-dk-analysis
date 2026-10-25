@@ -1,17 +1,35 @@
 {
-  "updatedAt": "2026-10-20T22:43:45.525Z",
+  "updatedAt": "2026-10-25T12:47:21.521Z",
   "teams": [
     {
       "pos": 1,
       "name": "KSV",
-      "k": 2,
-      "v": 2,
+      "k": 3,
+      "v": 3,
       "t": 0,
-      "sets": "6-0",
-      "pts": 6
+      "sets": "9-0",
+      "pts": 9
     },
     {
       "pos": 2,
+      "name": "KSV.2",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "7-3",
+      "pts": 6
+    },
+    {
+      "pos": 3,
+      "name": "Lynge Uggeløse",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "7-4",
+      "pts": 6
+    },
+    {
+      "pos": 4,
       "name": "Lyngby-Gladsaxe Volley",
       "k": 3,
       "v": 2,
@@ -20,25 +38,25 @@
       "pts": 6
     },
     {
-      "pos": 3,
+      "pos": 5,
       "name": "Amager Volley",
-      "k": 3,
+      "k": 4,
       "v": 2,
-      "t": 1,
-      "sets": "6-6",
+      "t": 2,
+      "sets": "6-9",
       "pts": 6
     },
     {
-      "pos": 4,
+      "pos": 6,
       "name": "VLI",
-      "k": 2,
+      "k": 3,
       "v": 1,
-      "t": 1,
-      "sets": "5-4",
-      "pts": 4
+      "t": 2,
+      "sets": "7-7",
+      "pts": 5
     },
     {
-      "pos": 5,
+      "pos": 7,
       "name": "KV 61",
       "k": 3,
       "v": 1,
@@ -47,48 +65,30 @@
       "pts": 4
     },
     {
-      "pos": 6,
-      "name": "Farum VK 2",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-1",
-      "pts": 3
-    },
-    {
-      "pos": 7,
-      "name": "KSV.2",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "4-3",
-      "pts": 3
-    },
-    {
       "pos": 8,
-      "name": "Lynge Uggeløse",
+      "name": "Farum VK 2",
       "k": 2,
       "v": 1,
       "t": 1,
-      "sets": "4-4",
+      "sets": "3-4",
       "pts": 3
     },
     {
       "pos": 9,
-      "name": "Amager Volley.2",
-      "k": 2,
-      "v": 0,
+      "name": "Gentofte Volley.2",
+      "k": 3,
+      "v": 1,
       "t": 2,
-      "sets": "2-6",
-      "pts": 0
+      "sets": "3-8",
+      "pts": 3
     },
     {
       "pos": 10,
-      "name": "Gentofte Volley.2",
-      "k": 2,
+      "name": "Amager Volley.2",
+      "k": 3,
       "v": 0,
-      "t": 2,
-      "sets": "0-6",
+      "t": 3,
+      "sets": "2-9",
       "pts": 0
     }
   ],
@@ -246,8 +246,8 @@
       "away": "KSV.2",
       "venue": "Sundbyhal 2",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76263",
@@ -259,8 +259,8 @@
       "away": "VLI",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "76260",
@@ -272,8 +272,8 @@
       "away": "KSV",
       "venue": "Sundbyhal 2",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76262",
@@ -285,8 +285,8 @@
       "away": "Lynge Uggeløse",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76265",
