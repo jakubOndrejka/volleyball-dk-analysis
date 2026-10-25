@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:47:21.958Z",
+  "updatedAt": "2026-10-25T16:52:36.586Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "VLI",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "8-6",
+      "pts": 7
+    },
+    {
+      "pos": 3,
       "name": "DTU Volley",
       "k": 2,
       "v": 2,
@@ -20,26 +29,17 @@
       "pts": 6
     },
     {
-      "pos": 3,
-      "name": "VLI",
+      "pos": 4,
+      "name": "Gentofte Volley.2",
       "k": 2,
       "v": 1,
       "t": 1,
-      "sets": "5-4",
+      "sets": "5-3",
       "pts": 4
     },
     {
-      "pos": 4,
-      "name": "Gentofte Volley.2",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
-    },
-    {
       "pos": 5,
-      "name": "Hvidovre VK.2",
+      "name": "KSV",
       "k": 1,
       "v": 1,
       "t": 0,
@@ -48,7 +48,7 @@
     },
     {
       "pos": 6,
-      "name": "RS Rødovre",
+      "name": "Hvidovre VK.2",
       "k": 2,
       "v": 1,
       "t": 1,
@@ -57,21 +57,21 @@
     },
     {
       "pos": 7,
+      "name": "RS Rødovre",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-3",
+      "pts": 3
+    },
+    {
+      "pos": 8,
       "name": "Team Køge",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "3-7",
       "pts": 3
-    },
-    {
-      "pos": 8,
-      "name": "KSV",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
     },
     {
       "pos": 9,
@@ -233,8 +233,8 @@
       "away": "VLI",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "75340",
@@ -246,8 +246,8 @@
       "away": "KSV",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "75333",

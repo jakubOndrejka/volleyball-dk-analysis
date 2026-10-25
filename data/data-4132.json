@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T16:04:51.796Z",
+  "updatedAt": "2026-10-25T16:52:36.815Z",
   "teams": [
     {
       "pos": 1,
@@ -57,6 +57,15 @@
     },
     {
       "pos": 7,
+      "name": "KV 61.2",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-3",
+      "pts": 3
+    },
+    {
+      "pos": 8,
       "name": "Glostrup IC.2",
       "k": 2,
       "v": 1,
@@ -65,22 +74,13 @@
       "pts": 3
     },
     {
-      "pos": 8,
-      "name": "VK Holbæk.2",
-      "k": 3,
-      "v": 0,
-      "t": 3,
-      "sets": "3-9",
-      "pts": 1
-    },
-    {
       "pos": 9,
-      "name": "KV 61.2",
-      "k": 1,
+      "name": "VK Holbæk.2",
+      "k": 4,
       "v": 0,
-      "t": 1,
-      "sets": "0-3",
-      "pts": 0
+      "t": 4,
+      "sets": "3-12",
+      "pts": 1
     }
   ],
   "fixtures": [
@@ -250,8 +250,8 @@
       "away": "VK Holbæk.2",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77567",

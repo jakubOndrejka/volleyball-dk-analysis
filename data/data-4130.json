@@ -1,18 +1,27 @@
 {
-  "updatedAt": "2026-10-25T12:47:22.008Z",
+  "updatedAt": "2026-10-25T16:52:36.624Z",
   "teams": [
     {
       "pos": 1,
       "name": "Gentofte Volley.3",
-      "k": 3,
-      "v": 3,
+      "k": 4,
+      "v": 4,
       "t": 0,
-      "sets": "9-3",
-      "pts": 9
+      "sets": "12-3",
+      "pts": 12
     },
     {
       "pos": 2,
       "name": "Farum-Holte.2",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "8-4",
+      "pts": 7
+    },
+    {
+      "pos": 3,
+      "name": "Aarby Volley",
       "k": 2,
       "v": 1,
       "t": 1,
@@ -20,34 +29,7 @@
       "pts": 4
     },
     {
-      "pos": 3,
-      "name": "Grøndal EV",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
-    },
-    {
       "pos": 4,
-      "name": "Aarby Volley",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-1",
-      "pts": 3
-    },
-    {
-      "pos": 5,
-      "name": "Hillerød G&I",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "4-3",
-      "pts": 3
-    },
-    {
-      "pos": 6,
       "name": "B1960",
       "k": 2,
       "v": 1,
@@ -56,22 +38,40 @@
       "pts": 3
     },
     {
+      "pos": 5,
+      "name": "Grøndal EV",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-3",
+      "pts": 3
+    },
+    {
+      "pos": 6,
+      "name": "Hillerød G&I",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "4-6",
+      "pts": 3
+    },
+    {
       "pos": 7,
+      "name": "KSV.2",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "4-8",
+      "pts": 3
+    },
+    {
+      "pos": 8,
       "name": "Amager Volley.3",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "3-6",
       "pts": 3
-    },
-    {
-      "pos": 8,
-      "name": "KSV.2",
-      "k": 2,
-      "v": 0,
-      "t": 2,
-      "sets": "1-6",
-      "pts": 0
     },
     {
       "pos": 9,
@@ -224,8 +224,8 @@
       "away": "Gentofte Volley.3",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77411",
@@ -237,8 +237,8 @@
       "away": "KSV.2",
       "venue": "Aarby Fritidscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77399",
@@ -250,8 +250,8 @@
       "away": "Farum-Holte.2",
       "venue": "Sophienborgskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77445",
