@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T16:52:36.624Z",
+  "updatedAt": "2026-10-26T17:40:20.578Z",
   "teams": [
     {
       "pos": 1,
@@ -12,15 +12,24 @@
     },
     {
       "pos": 2,
-      "name": "Farum-Holte.2",
+      "name": "Hillerød G&I",
       "k": 3,
       "v": 2,
       "t": 1,
-      "sets": "8-4",
-      "pts": 7
+      "sets": "7-3",
+      "pts": 6
     },
     {
       "pos": 3,
+      "name": "KSV.2",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "6-5",
+      "pts": 6
+    },
+    {
+      "pos": 4,
       "name": "Aarby Volley",
       "k": 2,
       "v": 1,
@@ -29,7 +38,7 @@
       "pts": 4
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "B1960",
       "k": 2,
       "v": 1,
@@ -38,7 +47,7 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "Grøndal EV",
       "k": 2,
       "v": 1,
@@ -47,31 +56,22 @@
       "pts": 3
     },
     {
-      "pos": 6,
-      "name": "Hillerød G&I",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "4-6",
-      "pts": 3
-    },
-    {
       "pos": 7,
-      "name": "KSV.2",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "4-8",
-      "pts": 3
-    },
-    {
-      "pos": 8,
       "name": "Amager Volley.3",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "3-6",
       "pts": 3
+    },
+    {
+      "pos": 8,
+      "name": "Farum-Holte.2",
+      "k": 3,
+      "v": 0,
+      "t": 3,
+      "sets": "2-9",
+      "pts": 1
     },
     {
       "pos": 9,
@@ -198,7 +198,7 @@
       "away": "KSV.2",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": "3-1",
+      "score": "0-3",
       "completed": true
     },
     {
@@ -250,21 +250,8 @@
       "away": "Farum-Holte.2",
       "venue": "Sophienborgskolen",
       "mapsUrl": null,
-      "score": "0-3",
+      "score": "3-0",
       "completed": true
-    },
-    {
-      "matchId": "77445",
-      "matchNumber": "150019",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77445",
-      "date": "2026-10-31",
-      "time": "14:00",
-      "home": "B1960",
-      "away": "VK Næstved",
-      "venue": "Nørrebrohallen",
-      "mapsUrl": null,
-      "score": null,
-      "completed": false
     },
     {
       "matchId": "77434",
@@ -315,6 +302,19 @@
       "away": "Amager Volley.3",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "77445",
+      "matchNumber": "150019",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77445",
+      "date": "2026-11-09",
+      "time": "19:00",
+      "home": "VK Næstved",
+      "away": "B1960",
+      "venue": "Kobberbakkeskolen, afd. Sydby",
+      "mapsUrl": null,
       "score": null,
       "completed": false
     },
