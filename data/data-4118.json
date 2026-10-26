@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T16:52:36.586Z",
+  "updatedAt": "2026-10-26T21:56:11.101Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Gentofte Volley.2",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "8-5",
+      "pts": 7
+    },
+    {
+      "pos": 3,
       "name": "VLI",
       "k": 3,
       "v": 2,
@@ -20,7 +29,7 @@
       "pts": 7
     },
     {
-      "pos": 3,
+      "pos": 4,
       "name": "DTU Volley",
       "k": 2,
       "v": 2,
@@ -29,22 +38,13 @@
       "pts": 6
     },
     {
-      "pos": 4,
-      "name": "Gentofte Volley.2",
+      "pos": 5,
+      "name": "KSV",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "5-3",
       "pts": 4
-    },
-    {
-      "pos": 5,
-      "name": "KSV",
-      "k": 1,
-      "v": 1,
-      "t": 0,
-      "sets": "3-0",
-      "pts": 3
     },
     {
       "pos": 6,
@@ -259,8 +259,8 @@
       "away": "KSV",
       "venue": "Gentoftehallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "75345",
