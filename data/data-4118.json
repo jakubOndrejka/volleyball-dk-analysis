@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T21:56:11.101Z",
+  "updatedAt": "2026-10-29T14:26:52.140Z",
   "teams": [
     {
       "pos": 1,
@@ -367,19 +367,6 @@
       "completed": false
     },
     {
-      "matchId": "75353",
-      "matchNumber": "148115",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75353",
-      "date": "2026-11-08",
-      "time": "13:00",
-      "home": "RS Rødovre",
-      "away": "KSV",
-      "venue": "Rødovrehallen",
-      "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "75351",
       "matchNumber": "148113",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75351",
@@ -480,6 +467,19 @@
       "away": "Hvidovre VK.2",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "75353",
+      "matchNumber": "148115",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75353",
+      "date": "2026-11-25",
+      "time": "19:00",
+      "home": "RS Rødovre",
+      "away": "KSV",
+      "venue": "Rødovrehallen",
+      "mapsUrl": null,
       "score": null,
       "completed": false
     },
