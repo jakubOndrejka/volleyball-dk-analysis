@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-25T16:52:36.036Z",
+  "updatedAt": "2026-10-31T14:49:22.086Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Hvidovre VK.2",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "11-4",
+      "pts": 10
+    },
+    {
+      "pos": 2,
       "name": "VLI.3",
       "k": 3,
       "v": 3,
@@ -11,30 +20,21 @@
       "pts": 9
     },
     {
-      "pos": 2,
-      "name": "Hvidovre VK.2",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "8-4",
-      "pts": 7
-    },
-    {
       "pos": 3,
-      "name": "Tårnfalkene",
-      "k": 2,
-      "v": 2,
-      "t": 0,
-      "sets": "6-3",
-      "pts": 6
+      "name": "KSV.4",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "9-6",
+      "pts": 9
     },
     {
       "pos": 4,
-      "name": "KSV.4",
+      "name": "Tårnfalkene",
       "k": 3,
       "v": 2,
       "t": 1,
-      "sets": "6-5",
+      "sets": "7-6",
       "pts": 6
     },
     {
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Roskilde VK",
-      "k": 3,
+      "k": 4,
       "v": 0,
-      "t": 3,
-      "sets": "0-9",
+      "t": 4,
+      "sets": "0-12",
       "pts": 0
     }
   ],
@@ -250,8 +250,8 @@
       "away": "Roskilde VK",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76643",
@@ -263,8 +263,8 @@
       "away": "Tårnfalkene",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "76615",

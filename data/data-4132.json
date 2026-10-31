@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T22:59:40.241Z",
+  "updatedAt": "2026-10-31T14:49:23.003Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Glostrup IC.2",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "10-6",
+      "pts": 9
+    },
+    {
+      "pos": 3,
       "name": "Hvidovre VK.4",
       "k": 3,
       "v": 2,
@@ -20,22 +29,13 @@
       "pts": 7
     },
     {
-      "pos": 3,
+      "pos": 4,
       "name": "Kanalbyens IF",
       "k": 4,
       "v": 2,
       "t": 2,
       "sets": "9-8",
       "pts": 7
-    },
-    {
-      "pos": 4,
-      "name": "Glostrup IC.2",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "7-6",
-      "pts": 6
     },
     {
       "pos": 5,
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "VK Holbæk.2",
-      "k": 4,
+      "k": 5,
       "v": 0,
-      "t": 4,
-      "sets": "3-12",
+      "t": 5,
+      "sets": "3-15",
       "pts": 1
     }
   ],
@@ -302,8 +302,8 @@
       "away": "Glostrup IC.2",
       "venue": "Bjergmarkshallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77569",

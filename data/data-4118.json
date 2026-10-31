@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-29T14:26:52.140Z",
+  "updatedAt": "2026-10-31T14:49:22.682Z",
   "teams": [
     {
       "pos": 1,
+      "name": "VLI",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "11-6",
+      "pts": 10
+    },
+    {
+      "pos": 2,
       "name": "Frederiksberg Volley",
       "k": 3,
       "v": 3,
@@ -11,21 +20,12 @@
       "pts": 9
     },
     {
-      "pos": 2,
+      "pos": 3,
       "name": "Gentofte Volley.2",
       "k": 3,
       "v": 2,
       "t": 1,
       "sets": "8-5",
-      "pts": 7
-    },
-    {
-      "pos": 3,
-      "name": "VLI",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "8-6",
       "pts": 7
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "pos": 6,
-      "name": "Hvidovre VK.2",
+      "name": "RS Rødovre",
       "k": 2,
       "v": 1,
       "t": 1,
@@ -57,11 +57,11 @@
     },
     {
       "pos": 7,
-      "name": "RS Rødovre",
-      "k": 2,
+      "name": "Hvidovre VK.2",
+      "k": 3,
       "v": 1,
-      "t": 1,
-      "sets": "3-3",
+      "t": 2,
+      "sets": "3-6",
       "pts": 3
     },
     {
@@ -272,8 +272,8 @@
       "away": "Hvidovre VK.2",
       "venue": "Bülowsvejhallen",
       "mapsUrl": "https://maps.google.com/maps?q=B%C3%BClowsvej%2034%2C%201870%20Frederiksberg%20C",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75344",

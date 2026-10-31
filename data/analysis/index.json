@@ -2,6 +2,187 @@
   "version": 1,
   "matches": [
     {
+      "id": "75345",
+      "leagueId": 4118,
+      "home": "VLI",
+      "away": "Hvidovre VK.2",
+      "date": "2026-10-31",
+      "score": "3-0",
+      "matchNumber": "148107",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75345",
+      "status": "review",
+      "nextCheckAt": "2026-10-31T16:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75345",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75345"
+      },
+      "failures": 1,
+      "reason": "Substitution creates a duplicate player.",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5
+    },
+    {
+      "id": "76629",
+      "leagueId": 4133,
+      "home": "Hvidovre VK.2",
+      "away": "Roskilde VK",
+      "date": "2026-10-31",
+      "score": "3-0",
+      "matchNumber": "149391",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76629",
+      "status": "ready",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76629",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76629",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76629",
+        "sha256": "06f4c9613090c95f5132b35f43c6a3de1b9a36ce28f52b95fe8823bf11d983ea",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": null,
+      "file": "matches/76629.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 3,
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5
+    },
+    {
+      "id": "76643",
+      "leagueId": 4133,
+      "home": "KSV.4",
+      "away": "Tårnfalkene",
+      "date": "2026-10-31",
+      "score": "3-1",
+      "matchNumber": "149405",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76643",
+      "status": "ready",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76643",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76643",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76643",
+        "sha256": "01d48e448c989e7a3dd3d3d147d148d6af498dfe717e8f21c7cb08f1a432fef4",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "file": "matches/76643.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 4,
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5,
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
+      "liberoVersion": 1
+    },
+    {
+      "id": "77602",
+      "leagueId": 4132,
+      "home": "VK Holbæk.2",
+      "away": "Glostrup IC.2",
+      "date": "2026-10-31",
+      "score": "0-3",
+      "matchNumber": "150176",
+      "bestOf": 5,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77602",
+      "status": "ready",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77602",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77602",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77602",
+        "sha256": "4dc923bfe9d703c900171d4f209c610ea4ff70b72d9ded5056f22c4baa376dff",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": null,
+      "file": "matches/77602.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 3,
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5
+    },
+    {
+      "id": "78043",
+      "leagueId": 4137,
+      "home": "DTU Volley.2",
+      "away": "Helsingør VK",
+      "date": "2026-10-31",
+      "score": "0-2",
+      "matchNumber": "150373",
+      "bestOf": 3,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78043",
+      "status": "ready",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78043",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78043",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78043",
+        "sha256": "4d095818803a5136ee196240f42b6112caa5352359af56a7fe5bffe1b997f4ca",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": null,
+      "file": "matches/78043.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 2,
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5
+    },
+    {
+      "id": "78044",
+      "leagueId": 4137,
+      "home": "DTU Volley.2",
+      "away": "Pan Volley",
+      "date": "2026-10-31",
+      "score": "2-0",
+      "matchNumber": "150374",
+      "bestOf": 3,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78044",
+      "status": "ready",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78044",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78044",
+        "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78044",
+        "sha256": "e1ebd67c64bcd76f1155fe93262601917f7f856e31443bf5e4c2b8d6817f3f3b",
+        "check": "PDF checks + public point-history comparison"
+      },
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "file": "matches/78044.json",
+      "reason": null,
+      "failures": 0,
+      "sets": 2,
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5,
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
+      "liberoVersion": 1
+    },
+    {
+      "id": "78045",
+      "leagueId": 4137,
+      "home": "Helsingør VK",
+      "away": "Pan Volley",
+      "date": "2026-10-31",
+      "score": "1-2",
+      "matchNumber": "150375",
+      "bestOf": 3,
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=78045",
+      "status": "review",
+      "nextCheckAt": "2026-10-31T16:49:23.551Z",
+      "source": {
+        "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=78045",
+        "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=78045"
+      },
+      "failures": 1,
+      "reason": "A starting player is missing or unreadable.",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
+      "parserVersion": 5
+    },
+    {
       "id": "76161",
       "leagueId": 4125,
       "home": "VLI.2",
@@ -12,22 +193,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76161",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76161",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76161",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76161",
-        "sha256": "25d196d7589840af612ea5c759000d09fc4cb967bc59a2dd0b708d0a1ed92fb2",
+        "sha256": "6ebaad62e934617f27e9b6b812f185c13b3983e90a42d3bc3b1fcae1e1fdc135",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76161.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -41,12 +222,12 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77634",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=77634",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=77634",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77634",
-        "sha256": "d4176a90b83a8d6c5a4a3b338e7bc403321f827e0a24c493184fe87e3fb381e1",
+        "sha256": "2a9468f218b41fb5f73aafca043dda783743c026ea0a1428908af3f16f11bbc6",
         "check": "PDF checks + public point-history comparison"
       },
       "liberoNextCheckAt": null,
@@ -54,7 +235,7 @@
       "reason": null,
       "failures": 0,
       "sets": 4,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5
     },
     {
@@ -89,12 +270,12 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75339",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75339",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75339",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75339",
-        "sha256": "86db3eb6991ad0d5f56359bc52f12c27b38960fb6e5fb5f532caf8df8526b219",
+        "sha256": "dbeee92852ec2bccb8c4cd3c0f755ddb1997fd9b22dc3d9f22047bfb7199661a",
         "check": "PDF checks + public point-history comparison"
       },
       "liberoNextCheckAt": null,
@@ -102,7 +283,7 @@
       "reason": null,
       "failures": 0,
       "sets": 4,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5
     },
     {
@@ -116,22 +297,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75340",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75340",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75340",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75340",
-        "sha256": "ac834f36ede96cf044f218e422af32cd51ee2910bf79d86dea3105f66feffd8e",
+        "sha256": "a6604c200f1102fcbebfdd75c8444b202793223cce842ff7060c3c75113cfe9d",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/75340.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -145,22 +326,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75341",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75341",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75341",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75341",
-        "sha256": "474fc1b875c06cf1dae83fa997708be335c68d02d8d5fed2e4722ce14c014096",
+        "sha256": "fe251c16dc28da5edd28e705271a3c2fc32a31c80ca92cdec9d7d0281df8250b",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/75341.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -174,12 +355,12 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75343",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=75343",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=75343",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75343",
-        "sha256": "f2c6ced531396fa9da086d8a3ebbd2d3fb4bc39f7f57f5ad56159416735ffa78",
+        "sha256": "e87313eeb9317c04c690b06029ae17d3f02e84ebfe095fc70579d53323093b80",
         "check": "PDF checks + public point-history comparison"
       },
       "liberoNextCheckAt": null,
@@ -187,7 +368,7 @@
       "reason": null,
       "failures": 0,
       "sets": 5,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5
     },
     {
@@ -201,22 +382,22 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76259",
       "status": "ready",
-      "nextCheckAt": "2026-10-31T14:30:07.405Z",
+      "nextCheckAt": "2026-10-31T20:49:23.551Z",
       "source": {
         "scorecardUrl": "https://api.volleyball.dk/api/pdf/scorecard/?matchID=76259",
         "rosterUrl": "https://api.volleyball.dk/api/pdf/roster/?matchID=76259",
         "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76259",
-        "sha256": "d3019b3c81c28e6cfa46531ce0b48dd424d7ee98822b1185b7e4ceefb4c6d24a",
+        "sha256": "a1e16b1d11d9dcfb0a96363bd33cdf89dddc734d950450ecd55d730871c13649",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76259.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -292,14 +473,14 @@
         "sha256": "8633cbd2330c12bb716b9bac3b74c7307599cfb64f30203dd9e918b4f5ec9110",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76263.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
       "lastCheckedAt": "2026-10-31T08:30:07.405Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -348,14 +529,14 @@
         "sha256": "d9962a8084255196c9edf468c94c239b9009f4de2f16ad49ae7db2041505eb14",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76613.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-10-31T01:52:39.116Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -514,14 +695,14 @@
         "sha256": "d970522a10711e9111b4f5b1dbea6e4dba05100f0bd476138b84238d0cc9ba54",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/77567.json",
       "reason": null,
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -543,14 +724,14 @@
         "sha256": "d33ac85c4772262b78ee25b9e5e9015ee143459351f5a57bc2d7757932a96159",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/77617.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -572,14 +753,14 @@
         "sha256": "0b4b65f2fc52331586ab779a578cc42b20e9b0d8205bdf489f579a0c6726b992",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/77631.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -601,14 +782,14 @@
         "sha256": "9fb1b0f4af7e37b90a983e9bdc01cd332f01c47a81af99b8c49bd54fd8d5d0bd",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/77707.json",
       "reason": null,
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -630,14 +811,14 @@
         "sha256": "60abc7574ac93329cbfc403abb81e0ab5a50164380aca204e524ccbd3c4c9313",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/77708.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -740,14 +921,14 @@
         "sha256": "ae3f68274b2e5320a0d294fe2f0cec1c0a32c8ec27778f53023daac58985367b",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76158.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -769,14 +950,14 @@
         "sha256": "f7a926712e7290a4d1136b0ee6836e3b3330963344003ee19b4a7341d6212207",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/77619.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -825,14 +1006,14 @@
         "sha256": "dc9782630b96e333ce6a61fc53cb71caa30054b0c31ba3dbdcc690b6b46f9e57",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76250.json",
       "reason": null,
       "failures": 0,
       "sets": 4,
       "lastCheckedAt": "2026-10-30T18:39:39.286Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -908,14 +1089,14 @@
         "sha256": "f8ede29c0223ce9d74d1933bed556b556bb79b5b7c40b6003ca75bc52f11fa2d",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76283.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:15:11.455Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -929,14 +1110,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77712",
       "status": "pending",
-      "nextCheckAt": "2026-10-31T09:30:07.405Z",
+      "nextCheckAt": "2026-10-31T15:49:23.551Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5
     },
     {
@@ -958,14 +1139,14 @@
         "sha256": "24c2664153fbbcfa1daa20c396f16fad203fde8148fb15ab2ec6e9b20c48a479",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/75335.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:15:11.455Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1068,14 +1249,14 @@
         "sha256": "9e6f107684bc5faf67ea595c5be3018b88fb61f76bbe64093db504741fc616f0",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76153.json",
       "reason": null,
       "failures": 0,
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:15:11.455Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1097,14 +1278,14 @@
         "sha256": "1470cebfcd899d0673117efc27289b127882c16c3a09ddcfa16d84206ab76879",
         "check": "PDF checks + public point-history comparison"
       },
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76256.json",
       "reason": null,
       "failures": 0,
       "sets": 5,
       "lastCheckedAt": "2026-10-24T12:15:11.455Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1390,9 +1571,9 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:20:45.349Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76146",
@@ -1417,10 +1598,10 @@
       "reason": null,
       "lastCheckedAt": "2026-10-24T08:32:44.540Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
       "file": "matches/76146.json",
       "sets": 4,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1448,9 +1629,9 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:20:45.349Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76251",
@@ -1477,9 +1658,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T12:20:45.349Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76253",
@@ -1506,8 +1687,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:20:45.349Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1535,8 +1716,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:20:45.349Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1564,8 +1745,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T12:20:45.349Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1732,8 +1913,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1761,8 +1942,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1790,8 +1971,8 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1819,8 +2000,8 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1848,8 +2029,8 @@
       "sets": 5,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1931,8 +2112,8 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z",
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1
     },
     {
@@ -1960,9 +2141,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77699",
@@ -1989,9 +2170,9 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77845",
@@ -2060,9 +2241,9 @@
       "sets": 2,
       "lastCheckedAt": "2026-10-24T16:04:52.561Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77848",
@@ -2343,9 +2524,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T18:50:17.583Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77425",
@@ -2430,9 +2611,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T18:50:17.583Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77613",
@@ -2445,14 +2626,14 @@
       "bestOf": 5,
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77613",
       "status": "pending",
-      "nextCheckAt": "2026-10-31T09:30:07.405Z",
+      "nextCheckAt": "2026-10-31T15:49:23.551Z",
       "source": {
         "scorecardUrl": null,
         "rosterUrl": null
       },
       "reason": "Waiting for a published scorecard and roster PDF.",
       "failures": 0,
-      "lastCheckedAt": "2026-10-31T08:30:07.405Z",
+      "lastCheckedAt": "2026-10-31T14:49:23.551Z",
       "parserVersion": 5
     },
     {
@@ -2480,9 +2661,9 @@
       "sets": 3,
       "lastCheckedAt": "2026-10-24T18:50:17.583Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77691",
@@ -2538,9 +2719,9 @@
       "sets": 5,
       "lastCheckedAt": "2026-10-24T21:39:52.907Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76635",
@@ -2567,9 +2748,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T21:39:52.907Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77562",
@@ -2596,9 +2777,9 @@
       "sets": 4,
       "lastCheckedAt": "2026-10-24T21:39:52.907Z",
       "parserVersion": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76140",
@@ -2654,9 +2835,9 @@
       "lastCheckedAt": "2026-10-24T21:39:52.907Z",
       "parserVersion": 5,
       "bestOf": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76630",
@@ -2683,9 +2864,9 @@
       "lastCheckedAt": "2026-10-24T21:39:52.907Z",
       "parserVersion": 5,
       "bestOf": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "76641",
@@ -2762,9 +2943,9 @@
       "lastCheckedAt": "2026-10-24T21:39:52.907Z",
       "parserVersion": 5,
       "bestOf": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77563",
@@ -2986,9 +3167,9 @@
       },
       "file": "matches/78036.json",
       "sets": 2,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     },
     {
       "id": "77566",
@@ -3036,10 +3217,10 @@
       },
       "file": "matches/77724.json",
       "sets": 5,
-      "liberoLastCheckedAt": "2026-10-31T08:30:39.650Z",
+      "liberoLastCheckedAt": "2026-10-31T14:49:49.448Z",
       "liberoVersion": 1,
-      "liberoNextCheckAt": "2026-10-31T14:30:39.650Z"
+      "liberoNextCheckAt": "2026-10-31T20:49:49.448Z"
     }
   ],
-  "lastCheckedAt": "2026-10-31T08:30:07.405Z"
+  "lastCheckedAt": "2026-10-31T14:49:23.551Z"
 }

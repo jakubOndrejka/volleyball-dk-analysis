@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-03T18:44:02.405Z",
+  "updatedAt": "2026-10-31T14:49:23.289Z",
   "teams": [
     {
       "pos": 1,
       "name": "Pan Volley",
-      "k": 2,
-      "v": 2,
-      "t": 0,
-      "sets": "4-1",
-      "pts": 4
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "6-4",
+      "pts": 6
     },
     {
       "pos": 2,
@@ -21,7 +21,7 @@
     },
     {
       "pos": 3,
-      "name": "Grøndal EV.2",
+      "name": "Helsingør VK",
       "k": 2,
       "v": 1,
       "t": 1,
@@ -30,6 +30,15 @@
     },
     {
       "pos": 4,
+      "name": "Grøndal EV.2",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "3-2",
+      "pts": 2
+    },
+    {
+      "pos": 5,
       "name": "KSV.2",
       "k": 2,
       "v": 1,
@@ -38,7 +47,7 @@
       "pts": 2
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "Farum-Holte.2",
       "k": 2,
       "v": 1,
@@ -47,26 +56,17 @@
       "pts": 2
     },
     {
-      "pos": 6,
-      "name": "DTU Volley.2",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
-    },
-    {
       "pos": 7,
-      "name": "Grøndal EV.3",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
+      "name": "DTU Volley.2",
+      "k": 2,
+      "v": 1,
+      "t": 1,
+      "sets": "2-2",
+      "pts": 2
     },
     {
       "pos": 8,
-      "name": "Helsingør VK",
+      "name": "Grøndal EV.3",
       "k": 0,
       "v": 0,
       "t": 0,
@@ -194,8 +194,8 @@
       "away": "Helsingør VK",
       "venue": "DTU Hal 2",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "78045",
@@ -207,8 +207,8 @@
       "away": "Pan Volley",
       "venue": "DTU Hal 2",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "78044",
@@ -220,8 +220,8 @@
       "away": "Pan Volley",
       "venue": "DTU Hal 2",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "78049",
