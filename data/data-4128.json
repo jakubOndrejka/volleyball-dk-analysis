@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:47:21.521Z",
+  "updatedAt": "2026-10-31T19:21:44.906Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "VLI",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "10-7",
+      "pts": 8
+    },
+    {
+      "pos": 3,
       "name": "KSV.2",
       "k": 3,
       "v": 2,
@@ -20,7 +29,7 @@
       "pts": 6
     },
     {
-      "pos": 3,
+      "pos": 4,
       "name": "Lynge Uggeløse",
       "k": 3,
       "v": 2,
@@ -29,7 +38,7 @@
       "pts": 6
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "Lyngby-Gladsaxe Volley",
       "k": 3,
       "v": 2,
@@ -38,22 +47,13 @@
       "pts": 6
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "Amager Volley",
       "k": 4,
       "v": 2,
       "t": 2,
       "sets": "6-9",
       "pts": 6
-    },
-    {
-      "pos": 6,
-      "name": "VLI",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "7-7",
-      "pts": 5
     },
     {
       "pos": 7,
@@ -85,10 +85,10 @@
     {
       "pos": 10,
       "name": "Amager Volley.2",
-      "k": 3,
+      "k": 4,
       "v": 0,
-      "t": 3,
-      "sets": "2-9",
+      "t": 4,
+      "sets": "2-12",
       "pts": 0
     }
   ],
@@ -298,8 +298,8 @@
       "away": "Amager Volley.2",
       "venue": "Bülowsvejhallen",
       "mapsUrl": "https://maps.google.com/maps?q=B%C3%BClowsvej%2034%2C%201870%20Frederiksberg%20C",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76268",
