@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T17:40:20.578Z",
+  "updatedAt": "2026-11-01T09:47:37.835Z",
   "teams": [
     {
       "pos": 1,
@@ -39,6 +39,15 @@
     },
     {
       "pos": 5,
+      "name": "Farum-Holte.2",
+      "k": 4,
+      "v": 1,
+      "t": 3,
+      "sets": "5-10",
+      "pts": 4
+    },
+    {
+      "pos": 6,
       "name": "B1960",
       "k": 2,
       "v": 1,
@@ -47,31 +56,22 @@
       "pts": 3
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "Grøndal EV",
-      "k": 2,
+      "k": 3,
       "v": 1,
-      "t": 1,
-      "sets": "3-3",
+      "t": 2,
+      "sets": "4-6",
       "pts": 3
     },
     {
-      "pos": 7,
+      "pos": 8,
       "name": "Amager Volley.3",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "3-6",
       "pts": 3
-    },
-    {
-      "pos": 8,
-      "name": "Farum-Holte.2",
-      "k": 3,
-      "v": 0,
-      "t": 3,
-      "sets": "2-9",
-      "pts": 1
     },
     {
       "pos": 9,
@@ -263,8 +263,8 @@
       "away": "Grøndal EV",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77433",
