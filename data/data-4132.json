@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T14:49:23.003Z",
+  "updatedAt": "2026-11-01T21:14:40.763Z",
   "teams": [
     {
       "pos": 1,
@@ -12,21 +12,21 @@
     },
     {
       "pos": 2,
+      "name": "Hvidovre VK.4",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "11-4",
+      "pts": 10
+    },
+    {
+      "pos": 3,
       "name": "Glostrup IC.2",
       "k": 4,
       "v": 3,
       "t": 1,
       "sets": "10-6",
       "pts": 9
-    },
-    {
-      "pos": 3,
-      "name": "Hvidovre VK.4",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "8-4",
-      "pts": 7
     },
     {
       "pos": 4,
@@ -67,10 +67,10 @@
     {
       "pos": 8,
       "name": "VLI.4",
-      "k": 3,
+      "k": 4,
       "v": 1,
-      "t": 2,
-      "sets": "4-6",
+      "t": 3,
+      "sets": "4-9",
       "pts": 3
     },
     {
@@ -315,8 +315,8 @@
       "away": "Hvidovre VK.4",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77621",

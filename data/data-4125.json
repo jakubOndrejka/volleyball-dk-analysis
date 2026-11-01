@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T16:50:31.381Z",
+  "updatedAt": "2026-11-01T21:14:39.599Z",
   "teams": [
     {
       "pos": 1,
@@ -31,28 +31,28 @@
     {
       "pos": 4,
       "name": "KSV.3",
-      "k": 4,
+      "k": 5,
       "v": 2,
-      "t": 2,
-      "sets": "6-7",
-      "pts": 6
+      "t": 3,
+      "sets": "8-10",
+      "pts": 7
     },
     {
       "pos": 5,
+      "name": "Frederiksberg Volley",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "6-6",
+      "pts": 6
+    },
+    {
+      "pos": 6,
       "name": "VLI.2",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "4-3",
-      "pts": 3
-    },
-    {
-      "pos": 6,
-      "name": "Frederiksberg Volley",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-4",
       "pts": 3
     },
     {
@@ -289,8 +289,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76142",

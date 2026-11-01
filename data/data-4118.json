@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T16:50:32.308Z",
+  "updatedAt": "2026-11-01T21:14:40.481Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Gentofte Volley.2",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "11-5",
+      "pts": 10
+    },
+    {
+      "pos": 3,
       "name": "VLI",
       "k": 4,
       "v": 3,
@@ -20,21 +29,12 @@
       "pts": 10
     },
     {
-      "pos": 3,
-      "name": "Gentofte Volley.2",
+      "pos": 4,
+      "name": "DTU Volley",
       "k": 3,
       "v": 2,
       "t": 1,
-      "sets": "8-5",
-      "pts": 7
-    },
-    {
-      "pos": 4,
-      "name": "DTU Volley",
-      "k": 2,
-      "v": 2,
-      "t": 0,
-      "sets": "6-0",
+      "sets": "6-3",
       "pts": 6
     },
     {
@@ -311,8 +311,8 @@
       "away": "DTU Volley",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75347",
