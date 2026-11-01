@@ -1,32 +1,32 @@
 {
-  "updatedAt": "2026-10-30T22:40:35.817Z",
+  "updatedAt": "2026-11-01T16:50:31.381Z",
   "teams": [
     {
       "pos": 1,
       "name": "DTU Volley",
-      "k": 4,
-      "v": 4,
+      "k": 5,
+      "v": 5,
       "t": 0,
-      "sets": "12-2",
-      "pts": 12
+      "sets": "15-3",
+      "pts": 15
     },
     {
       "pos": 2,
-      "name": "Enghave VK",
-      "k": 3,
-      "v": 2,
+      "name": "Rosenlund Volley",
+      "k": 4,
+      "v": 3,
       "t": 1,
-      "sets": "6-3",
-      "pts": 6
+      "sets": "10-6",
+      "pts": 9
     },
     {
       "pos": 3,
-      "name": "Rosenlund Volley",
-      "k": 3,
+      "name": "Enghave VK",
+      "k": 4,
       "v": 2,
-      "t": 1,
-      "sets": "7-4",
-      "pts": 6
+      "t": 2,
+      "sets": "8-6",
+      "pts": 7
     },
     {
       "pos": 4,
@@ -48,7 +48,7 @@
     },
     {
       "pos": 6,
-      "name": "Lyngby-Gladsaxe WC",
+      "name": "Frederiksberg Volley",
       "k": 2,
       "v": 1,
       "t": 1,
@@ -57,11 +57,11 @@
     },
     {
       "pos": 7,
-      "name": "Frederiksberg Volley",
-      "k": 2,
+      "name": "Lyngby-Gladsaxe WC",
+      "k": 3,
       "v": 1,
-      "t": 1,
-      "sets": "3-4",
+      "t": 2,
+      "sets": "4-7",
       "pts": 3
     },
     {
@@ -263,8 +263,8 @@
       "away": "DTU Volley",
       "venue": "Engelsborghallen",
       "mapsUrl": "https://maps.google.com/maps?q=Engelsborgvej%2093%2C%202800%20Kgs.%20Lyngby",
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "76160",
@@ -276,8 +276,8 @@
       "away": "Rosenlund Volley",
       "venue": "Bavnehøjhallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76163",

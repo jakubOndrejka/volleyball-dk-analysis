@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T19:21:45.647Z",
+  "updatedAt": "2026-11-01T16:50:32.079Z",
   "teams": [
     {
       "pos": 1,
@@ -12,6 +12,15 @@
     },
     {
       "pos": 2,
+      "name": "Farum VK.3",
+      "k": 4,
+      "v": 4,
+      "t": 0,
+      "sets": "12-3",
+      "pts": 12
+    },
+    {
+      "pos": 3,
       "name": "Kanalbyens IF",
       "k": 4,
       "v": 3,
@@ -20,30 +29,21 @@
       "pts": 10
     },
     {
-      "pos": 3,
-      "name": "Farum VK.3",
-      "k": 3,
-      "v": 3,
-      "t": 0,
-      "sets": "9-3",
-      "pts": 9
-    },
-    {
       "pos": 4,
-      "name": "Frederiksberg Volley.4",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "6-4",
-      "pts": 6
-    },
-    {
-      "pos": 5,
       "name": "KSV.5",
       "k": 5,
       "v": 2,
       "t": 3,
       "sets": "8-10",
+      "pts": 6
+    },
+    {
+      "pos": 5,
+      "name": "Frederiksberg Volley.4",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "6-7",
       "pts": 6
     },
     {
@@ -315,8 +315,8 @@
       "away": "Frederiksberg Volley.4",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77673",

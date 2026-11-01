@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-10-31T14:49:22.682Z",
+  "updatedAt": "2026-11-01T16:50:32.308Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Frederiksberg Volley",
+      "k": 4,
+      "v": 4,
+      "t": 0,
+      "sets": "12-2",
+      "pts": 12
+    },
+    {
+      "pos": 2,
       "name": "VLI",
       "k": 4,
       "v": 3,
       "t": 1,
       "sets": "11-6",
       "pts": 10
-    },
-    {
-      "pos": 2,
-      "name": "Frederiksberg Volley",
-      "k": 3,
-      "v": 3,
-      "t": 0,
-      "sets": "9-2",
-      "pts": 9
     },
     {
       "pos": 3,
@@ -40,10 +40,10 @@
     {
       "pos": 5,
       "name": "KSV",
-      "k": 2,
+      "k": 3,
       "v": 1,
-      "t": 1,
-      "sets": "5-3",
+      "t": 2,
+      "sets": "5-6",
       "pts": 4
     },
     {
@@ -66,6 +66,15 @@
     },
     {
       "pos": 8,
+      "name": "Amager Volley.2",
+      "k": 4,
+      "v": 1,
+      "t": 3,
+      "sets": "5-9",
+      "pts": 3
+    },
+    {
+      "pos": 9,
       "name": "Team Køge",
       "k": 3,
       "v": 1,
@@ -74,21 +83,12 @@
       "pts": 3
     },
     {
-      "pos": 9,
-      "name": "Amager Volley.2",
-      "k": 3,
-      "v": 0,
-      "t": 3,
-      "sets": "2-9",
-      "pts": 0
-    },
-    {
       "pos": 10,
       "name": "Enghave VK",
-      "k": 3,
+      "k": 4,
       "v": 0,
-      "t": 3,
-      "sets": "0-9",
+      "t": 4,
+      "sets": "0-12",
       "pts": 0
     }
   ],
@@ -285,8 +285,8 @@
       "away": "Amager Volley.2",
       "venue": "Bavnehøjhallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "75348",
@@ -298,8 +298,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "75346",

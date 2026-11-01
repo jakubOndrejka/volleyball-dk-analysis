@@ -1,32 +1,32 @@
 {
-  "updatedAt": "2026-10-31T19:21:44.906Z",
+  "updatedAt": "2026-11-01T16:50:31.755Z",
   "teams": [
     {
       "pos": 1,
       "name": "KSV",
-      "k": 3,
-      "v": 3,
+      "k": 4,
+      "v": 4,
       "t": 0,
-      "sets": "9-0",
-      "pts": 9
+      "sets": "12-0",
+      "pts": 12
     },
     {
       "pos": 2,
+      "name": "KSV.2",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "10-3",
+      "pts": 9
+    },
+    {
+      "pos": 3,
       "name": "VLI",
       "k": 4,
       "v": 2,
       "t": 2,
       "sets": "10-7",
       "pts": 8
-    },
-    {
-      "pos": 3,
-      "name": "KSV.2",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "7-3",
-      "pts": 6
     },
     {
       "pos": 4,
@@ -39,15 +39,24 @@
     },
     {
       "pos": 5,
-      "name": "Lyngby-Gladsaxe Volley",
-      "k": 3,
+      "name": "Gentofte Volley.2",
+      "k": 4,
       "v": 2,
-      "t": 1,
-      "sets": "7-6",
+      "t": 2,
+      "sets": "6-8",
       "pts": 6
     },
     {
       "pos": 6,
+      "name": "Lyngby-Gladsaxe Volley",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "7-9",
+      "pts": 6
+    },
+    {
+      "pos": 7,
       "name": "Amager Volley",
       "k": 4,
       "v": 2,
@@ -56,30 +65,21 @@
       "pts": 6
     },
     {
-      "pos": 7,
+      "pos": 8,
       "name": "KV 61",
-      "k": 3,
+      "k": 4,
       "v": 1,
-      "t": 2,
-      "sets": "6-7",
+      "t": 3,
+      "sets": "6-10",
       "pts": 4
     },
     {
-      "pos": 8,
-      "name": "Farum VK 2",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-4",
-      "pts": 3
-    },
-    {
       "pos": 9,
-      "name": "Gentofte Volley.2",
+      "name": "Farum VK 2",
       "k": 3,
       "v": 1,
       "t": 2,
-      "sets": "3-8",
+      "sets": "3-7",
       "pts": 3
     },
     {
@@ -311,8 +311,8 @@
       "away": "KV 61",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76267",
@@ -324,8 +324,8 @@
       "away": "Lyngby-Gladsaxe Volley",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76266",
@@ -337,8 +337,8 @@
       "away": "Farum VK 2",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76264",

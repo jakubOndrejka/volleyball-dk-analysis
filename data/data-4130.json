@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T09:47:37.835Z",
+  "updatedAt": "2026-11-01T16:50:32.416Z",
   "teams": [
     {
       "pos": 1,
@@ -30,15 +30,24 @@
     },
     {
       "pos": 4,
-      "name": "Aarby Volley",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "5-4",
-      "pts": 4
+      "name": "Amager Volley.3",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "6-8",
+      "pts": 6
     },
     {
       "pos": 5,
+      "name": "Aarby Volley",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "7-7",
+      "pts": 5
+    },
+    {
+      "pos": 6,
       "name": "Farum-Holte.2",
       "k": 4,
       "v": 1,
@@ -47,7 +56,7 @@
       "pts": 4
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "B1960",
       "k": 2,
       "v": 1,
@@ -56,21 +65,12 @@
       "pts": 3
     },
     {
-      "pos": 7,
+      "pos": 8,
       "name": "Grøndal EV",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "4-6",
-      "pts": 3
-    },
-    {
-      "pos": 8,
-      "name": "Amager Volley.3",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "3-6",
       "pts": 3
     },
     {
@@ -276,8 +276,8 @@
       "away": "Aarby Volley",
       "venue": "Sundbyhal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "77396",

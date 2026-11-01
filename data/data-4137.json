@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-31T14:49:23.289Z",
+  "updatedAt": "2026-11-01T16:50:32.956Z",
   "teams": [
     {
       "pos": 1,
-      "name": "Pan Volley",
+      "name": "Enghave VK",
       "k": 4,
       "v": 3,
       "t": 1,
@@ -12,15 +12,51 @@
     },
     {
       "pos": 2,
-      "name": "Enghave VK",
-      "k": 2,
-      "v": 2,
-      "t": 0,
-      "sets": "4-1",
-      "pts": 4
+      "name": "Pan Volley",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "6-4",
+      "pts": 6
     },
     {
       "pos": 3,
+      "name": "Grøndal EV.2",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "5-4",
+      "pts": 4
+    },
+    {
+      "pos": 4,
+      "name": "Farum-Holte.2",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "5-4",
+      "pts": 4
+    },
+    {
+      "pos": 5,
+      "name": "Frederiksberg Volley",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "5-4",
+      "pts": 4
+    },
+    {
+      "pos": 6,
+      "name": "KSV.2",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "5-6",
+      "pts": 4
+    },
+    {
+      "pos": 7,
       "name": "Helsingør VK",
       "k": 2,
       "v": 1,
@@ -29,34 +65,7 @@
       "pts": 2
     },
     {
-      "pos": 4,
-      "name": "Grøndal EV.2",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-2",
-      "pts": 2
-    },
-    {
-      "pos": 5,
-      "name": "KSV.2",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-3",
-      "pts": 2
-    },
-    {
-      "pos": 6,
-      "name": "Farum-Holte.2",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "2-2",
-      "pts": 2
-    },
-    {
-      "pos": 7,
+      "pos": 8,
       "name": "DTU Volley.2",
       "k": 2,
       "v": 1,
@@ -65,30 +74,21 @@
       "pts": 2
     },
     {
-      "pos": 8,
-      "name": "Grøndal EV.3",
-      "k": 0,
-      "v": 0,
-      "t": 0,
-      "sets": "—",
-      "pts": 0
+      "pos": 9,
+      "name": "Amager VK.2",
+      "k": 4,
+      "v": 1,
+      "t": 3,
+      "sets": "2-6",
+      "pts": 2
     },
     {
-      "pos": 9,
-      "name": "Frederiksberg Volley",
+      "pos": 10,
+      "name": "Grøndal EV.3",
       "k": 2,
       "v": 0,
       "t": 2,
       "sets": "1-4",
-      "pts": 0
-    },
-    {
-      "pos": 10,
-      "name": "Amager VK.2",
-      "k": 2,
-      "v": 0,
-      "t": 2,
-      "sets": "0-4",
       "pts": 0
     }
   ],
@@ -233,8 +233,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "78048",
@@ -246,8 +246,8 @@
       "away": "Farum-Holte.2",
       "venue": "Gl. Holtehal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-1",
+      "completed": true
     },
     {
       "matchId": "78050",
@@ -259,8 +259,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "78046",
@@ -272,8 +272,8 @@
       "away": "Enghave VK",
       "venue": "Gl. Holtehal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "78051",
@@ -285,8 +285,8 @@
       "away": "KSV.2",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "78047",
@@ -298,8 +298,8 @@
       "away": "Farum-Holte.2",
       "venue": "Gl. Holtehal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "78052",
@@ -311,8 +311,8 @@
       "away": "KSV.2",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "78053",
