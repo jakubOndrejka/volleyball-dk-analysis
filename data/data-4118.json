@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T21:14:40.481Z",
+  "updatedAt": "2026-11-03T21:07:36.043Z",
   "teams": [
     {
       "pos": 1,
@@ -39,21 +39,21 @@
     },
     {
       "pos": 5,
+      "name": "RS Rødovre",
+      "k": 3,
+      "v": 2,
+      "t": 1,
+      "sets": "6-4",
+      "pts": 6
+    },
+    {
+      "pos": 6,
       "name": "KSV",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "5-6",
       "pts": 4
-    },
-    {
-      "pos": 6,
-      "name": "RS Rødovre",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-3",
-      "pts": 3
     },
     {
       "pos": 7,
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Team Køge",
-      "k": 3,
+      "k": 4,
       "v": 1,
-      "t": 2,
-      "sets": "3-7",
+      "t": 3,
+      "sets": "4-10",
       "pts": 3
     },
     {
@@ -324,8 +324,8 @@
       "away": "RS Rødovre",
       "venue": "Spar Nord Arena",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "75352",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T21:14:39.599Z",
+  "updatedAt": "2026-11-03T21:07:35.745Z",
   "teams": [
     {
       "pos": 1,
@@ -57,21 +57,21 @@
     },
     {
       "pos": 7,
-      "name": "Lyngby-Gladsaxe WC",
-      "k": 3,
+      "name": "Lyngby-Gladsaxe Volley.2",
+      "k": 4,
       "v": 1,
-      "t": 2,
-      "sets": "4-7",
+      "t": 3,
+      "sets": "6-10",
       "pts": 3
     },
     {
       "pos": 8,
-      "name": "Lyngby-Gladsaxe Volley.2",
-      "k": 3,
-      "v": 0,
+      "name": "Lyngby-Gladsaxe WC",
+      "k": 4,
+      "v": 1,
       "t": 3,
-      "sets": "3-9",
-      "pts": 0
+      "sets": "5-10",
+      "pts": 3
     },
     {
       "pos": 9,
@@ -302,8 +302,8 @@
       "away": "Lyngby-Gladsaxe Volley.2",
       "venue": "Gladsaxe Idrætshal 2",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "76166",
