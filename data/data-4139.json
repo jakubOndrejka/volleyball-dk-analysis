@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T16:50:32.079Z",
+  "updatedAt": "2026-11-04T16:23:37.604Z",
   "teams": [
     {
       "pos": 1,
@@ -48,12 +48,12 @@
     },
     {
       "pos": 6,
-      "name": "Gentofte Volley.4",
+      "name": "Glostrup IC.2",
       "k": 4,
       "v": 1,
       "t": 3,
-      "sets": "5-9",
-      "pts": 4
+      "sets": "8-9",
+      "pts": 5
     },
     {
       "pos": 7,
@@ -66,12 +66,12 @@
     },
     {
       "pos": 8,
-      "name": "Glostrup IC.2",
+      "name": "Gentofte Volley.4",
       "k": 4,
       "v": 0,
       "t": 4,
-      "sets": "5-12",
-      "pts": 2
+      "sets": "2-12",
+      "pts": 1
     },
     {
       "pos": 9,
@@ -107,7 +107,7 @@
       "away": "Glostrup IC.2",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": "3-0",
+      "score": "0-3",
       "completed": true
     },
     {
