@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T16:39:15.598Z",
+  "updatedAt": "2026-11-07T20:33:18.232Z",
   "teams": [
     {
       "pos": 1,
@@ -30,6 +30,15 @@
     },
     {
       "pos": 4,
+      "name": "Amager Volley",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "9-10",
+      "pts": 9
+    },
+    {
+      "pos": 5,
       "name": "VLI",
       "k": 4,
       "v": 2,
@@ -38,7 +47,7 @@
       "pts": 8
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "Lynge Uggeløse",
       "k": 3,
       "v": 2,
@@ -47,21 +56,12 @@
       "pts": 6
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "Lyngby-Gladsaxe Volley",
       "k": 4,
       "v": 2,
       "t": 2,
       "sets": "7-9",
-      "pts": 6
-    },
-    {
-      "pos": 7,
-      "name": "Amager Volley",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "6-9",
       "pts": 6
     },
     {
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Farum VK 2",
-      "k": 3,
+      "k": 4,
       "v": 1,
-      "t": 2,
-      "sets": "3-7",
+      "t": 3,
+      "sets": "4-10",
       "pts": 3
     },
     {
@@ -389,8 +389,8 @@
       "away": "Farum VK 2",
       "venue": "Sundbyhal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "76273",
