@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-03T21:07:35.745Z",
+  "updatedAt": "2026-11-07T16:39:16.083Z",
   "teams": [
     {
       "pos": 1,
       "name": "DTU Volley",
-      "k": 5,
-      "v": 5,
+      "k": 6,
+      "v": 6,
       "t": 0,
-      "sets": "15-3",
-      "pts": 15
+      "sets": "18-3",
+      "pts": 18
     },
     {
       "pos": 2,
@@ -30,6 +30,15 @@
     },
     {
       "pos": 4,
+      "name": "Frederiksberg Volley",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "8-9",
+      "pts": 7
+    },
+    {
+      "pos": 5,
       "name": "KSV.3",
       "k": 5,
       "v": 2,
@@ -38,22 +47,13 @@
       "pts": 7
     },
     {
-      "pos": 5,
-      "name": "Frederiksberg Volley",
+      "pos": 6,
+      "name": "VLI.2",
       "k": 3,
       "v": 2,
       "t": 1,
-      "sets": "6-6",
+      "sets": "7-5",
       "pts": 6
-    },
-    {
-      "pos": 6,
-      "name": "VLI.2",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "4-3",
-      "pts": 3
     },
     {
       "pos": 7,
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Brøndby VK Wildcard",
-      "k": 3,
+      "k": 4,
       "v": 0,
-      "t": 3,
-      "sets": "1-9",
+      "t": 4,
+      "sets": "1-12",
       "pts": 0
     }
   ],
@@ -315,8 +315,8 @@
       "away": "VLI.2",
       "venue": "Bülowsvejhallen",
       "mapsUrl": "https://maps.google.com/maps?q=B%C3%BClowsvej%2034%2C%201870%20Frederiksberg%20C",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76164",
@@ -328,8 +328,8 @@
       "away": "DTU Volley",
       "venue": "Stadionhal 1",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76167",

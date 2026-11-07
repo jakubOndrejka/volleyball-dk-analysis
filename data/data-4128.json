@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T16:50:31.755Z",
+  "updatedAt": "2026-11-07T16:39:15.598Z",
   "teams": [
     {
       "pos": 1,
@@ -13,14 +13,23 @@
     {
       "pos": 2,
       "name": "KSV.2",
-      "k": 4,
-      "v": 3,
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "10-3",
-      "pts": 9
+      "sets": "13-3",
+      "pts": 12
     },
     {
       "pos": 3,
+      "name": "Gentofte Volley.2",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "9-8",
+      "pts": 9
+    },
+    {
+      "pos": 4,
       "name": "VLI",
       "k": 4,
       "v": 2,
@@ -29,21 +38,12 @@
       "pts": 8
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "Lynge Uggeløse",
       "k": 3,
       "v": 2,
       "t": 1,
       "sets": "7-4",
-      "pts": 6
-    },
-    {
-      "pos": 5,
-      "name": "Gentofte Volley.2",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "6-8",
       "pts": 6
     },
     {
@@ -67,10 +67,10 @@
     {
       "pos": 8,
       "name": "KV 61",
-      "k": 4,
+      "k": 5,
       "v": 1,
-      "t": 3,
-      "sets": "6-10",
+      "t": 4,
+      "sets": "6-13",
       "pts": 4
     },
     {
@@ -85,10 +85,10 @@
     {
       "pos": 10,
       "name": "Amager Volley.2",
-      "k": 4,
+      "k": 5,
       "v": 0,
-      "t": 4,
-      "sets": "2-12",
+      "t": 5,
+      "sets": "2-15",
       "pts": 0
     }
   ],
@@ -363,8 +363,8 @@
       "away": "KSV.2",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76269",
@@ -376,8 +376,8 @@
       "away": "Gentofte Volley.2",
       "venue": "Sundbyhal 2",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76270",

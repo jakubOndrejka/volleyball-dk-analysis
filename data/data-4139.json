@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T16:23:37.604Z",
+  "updatedAt": "2026-11-07T16:39:16.060Z",
   "teams": [
     {
       "pos": 1,
@@ -12,21 +12,21 @@
     },
     {
       "pos": 2,
+      "name": "Kanalbyens IF",
+      "k": 5,
+      "v": 4,
+      "t": 1,
+      "sets": "14-3",
+      "pts": 13
+    },
+    {
+      "pos": 3,
       "name": "Farum VK.3",
       "k": 4,
       "v": 4,
       "t": 0,
       "sets": "12-3",
       "pts": 12
-    },
-    {
-      "pos": 3,
-      "name": "Kanalbyens IF",
-      "k": 4,
-      "v": 3,
-      "t": 1,
-      "sets": "11-3",
-      "pts": 10
     },
     {
       "pos": 4,
@@ -40,10 +40,10 @@
     {
       "pos": 5,
       "name": "Frederiksberg Volley.4",
-      "k": 4,
+      "k": 5,
       "v": 2,
-      "t": 2,
-      "sets": "6-7",
+      "t": 3,
+      "sets": "6-10",
       "pts": 6
     },
     {
@@ -328,8 +328,8 @@
       "away": "Frederiksberg Volley.4",
       "venue": "Sluseholmen Skole",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77671",

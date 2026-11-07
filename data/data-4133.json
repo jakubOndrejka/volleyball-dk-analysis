@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-11-01T21:14:39.885Z",
+  "updatedAt": "2026-11-07T16:39:15.826Z",
   "teams": [
     {
       "pos": 1,
-      "name": "VLI.3",
-      "k": 4,
+      "name": "Hvidovre VK.2",
+      "k": 5,
       "v": 4,
-      "t": 0,
-      "sets": "12-2",
-      "pts": 12
+      "t": 1,
+      "sets": "14-4",
+      "pts": 13
     },
     {
       "pos": 2,
-      "name": "Hvidovre VK.2",
-      "k": 4,
-      "v": 3,
+      "name": "VLI.3",
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "11-4",
-      "pts": 10
+      "sets": "12-5",
+      "pts": 12
     },
     {
       "pos": 3,
@@ -302,8 +302,8 @@
       "away": "VLI.3",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76639",
