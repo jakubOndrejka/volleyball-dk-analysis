@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T13:38:36.541Z",
+  "updatedAt": "2026-11-08T18:31:48.316Z",
   "teams": [
     {
       "pos": 1,
@@ -48,30 +48,30 @@
     },
     {
       "pos": 6,
-      "name": "Ishøj Volley.2",
-      "k": 4,
+      "name": "VLI.4",
+      "k": 5,
       "v": 2,
-      "t": 2,
-      "sets": "8-9",
+      "t": 3,
+      "sets": "7-10",
       "pts": 6
     },
     {
       "pos": 7,
+      "name": "Ishøj Volley.2",
+      "k": 5,
+      "v": 2,
+      "t": 3,
+      "sets": "9-12",
+      "pts": 6
+    },
+    {
+      "pos": 8,
       "name": "Gentofte Volley.4",
       "k": 5,
       "v": 1,
       "t": 4,
       "sets": "7-14",
       "pts": 4
-    },
-    {
-      "pos": 8,
-      "name": "VLI.4",
-      "k": 4,
-      "v": 1,
-      "t": 3,
-      "sets": "4-9",
-      "pts": 3
     },
     {
       "pos": 9,
@@ -367,8 +367,8 @@
       "away": "Ishøj Volley.2",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77556",

@@ -1,40 +1,40 @@
 {
-  "updatedAt": "2026-11-01T16:50:32.416Z",
+  "updatedAt": "2026-11-08T18:31:48.203Z",
   "teams": [
     {
       "pos": 1,
       "name": "Gentofte Volley.3",
-      "k": 4,
+      "k": 5,
       "v": 4,
-      "t": 0,
-      "sets": "12-3",
-      "pts": 12
+      "t": 1,
+      "sets": "14-6",
+      "pts": 13
     },
     {
       "pos": 2,
-      "name": "Hillerød G&I",
-      "k": 3,
-      "v": 2,
+      "name": "KSV.2",
+      "k": 4,
+      "v": 3,
       "t": 1,
-      "sets": "7-3",
-      "pts": 6
+      "sets": "9-5",
+      "pts": 9
     },
     {
       "pos": 3,
-      "name": "KSV.2",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "6-5",
-      "pts": 6
+      "name": "Amager Volley.3",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "9-10",
+      "pts": 9
     },
     {
       "pos": 4,
-      "name": "Amager Volley.3",
+      "name": "Hillerød G&I",
       "k": 4,
       "v": 2,
       "t": 2,
-      "sets": "6-8",
+      "sets": "7-6",
       "pts": 6
     },
     {
@@ -289,8 +289,8 @@
       "away": "KSV.2",
       "venue": "Sophienborgskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77398",
@@ -302,8 +302,8 @@
       "away": "Amager Volley.3",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77445",

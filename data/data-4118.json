@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T16:39:16.379Z",
+  "updatedAt": "2026-11-08T18:31:48.042Z",
   "teams": [
     {
       "pos": 1,
@@ -22,11 +22,11 @@
     {
       "pos": 3,
       "name": "VLI",
-      "k": 4,
-      "v": 3,
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "11-6",
-      "pts": 10
+      "sets": "14-6",
+      "pts": 13
     },
     {
       "pos": 4,
@@ -85,10 +85,10 @@
     {
       "pos": 10,
       "name": "Enghave VK",
-      "k": 4,
+      "k": 5,
       "v": 0,
-      "t": 4,
-      "sets": "0-12",
+      "t": 5,
+      "sets": "0-15",
       "pts": 0
     }
   ],
@@ -376,8 +376,8 @@
       "away": "Enghave VK",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75334",
