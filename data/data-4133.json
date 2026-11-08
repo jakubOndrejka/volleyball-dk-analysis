@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T16:39:15.826Z",
+  "updatedAt": "2026-11-08T13:38:35.401Z",
   "teams": [
     {
       "pos": 1,
@@ -30,21 +30,21 @@
     },
     {
       "pos": 4,
-      "name": "Tårnfalkene",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "7-6",
-      "pts": 6
+      "name": "Hillerød G&I",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "10-8",
+      "pts": 9
     },
     {
       "pos": 5,
-      "name": "Hillerød G&I",
+      "name": "Tårnfalkene",
       "k": 4,
       "v": 2,
       "t": 2,
-      "sets": "7-7",
-      "pts": 6
+      "sets": "9-9",
+      "pts": 7
     },
     {
       "pos": 6,
@@ -66,20 +66,20 @@
     },
     {
       "pos": 8,
-      "name": "Taastrup IK",
-      "k": 2,
-      "v": 0,
-      "t": 2,
-      "sets": "2-6",
-      "pts": 0
+      "name": "Roskilde VK",
+      "k": 5,
+      "v": 1,
+      "t": 4,
+      "sets": "3-14",
+      "pts": 3
     },
     {
       "pos": 9,
-      "name": "Roskilde VK",
-      "k": 4,
+      "name": "Taastrup IK",
+      "k": 3,
       "v": 0,
-      "t": 4,
-      "sets": "0-12",
+      "t": 3,
+      "sets": "3-9",
       "pts": 0
     }
   ],
@@ -315,8 +315,8 @@
       "away": "Taastrup IK",
       "venue": "Sophienborgskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "76679",
@@ -328,8 +328,8 @@
       "away": "Roskilde VK",
       "venue": "Nordregårdskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76698",

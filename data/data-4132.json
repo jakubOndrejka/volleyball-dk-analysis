@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T20:33:18.924Z",
+  "updatedAt": "2026-11-08T13:38:36.541Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "Hvidovre VK.4",
-      "k": 4,
-      "v": 3,
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "11-4",
-      "pts": 10
+      "sets": "14-4",
+      "pts": 13
     },
     {
       "pos": 3,
@@ -58,10 +58,10 @@
     {
       "pos": 7,
       "name": "Gentofte Volley.4",
-      "k": 4,
+      "k": 5,
       "v": 1,
-      "t": 3,
-      "sets": "7-11",
+      "t": 4,
+      "sets": "7-14",
       "pts": 4
     },
     {
@@ -354,8 +354,8 @@
       "away": "Hvidovre VK.4",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77575",
