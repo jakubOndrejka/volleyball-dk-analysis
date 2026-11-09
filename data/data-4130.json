@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T18:31:48.203Z",
+  "updatedAt": "2026-11-09T20:49:41.597Z",
   "teams": [
     {
       "pos": 1,
@@ -48,21 +48,21 @@
     },
     {
       "pos": 6,
+      "name": "B1960",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "6-6",
+      "pts": 4
+    },
+    {
+      "pos": 7,
       "name": "Farum-Holte.2",
       "k": 4,
       "v": 1,
       "t": 3,
       "sets": "5-10",
       "pts": 4
-    },
-    {
-      "pos": 7,
-      "name": "B1960",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "4-3",
-      "pts": 3
     },
     {
       "pos": 8,
@@ -76,11 +76,11 @@
     {
       "pos": 9,
       "name": "VK Næstved",
-      "k": 2,
-      "v": 0,
+      "k": 3,
+      "v": 1,
       "t": 2,
-      "sets": "0-6",
-      "pts": 0
+      "sets": "3-8",
+      "pts": 3
     }
   ],
   "fixtures": [
@@ -315,8 +315,8 @@
       "away": "B1960",
       "venue": "Kobberbakkeskolen, afd. Sydby",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "77383",
