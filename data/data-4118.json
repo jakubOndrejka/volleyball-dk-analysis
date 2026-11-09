@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T18:31:48.042Z",
+  "updatedAt": "2026-11-09T09:54:46.195Z",
   "teams": [
     {
       "pos": 1,
@@ -454,19 +454,6 @@
       "away": "Amager Volley.2",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "75355",
-      "matchNumber": "148117",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75355",
-      "date": "2026-11-22",
-      "time": "14:00",
-      "home": "Frederiksberg Volley",
-      "away": "Hvidovre VK.2",
-      "venue": "Kedelhallen",
-      "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
       "score": null,
       "completed": false
     },
