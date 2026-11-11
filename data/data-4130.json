@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T20:49:41.597Z",
+  "updatedAt": "2026-11-11T15:25:22.306Z",
   "teams": [
     {
       "pos": 1,
@@ -135,19 +135,6 @@
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
       "score": "3-1",
       "completed": true
-    },
-    {
-      "matchId": "77374",
-      "matchNumber": "149948",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77374",
-      "date": "2026-10-03",
-      "time": "11:00",
-      "home": "Farum-Holte.2",
-      "away": "Aarby Volley",
-      "venue": "Ny Holtehal",
-      "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
     },
     {
       "matchId": "77391",
@@ -540,13 +527,13 @@
       "completed": false
     },
     {
-      "matchId": "77393",
-      "matchNumber": "149967",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77393",
-      "date": "2027-01-09",
-      "time": "09:00",
+      "matchId": "77374",
+      "matchNumber": "149948",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77374",
+      "date": "2026-12-19",
+      "time": "17:00",
       "home": "Farum-Holte.2",
-      "away": "Gentofte Volley.3",
+      "away": "Aarby Volley",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
       "score": null,
@@ -562,6 +549,19 @@
       "away": "Amager Volley.3",
       "venue": "Nørrebrohallen",
       "mapsUrl": null,
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "77393",
+      "matchNumber": "149967",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77393",
+      "date": "2027-01-09",
+      "time": "18:00",
+      "home": "Farum-Holte.2",
+      "away": "Gentofte Volley.3",
+      "venue": "Ny Holtehal",
+      "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
       "score": null,
       "completed": false
     },
@@ -696,6 +696,19 @@
       "completed": false
     },
     {
+      "matchId": "77414",
+      "matchNumber": "149988",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77414",
+      "date": "2027-01-31",
+      "time": "14:00",
+      "home": "Hillerød G&I",
+      "away": "Gentofte Volley.3",
+      "venue": "Sophienborgskolen",
+      "mapsUrl": null,
+      "score": null,
+      "completed": false
+    },
+    {
       "matchId": "77380",
       "matchNumber": "149954",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77380",
@@ -717,19 +730,6 @@
       "home": "Aarby Volley",
       "away": "VK Næstved",
       "venue": "Aarby Fritidscenter",
-      "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77414",
-      "matchNumber": "149988",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77414",
-      "date": "2027-01-31",
-      "time": "14:00",
-      "home": "Hillerød G&I",
-      "away": "Gentofte Volley.3",
-      "venue": "Sophienborgskolen",
       "mapsUrl": null,
       "score": null,
       "completed": false
