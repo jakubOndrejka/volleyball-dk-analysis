@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T15:25:21.903Z",
+  "updatedAt": "2026-11-11T22:19:00.786Z",
   "teams": [
     {
       "pos": 1,
@@ -560,8 +560,8 @@
       "time": "16:00",
       "home": "Farum VK.3",
       "away": "Aarby Volley",
-      "venue": "Ny Holtehal",
-      "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
+      "venue": "Gl. Holtehal",
+      "mapsUrl": null,
       "score": null,
       "completed": false
     },

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T09:54:46.195Z",
+  "updatedAt": "2026-11-11T22:19:01.245Z",
   "teams": [
     {
       "pos": 1,
@@ -40,11 +40,11 @@
     {
       "pos": 5,
       "name": "RS Rødovre",
-      "k": 3,
-      "v": 2,
+      "k": 4,
+      "v": 3,
       "t": 1,
-      "sets": "6-4",
-      "pts": 6
+      "sets": "9-4",
+      "pts": 9
     },
     {
       "pos": 6,
@@ -66,20 +66,20 @@
     },
     {
       "pos": 8,
-      "name": "Hvidovre VK.2",
-      "k": 4,
-      "v": 1,
-      "t": 3,
-      "sets": "3-9",
-      "pts": 3
-    },
-    {
-      "pos": 9,
       "name": "Team Køge",
       "k": 5,
       "v": 1,
       "t": 4,
       "sets": "4-13",
+      "pts": 3
+    },
+    {
+      "pos": 9,
+      "name": "Hvidovre VK.2",
+      "k": 5,
+      "v": 1,
+      "t": 4,
+      "sets": "3-12",
       "pts": 3
     },
     {
@@ -389,8 +389,8 @@
       "away": "Hvidovre VK.2",
       "venue": "Rødovrehallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "75356",
