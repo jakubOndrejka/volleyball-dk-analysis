@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-08T18:31:47.161Z",
+  "updatedAt": "2026-11-14T17:16:17.214Z",
   "teams": [
     {
       "pos": 1,
       "name": "DTU Volley",
-      "k": 6,
-      "v": 6,
+      "k": 7,
+      "v": 7,
       "t": 0,
-      "sets": "18-3",
-      "pts": 18
+      "sets": "21-3",
+      "pts": 21
     },
     {
       "pos": 2,
@@ -30,20 +30,20 @@
     },
     {
       "pos": 4,
-      "name": "Frederiksberg Volley",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "8-9",
-      "pts": 7
-    },
-    {
-      "pos": 5,
       "name": "KSV.3",
       "k": 5,
       "v": 2,
       "t": 3,
       "sets": "8-10",
+      "pts": 7
+    },
+    {
+      "pos": 5,
+      "name": "Frederiksberg Volley",
+      "k": 5,
+      "v": 2,
+      "t": 3,
+      "sets": "8-12",
       "pts": 7
     },
     {
@@ -354,8 +354,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Engelsborghallen",
       "mapsUrl": "https://maps.google.com/maps?q=Engelsborgvej%2093%2C%202800%20Kgs.%20Lyngby",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76183",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T16:09:48.912Z",
+  "updatedAt": "2026-11-14T17:16:18.001Z",
   "teams": [
     {
       "pos": 1,
@@ -22,10 +22,10 @@
     {
       "pos": 3,
       "name": "DTU Volley",
-      "k": 3,
+      "k": 4,
       "v": 2,
-      "t": 1,
-      "sets": "4-2",
+      "t": 2,
+      "sets": "4-4",
       "pts": 4
     },
     {
@@ -39,21 +39,21 @@
     },
     {
       "pos": 5,
+      "name": "Tårnfalkene",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "3-4",
+      "pts": 2
+    },
+    {
+      "pos": 6,
       "name": "Gentofte Volley",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "2-3",
       "pts": 2
-    },
-    {
-      "pos": 6,
-      "name": "Tårnfalkene",
-      "k": 2,
-      "v": 0,
-      "t": 2,
-      "sets": "1-4",
-      "pts": 0
     },
     {
       "pos": 7,
@@ -215,8 +215,8 @@
       "away": "Tårnfalkene",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "77856",
