@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-10T15:54:03.780Z",
+  "updatedAt": "2026-11-14T16:09:48.912Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Grøndal EV",
+      "k": 4,
+      "v": 4,
+      "t": 0,
+      "sets": "8-2",
+      "pts": 8
+    },
+    {
+      "pos": 2,
       "name": "CBS Sport",
       "k": 2,
       "v": 2,
@@ -11,20 +20,11 @@
       "pts": 4
     },
     {
-      "pos": 2,
-      "name": "DTU Volley",
-      "k": 2,
-      "v": 2,
-      "t": 0,
-      "sets": "4-0",
-      "pts": 4
-    },
-    {
       "pos": 3,
-      "name": "Grøndal EV",
-      "k": 2,
+      "name": "DTU Volley",
+      "k": 3,
       "v": 2,
-      "t": 0,
+      "t": 1,
       "sets": "4-2",
       "pts": 4
     },
@@ -57,7 +57,7 @@
     },
     {
       "pos": 7,
-      "name": "KSV",
+      "name": "Farum-Holte",
       "k": 2,
       "v": 0,
       "t": 2,
@@ -66,11 +66,11 @@
     },
     {
       "pos": 8,
-      "name": "Farum-Holte",
-      "k": 2,
+      "name": "KSV",
+      "k": 3,
       "v": 0,
-      "t": 2,
-      "sets": "1-4",
+      "t": 3,
+      "sets": "1-6",
       "pts": 0
     }
   ],
@@ -189,8 +189,8 @@
       "away": "Grøndal EV",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "77855",
@@ -202,8 +202,8 @@
       "away": "KSV",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "77854",

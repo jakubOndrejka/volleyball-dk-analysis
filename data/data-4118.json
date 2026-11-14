@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T22:19:01.245Z",
+  "updatedAt": "2026-11-14T16:09:48.383Z",
   "teams": [
     {
       "pos": 1,
@@ -31,19 +31,19 @@
     {
       "pos": 4,
       "name": "DTU Volley",
-      "k": 4,
-      "v": 3,
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "9-4",
-      "pts": 9
+      "sets": "12-5",
+      "pts": 12
     },
     {
       "pos": 5,
       "name": "RS Rødovre",
-      "k": 4,
+      "k": 5,
       "v": 3,
-      "t": 1,
-      "sets": "9-4",
+      "t": 2,
+      "sets": "10-7",
       "pts": 9
     },
     {
@@ -402,8 +402,8 @@
       "away": "RS Rødovre",
       "venue": "Engelsborghallen",
       "mapsUrl": "https://maps.google.com/maps?q=Engelsborgvej%2093%2C%202800%20Kgs.%20Lyngby",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "75373",
