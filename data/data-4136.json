@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T17:16:18.001Z",
+  "updatedAt": "2026-11-15T14:51:31.289Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "CBS Sport",
-      "k": 2,
-      "v": 2,
+      "k": 3,
+      "v": 3,
       "t": 0,
-      "sets": "4-0",
-      "pts": 4
+      "sets": "6-0",
+      "pts": 6
     },
     {
       "pos": 3,
@@ -30,15 +30,6 @@
     },
     {
       "pos": 4,
-      "name": "Amager Volley",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-3",
-      "pts": 2
-    },
-    {
-      "pos": 5,
       "name": "Tårnfalkene",
       "k": 3,
       "v": 1,
@@ -47,12 +38,21 @@
       "pts": 2
     },
     {
-      "pos": 6,
+      "pos": 5,
       "name": "Gentofte Volley",
       "k": 2,
       "v": 1,
       "t": 1,
       "sets": "2-3",
+      "pts": 2
+    },
+    {
+      "pos": 6,
+      "name": "Amager Volley",
+      "k": 3,
+      "v": 1,
+      "t": 2,
+      "sets": "3-5",
       "pts": 2
     },
     {
@@ -241,8 +241,8 @@
       "away": "CBS Sport",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "77858",
