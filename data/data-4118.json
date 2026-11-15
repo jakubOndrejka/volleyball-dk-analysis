@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T16:09:48.383Z",
+  "updatedAt": "2026-11-15T14:11:32.530Z",
   "teams": [
     {
       "pos": 1,
@@ -49,28 +49,28 @@
     {
       "pos": 6,
       "name": "KSV",
-      "k": 3,
-      "v": 1,
+      "k": 4,
+      "v": 2,
       "t": 2,
-      "sets": "5-6",
-      "pts": 4
+      "sets": "8-8",
+      "pts": 7
     },
     {
       "pos": 7,
+      "name": "Team Køge",
+      "k": 6,
+      "v": 1,
+      "t": 5,
+      "sets": "6-16",
+      "pts": 4
+    },
+    {
+      "pos": 8,
       "name": "Amager Volley.2",
       "k": 5,
       "v": 1,
       "t": 4,
       "sets": "6-12",
-      "pts": 3
-    },
-    {
-      "pos": 8,
-      "name": "Team Køge",
-      "k": 5,
-      "v": 1,
-      "t": 4,
-      "sets": "4-13",
       "pts": 3
     },
     {
@@ -415,8 +415,8 @@
       "away": "Team Køge",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "75357",

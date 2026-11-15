@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T22:19:01.281Z",
+  "updatedAt": "2026-11-15T14:11:32.693Z",
   "teams": [
     {
       "pos": 1,
@@ -13,19 +13,19 @@
     {
       "pos": 2,
       "name": "KSV.2",
-      "k": 4,
-      "v": 3,
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "9-5",
-      "pts": 9
+      "sets": "12-5",
+      "pts": 12
     },
     {
       "pos": 3,
       "name": "Amager Volley.3",
-      "k": 5,
+      "k": 6,
       "v": 3,
-      "t": 2,
-      "sets": "9-10",
+      "t": 3,
+      "sets": "9-13",
       "pts": 9
     },
     {
@@ -315,8 +315,8 @@
       "away": "KSV.2",
       "venue": "Sundbyhal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Englandsvej%2061%2C%202300%20K%C3%B8benhavn%20S",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "77430",

@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-11-01T16:50:32.956Z",
+  "updatedAt": "2026-11-15T14:11:33.068Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Pan Volley",
+      "k": 6,
+      "v": 4,
+      "t": 2,
+      "sets": "8-7",
+      "pts": 8
+    },
+    {
+      "pos": 2,
       "name": "Enghave VK",
       "k": 4,
       "v": 3,
@@ -11,16 +20,43 @@
       "pts": 6
     },
     {
-      "pos": 2,
-      "name": "Pan Volley",
-      "k": 4,
+      "pos": 3,
+      "name": "Farum-Holte.2",
+      "k": 5,
       "v": 3,
-      "t": 1,
-      "sets": "6-4",
+      "t": 2,
+      "sets": "7-5",
       "pts": 6
     },
     {
-      "pos": 3,
+      "pos": 4,
+      "name": "Frederiksberg Volley",
+      "k": 6,
+      "v": 3,
+      "t": 3,
+      "sets": "8-6",
+      "pts": 6
+    },
+    {
+      "pos": 5,
+      "name": "KSV.2",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "7-6",
+      "pts": 6
+    },
+    {
+      "pos": 6,
+      "name": "Helsingør VK",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "5-4",
+      "pts": 4
+    },
+    {
+      "pos": 7,
       "name": "Grøndal EV.2",
       "k": 4,
       "v": 2,
@@ -29,43 +65,16 @@
       "pts": 4
     },
     {
-      "pos": 4,
-      "name": "Farum-Holte.2",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "5-4",
-      "pts": 4
-    },
-    {
-      "pos": 5,
-      "name": "Frederiksberg Volley",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "5-4",
-      "pts": 4
-    },
-    {
-      "pos": 6,
-      "name": "KSV.2",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "5-6",
-      "pts": 4
-    },
-    {
-      "pos": 7,
-      "name": "Helsingør VK",
-      "k": 2,
-      "v": 1,
-      "t": 1,
-      "sets": "3-2",
-      "pts": 2
-    },
-    {
       "pos": 8,
+      "name": "Amager VK.2",
+      "k": 6,
+      "v": 2,
+      "t": 4,
+      "sets": "4-9",
+      "pts": 4
+    },
+    {
+      "pos": 9,
       "name": "DTU Volley.2",
       "k": 2,
       "v": 1,
@@ -74,21 +83,12 @@
       "pts": 2
     },
     {
-      "pos": 9,
-      "name": "Amager VK.2",
-      "k": 4,
-      "v": 1,
-      "t": 3,
-      "sets": "2-6",
-      "pts": 2
-    },
-    {
       "pos": 10,
       "name": "Grøndal EV.3",
-      "k": 2,
+      "k": 4,
       "v": 0,
-      "t": 2,
-      "sets": "1-4",
+      "t": 4,
+      "sets": "3-8",
       "pts": 0
     }
   ],
@@ -324,8 +324,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "2-1",
+      "completed": true
     },
     {
       "matchId": "78058",
@@ -337,8 +337,8 @@
       "away": "Pan Volley",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "78060",
@@ -363,8 +363,8 @@
       "away": "Pan Volley",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "78062",
@@ -389,8 +389,8 @@
       "away": "Helsingør VK",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "0-2",
+      "completed": true
     },
     {
       "matchId": "78055",
@@ -402,8 +402,8 @@
       "away": "Helsingør VK",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
+      "score": "2-0",
+      "completed": true
     },
     {
       "matchId": "78061",
@@ -428,8 +428,8 @@
       "away": "Farum-Holte.2",
       "venue": "Hillerødgades Sportssal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-2",
+      "completed": true
     },
     {
       "matchId": "78057",

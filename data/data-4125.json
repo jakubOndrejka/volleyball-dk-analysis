@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T17:16:17.214Z",
+  "updatedAt": "2026-11-15T14:11:32.251Z",
   "teams": [
     {
       "pos": 1,
@@ -13,29 +13,29 @@
     {
       "pos": 2,
       "name": "Enghave VK",
-      "k": 5,
+      "k": 6,
       "v": 3,
-      "t": 2,
-      "sets": "11-7",
-      "pts": 10
+      "t": 3,
+      "sets": "13-10",
+      "pts": 11
     },
     {
       "pos": 3,
+      "name": "KSV.3",
+      "k": 6,
+      "v": 3,
+      "t": 3,
+      "sets": "11-12",
+      "pts": 10
+    },
+    {
+      "pos": 4,
       "name": "Rosenlund Volley",
       "k": 4,
       "v": 3,
       "t": 1,
       "sets": "10-6",
       "pts": 9
-    },
-    {
-      "pos": 4,
-      "name": "KSV.3",
-      "k": 5,
-      "v": 2,
-      "t": 3,
-      "sets": "8-10",
-      "pts": 7
     },
     {
       "pos": 5,
@@ -367,8 +367,8 @@
       "away": "Enghave VK",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "76156",
