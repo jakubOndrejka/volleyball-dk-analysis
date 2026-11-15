@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T22:19:00.786Z",
+  "updatedAt": "2026-11-15T20:25:39.692Z",
   "teams": [
     {
       "pos": 1,
@@ -31,14 +31,23 @@
     {
       "pos": 4,
       "name": "KSV.5",
-      "k": 5,
+      "k": 6,
       "v": 2,
-      "t": 3,
-      "sets": "8-10",
-      "pts": 6
+      "t": 4,
+      "sets": "10-13",
+      "pts": 7
     },
     {
       "pos": 5,
+      "name": "Aarby Volley",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "7-10",
+      "pts": 6
+    },
+    {
+      "pos": 6,
       "name": "Frederiksberg Volley.4",
       "k": 5,
       "v": 2,
@@ -47,7 +56,7 @@
       "pts": 6
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "Glostrup IC.2",
       "k": 4,
       "v": 1,
@@ -56,22 +65,13 @@
       "pts": 5
     },
     {
-      "pos": 7,
+      "pos": 8,
       "name": "Gentofte Volley.4",
       "k": 5,
       "v": 1,
       "t": 4,
       "sets": "5-13",
       "pts": 4
-    },
-    {
-      "pos": 8,
-      "name": "Aarby Volley",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "4-8",
-      "pts": 3
     },
     {
       "pos": 9,
@@ -354,8 +354,8 @@
       "away": "Aarby Volley",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77697",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T14:11:32.693Z",
+  "updatedAt": "2026-11-15T20:25:40.119Z",
   "teams": [
     {
       "pos": 1,
@@ -30,30 +30,30 @@
     },
     {
       "pos": 4,
-      "name": "Hillerød G&I",
+      "name": "B1960",
       "k": 4,
       "v": 2,
       "t": 2,
-      "sets": "7-6",
-      "pts": 6
+      "sets": "9-6",
+      "pts": 7
     },
     {
       "pos": 5,
+      "name": "Hillerød G&I",
+      "k": 5,
+      "v": 2,
+      "t": 3,
+      "sets": "7-9",
+      "pts": 6
+    },
+    {
+      "pos": 6,
       "name": "Aarby Volley",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "7-7",
       "pts": 5
-    },
-    {
-      "pos": 6,
-      "name": "B1960",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "6-6",
-      "pts": 4
     },
     {
       "pos": 7,
@@ -328,8 +328,8 @@
       "away": "Hillerød G&I",
       "venue": "Nørrebrohallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77448",

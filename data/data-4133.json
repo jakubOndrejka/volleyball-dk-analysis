@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T14:11:32.038Z",
+  "updatedAt": "2026-11-15T20:25:39.397Z",
   "teams": [
     {
       "pos": 1,
@@ -13,28 +13,28 @@
     {
       "pos": 2,
       "name": "VLI.3",
-      "k": 5,
+      "k": 6,
       "v": 4,
-      "t": 1,
-      "sets": "12-5",
-      "pts": 12
+      "t": 2,
+      "sets": "14-8",
+      "pts": 13
     },
     {
       "pos": 3,
+      "name": "KSV.4",
+      "k": 6,
+      "v": 4,
+      "t": 2,
+      "sets": "12-11",
+      "pts": 12
+    },
+    {
+      "pos": 4,
       "name": "Hillerød G&I",
       "k": 5,
       "v": 3,
       "t": 2,
       "sets": "10-8",
-      "pts": 9
-    },
-    {
-      "pos": 4,
-      "name": "KSV.4",
-      "k": 5,
-      "v": 3,
-      "t": 2,
-      "sets": "9-9",
       "pts": 9
     },
     {
@@ -367,8 +367,8 @@
       "away": "VLI.3",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "76626",
