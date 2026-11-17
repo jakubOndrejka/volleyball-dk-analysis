@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T17:29:51.738Z",
+  "updatedAt": "2026-11-17T01:06:33.996Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "Hvidovre VK.4",
-      "k": 5,
-      "v": 4,
+      "k": 4,
+      "v": 3,
       "t": 1,
-      "sets": "14-4",
-      "pts": 13
+      "sets": "11-4",
+      "pts": 10
     },
     {
       "pos": 3,
@@ -31,23 +31,14 @@
     {
       "pos": 4,
       "name": "Kanalbyens IF",
-      "k": 5,
+      "k": 4,
       "v": 2,
-      "t": 3,
-      "sets": "10-11",
+      "t": 2,
+      "sets": "9-8",
       "pts": 7
     },
     {
       "pos": 5,
-      "name": "KV61.2",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "6-4",
-      "pts": 6
-    },
-    {
-      "pos": 6,
       "name": "VLI.4",
       "k": 5,
       "v": 2,
@@ -56,7 +47,7 @@
       "pts": 6
     },
     {
-      "pos": 7,
+      "pos": 6,
       "name": "Ishøj Volley.2",
       "k": 5,
       "v": 2,
@@ -65,7 +56,7 @@
       "pts": 6
     },
     {
-      "pos": 8,
+      "pos": 7,
       "name": "Gentofte Volley.4",
       "k": 5,
       "v": 1,
@@ -74,12 +65,12 @@
       "pts": 4
     },
     {
-      "pos": 9,
+      "pos": 8,
       "name": "VK Holbæk.2",
-      "k": 5,
+      "k": 4,
       "v": 0,
-      "t": 5,
-      "sets": "3-15",
+      "t": 4,
+      "sets": "3-12",
       "pts": 1
     }
   ],
@@ -134,19 +125,6 @@
       "venue": "Bjergmarkshallen",
       "mapsUrl": null,
       "score": "1-3",
-      "completed": true
-    },
-    {
-      "matchId": "77579",
-      "matchNumber": "150153",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77579",
-      "date": "2026-09-27",
-      "time": "10:00",
-      "home": "KV61.2",
-      "away": "Hvidovre VK.4",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": "0-3",
       "completed": true
     },
     {
@@ -241,19 +219,6 @@
       "completed": true
     },
     {
-      "matchId": "77617",
-      "matchNumber": "150191",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77617",
-      "date": "2026-10-25",
-      "time": "14:00",
-      "home": "KV61.2",
-      "away": "VK Holbæk.2",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": "3-0",
-      "completed": true
-    },
-    {
       "matchId": "77567",
       "matchNumber": "150141",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77567",
@@ -319,32 +284,6 @@
       "completed": true
     },
     {
-      "matchId": "77621",
-      "matchNumber": "150195",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77621",
-      "date": "2026-11-01",
-      "time": "18:30",
-      "home": "KSV.3",
-      "away": "KV61.2",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77583",
-      "matchNumber": "150157",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77583",
-      "date": "2026-11-07",
-      "time": "16:00",
-      "home": "Kanalbyens IF",
-      "away": "KV61.2",
-      "venue": "Sluseholmen Skole",
-      "mapsUrl": null,
-      "score": "1-3",
-      "completed": true
-    },
-    {
       "matchId": "77593",
       "matchNumber": "150167",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77593",
@@ -379,19 +318,6 @@
       "home": "Kanalbyens IF",
       "away": "KSV.3",
       "venue": "Sluseholmen Skole",
-      "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77639",
-      "matchNumber": "150213",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77639",
-      "date": "2026-11-22",
-      "time": "10:00",
-      "home": "Glostrup IC.2",
-      "away": "KV61.2",
-      "venue": "Hvissingehallen",
       "mapsUrl": null,
       "score": null,
       "completed": false
@@ -449,19 +375,6 @@
       "completed": false
     },
     {
-      "matchId": "77604",
-      "matchNumber": "150178",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77604",
-      "date": "2026-11-29",
-      "time": "16:00",
-      "home": "KV61.2",
-      "away": "Ishøj Volley.2",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "77587",
       "matchNumber": "150161",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77587",
@@ -484,32 +397,6 @@
       "away": "Glostrup IC.2",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77555",
-      "matchNumber": "150129",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77555",
-      "date": "2026-12-06",
-      "time": "10:00",
-      "home": "KV61.2",
-      "away": "VLI.4",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77588",
-      "matchNumber": "150162",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77588",
-      "date": "2026-12-12",
-      "time": "11:30",
-      "home": "Gentofte Volley.4",
-      "away": "KV61.2",
-      "venue": "Kildeskovshal 1",
-      "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
       "score": null,
       "completed": false
     },
@@ -579,19 +466,6 @@
       "completed": false
     },
     {
-      "matchId": "77628",
-      "matchNumber": "150202",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77628",
-      "date": "2027-01-10",
-      "time": "14:00",
-      "home": "KV61.2",
-      "away": "Kanalbyens IF",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "77630",
       "matchNumber": "150204",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77630",
@@ -605,14 +479,14 @@
       "completed": false
     },
     {
-      "matchId": "77572",
-      "matchNumber": "150146",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77572",
-      "date": "2027-01-16",
+      "matchId": "77618",
+      "matchNumber": "150192",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77618",
+      "date": "2027-01-17",
       "time": "10:00",
-      "home": "VK Holbæk.2",
-      "away": "KV61.2",
-      "venue": "Bjergmarkshallen",
+      "home": "Glostrup IC.2",
+      "away": "Hvidovre VK.4",
+      "venue": "Hvissingehallen",
       "mapsUrl": null,
       "score": null,
       "completed": false
@@ -627,19 +501,6 @@
       "away": "KSV.3",
       "venue": "Kedelhallen",
       "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77618",
-      "matchNumber": "150192",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77618",
-      "date": "2027-01-17",
-      "time": "10:00",
-      "home": "Glostrup IC.2",
-      "away": "Hvidovre VK.4",
-      "venue": "Hvissingehallen",
-      "mapsUrl": null,
       "score": null,
       "completed": false
     },
@@ -774,19 +635,6 @@
       "completed": false
     },
     {
-      "matchId": "77576",
-      "matchNumber": "150150",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77576",
-      "date": "2027-02-28",
-      "time": "16:00",
-      "home": "KV61.2",
-      "away": "KSV.3",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "77614",
       "matchNumber": "150188",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77614",
@@ -839,19 +687,6 @@
       "completed": false
     },
     {
-      "matchId": "77594",
-      "matchNumber": "150168",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77594",
-      "date": "2027-03-13",
-      "time": "16:00",
-      "home": "KV61.2",
-      "away": "Glostrup IC.2",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "77601",
       "matchNumber": "150175",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77601",
@@ -861,19 +696,6 @@
       "away": "Kanalbyens IF",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77559",
-      "matchNumber": "150133",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77559",
-      "date": "2027-03-21",
-      "time": "16:00",
-      "home": "Ishøj Volley.2",
-      "away": "KV61.2",
-      "venue": "Ishøj Idrætscenter",
-      "mapsUrl": null,
       "score": null,
       "completed": false
     },
@@ -900,19 +722,6 @@
       "away": "VK Holbæk.2",
       "venue": "Hvissingehallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77633",
-      "matchNumber": "150207",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77633",
-      "date": "2027-04-04",
-      "time": "16:00",
-      "home": "KV61.2",
-      "away": "Gentofte Volley.4",
-      "venue": "Idrætshuset",
-      "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
       "score": null,
       "completed": false
     },
@@ -956,19 +765,6 @@
       "completed": false
     },
     {
-      "matchId": "77600",
-      "matchNumber": "150174",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77600",
-      "date": "2027-04-11",
-      "time": "16:30",
-      "home": "VLI.4",
-      "away": "KV61.2",
-      "venue": "Kedelhallen",
-      "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "77582",
       "matchNumber": "150156",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77582",
@@ -1004,19 +800,6 @@
       "away": "Glostrup IC.2",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
-    },
-    {
-      "matchId": "77624",
-      "matchNumber": "150198",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=77624",
-      "date": "2027-04-18",
-      "time": "16:00",
-      "home": "Hvidovre VK.4",
-      "away": "KV61.2",
-      "venue": "Frihedens Idrætscenter",
-      "mapsUrl": null,
       "score": null,
       "completed": false
     }
