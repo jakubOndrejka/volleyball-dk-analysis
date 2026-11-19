@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T13:38:35.072Z",
+  "updatedAt": "2026-11-19T17:26:09.958Z",
   "teams": [
     {
       "pos": 1,
@@ -341,19 +341,6 @@
       "completed": true
     },
     {
-      "matchId": "76264",
-      "matchNumber": "149026",
-      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76264",
-      "date": "2026-11-01",
-      "time": "13:00",
-      "home": "Lynge Uggeløse",
-      "away": "Amager Volley",
-      "venue": "Lyngehallen",
-      "mapsUrl": "https://maps.google.com/maps?q=Idr%C3%A6tsvej%2014%2C%203540%20Lynge",
-      "score": null,
-      "completed": false
-    },
-    {
       "matchId": "76272",
       "matchNumber": "149034",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76272",
@@ -493,6 +480,19 @@
       "away": "Amager Volley.2",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "76264",
+      "matchNumber": "149026",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=76264",
+      "date": "2026-12-01",
+      "time": "19:00",
+      "home": "Lynge Uggeløse",
+      "away": "Amager Volley",
+      "venue": "Lyngehallen",
+      "mapsUrl": "https://maps.google.com/maps?q=Idr%C3%A6tsvej%2014%2C%203540%20Lynge",
       "score": null,
       "completed": false
     },
