@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-17T01:06:33.996Z",
+  "updatedAt": "2026-11-21T19:50:54.202Z",
   "teams": [
     {
       "pos": 1,
       "name": "KSV.3",
-      "k": 5,
+      "k": 6,
       "v": 5,
-      "t": 0,
-      "sets": "15-5",
-      "pts": 15
+      "t": 1,
+      "sets": "17-8",
+      "pts": 16
     },
     {
       "pos": 2,
@@ -21,21 +21,21 @@
     },
     {
       "pos": 3,
+      "name": "Kanalbyens IF",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "12-10",
+      "pts": 10
+    },
+    {
+      "pos": 4,
       "name": "Glostrup IC.2",
       "k": 4,
       "v": 3,
       "t": 1,
       "sets": "10-6",
       "pts": 9
-    },
-    {
-      "pos": 4,
-      "name": "Kanalbyens IF",
-      "k": 4,
-      "v": 2,
-      "t": 2,
-      "sets": "9-8",
-      "pts": 7
     },
     {
       "pos": 5,
@@ -319,8 +319,8 @@
       "away": "KSV.3",
       "venue": "Sluseholmen Skole",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "77554",
