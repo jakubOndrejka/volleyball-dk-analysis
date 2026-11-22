@@ -1,41 +1,41 @@
 {
-  "updatedAt": "2026-11-22T13:36:03.235Z",
+  "updatedAt": "2026-11-22T21:19:18.365Z",
   "teams": [
     {
       "pos": 1,
       "name": "KSV",
-      "k": 5,
-      "v": 5,
+      "k": 6,
+      "v": 6,
       "t": 0,
-      "sets": "15-0",
-      "pts": 15
+      "sets": "18-0",
+      "pts": 18
     },
     {
       "pos": 2,
       "name": "KSV.2",
-      "k": 5,
-      "v": 4,
+      "k": 6,
+      "v": 5,
       "t": 1,
-      "sets": "13-3",
-      "pts": 12
+      "sets": "16-5",
+      "pts": 15
     },
     {
       "pos": 3,
+      "name": "VLI",
+      "k": 6,
+      "v": 3,
+      "t": 3,
+      "sets": "15-10",
+      "pts": 12
+    },
+    {
+      "pos": 4,
       "name": "Amager Volley",
       "k": 6,
       "v": 4,
       "t": 2,
       "sets": "12-12",
       "pts": 12
-    },
-    {
-      "pos": 4,
-      "name": "VLI",
-      "k": 5,
-      "v": 3,
-      "t": 2,
-      "sets": "13-7",
-      "pts": 11
     },
     {
       "pos": 5,
@@ -58,10 +58,10 @@
     {
       "pos": 7,
       "name": "Lynge Uggeløse",
-      "k": 4,
+      "k": 5,
       "v": 2,
-      "t": 2,
-      "sets": "7-7",
+      "t": 3,
+      "sets": "7-10",
       "pts": 6
     },
     {
@@ -441,8 +441,8 @@
       "away": "VLI",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "76278",
@@ -454,8 +454,8 @@
       "away": "Lynge Uggeløse",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76258",

@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-11-21T19:50:53.813Z",
+  "updatedAt": "2026-11-22T21:19:18.978Z",
   "teams": [
     {
       "pos": 1,
+      "name": "Hvidovre VK.3",
+      "k": 6,
+      "v": 6,
+      "t": 0,
+      "sets": "18-7",
+      "pts": 18
+    },
+    {
+      "pos": 2,
       "name": "Kanalbyens IF",
       "k": 6,
       "v": 5,
@@ -11,21 +20,12 @@
       "pts": 16
     },
     {
-      "pos": 2,
-      "name": "Hvidovre VK.3",
-      "k": 5,
-      "v": 5,
-      "t": 0,
-      "sets": "15-6",
-      "pts": 15
-    },
-    {
       "pos": 3,
       "name": "Farum VK.3",
-      "k": 4,
+      "k": 5,
       "v": 4,
-      "t": 0,
-      "sets": "12-3",
+      "t": 1,
+      "sets": "13-6",
       "pts": 12
     },
     {
@@ -39,6 +39,15 @@
     },
     {
       "pos": 5,
+      "name": "Glostrup IC.2",
+      "k": 5,
+      "v": 2,
+      "t": 3,
+      "sets": "11-11",
+      "pts": 8
+    },
+    {
+      "pos": 6,
       "name": "KSV.5",
       "k": 7,
       "v": 2,
@@ -47,22 +56,13 @@
       "pts": 7
     },
     {
-      "pos": 6,
+      "pos": 7,
       "name": "Frederiksberg Volley.4",
       "k": 5,
       "v": 2,
       "t": 3,
       "sets": "6-10",
       "pts": 6
-    },
-    {
-      "pos": 7,
-      "name": "Glostrup IC.2",
-      "k": 4,
-      "v": 1,
-      "t": 3,
-      "sets": "8-9",
-      "pts": 5
     },
     {
       "pos": 8,
@@ -76,11 +76,11 @@
     {
       "pos": 9,
       "name": "VLI.4",
-      "k": 4,
+      "k": 5,
       "v": 0,
-      "t": 4,
-      "sets": "2-12",
-      "pts": 0
+      "t": 5,
+      "sets": "4-15",
+      "pts": 1
     }
   ],
   "fixtures": [
@@ -393,8 +393,8 @@
       "away": "VLI.4",
       "venue": "Hvissingehallen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-2",
+      "completed": true
     },
     {
       "matchId": "77693",
@@ -406,8 +406,8 @@
       "away": "Farum VK.3",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77661",

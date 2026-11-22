@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T13:36:02.659Z",
+  "updatedAt": "2026-11-22T21:19:18.668Z",
   "teams": [
     {
       "pos": 1,
@@ -39,21 +39,21 @@
     },
     {
       "pos": 5,
+      "name": "VLI.2",
+      "k": 4,
+      "v": 3,
+      "t": 1,
+      "sets": "10-5",
+      "pts": 9
+    },
+    {
+      "pos": 6,
       "name": "Rosenlund Volley",
       "k": 4,
       "v": 3,
       "t": 1,
       "sets": "10-6",
       "pts": 9
-    },
-    {
-      "pos": 6,
-      "name": "VLI.2",
-      "k": 3,
-      "v": 2,
-      "t": 1,
-      "sets": "7-5",
-      "pts": 6
     },
     {
       "pos": 7,
@@ -67,10 +67,10 @@
     {
       "pos": 8,
       "name": "Lyngby-Gladsaxe WC",
-      "k": 5,
+      "k": 6,
       "v": 1,
-      "t": 4,
-      "sets": "5-13",
+      "t": 5,
+      "sets": "5-16",
       "pts": 3
     },
     {
@@ -406,8 +406,8 @@
       "away": "VLI.2",
       "venue": "Buddingehallen",
       "mapsUrl": "https://maps.google.com/maps?q=Kildebakkeg%C3%A5rds%20Alle%20155%2C%202860%20S%C3%B8borg",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76178",

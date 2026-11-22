@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T13:36:03.711Z",
+  "updatedAt": "2026-11-22T21:19:19.269Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "KSV.2",
-      "k": 5,
+      "k": 6,
       "v": 4,
-      "t": 1,
-      "sets": "12-5",
-      "pts": 12
+      "t": 2,
+      "sets": "14-8",
+      "pts": 13
     },
     {
       "pos": 3,
@@ -48,6 +48,15 @@
     },
     {
       "pos": 6,
+      "name": "Grøndal EV",
+      "k": 4,
+      "v": 2,
+      "t": 2,
+      "sets": "7-8",
+      "pts": 6
+    },
+    {
+      "pos": 7,
       "name": "VK Næstved",
       "k": 4,
       "v": 2,
@@ -56,7 +65,7 @@
       "pts": 6
     },
     {
-      "pos": 7,
+      "pos": 8,
       "name": "Hillerød G&I",
       "k": 6,
       "v": 2,
@@ -65,22 +74,13 @@
       "pts": 6
     },
     {
-      "pos": 8,
+      "pos": 9,
       "name": "Farum-Holte.2",
       "k": 4,
       "v": 1,
       "t": 3,
       "sets": "5-10",
       "pts": 4
-    },
-    {
-      "pos": 9,
-      "name": "Grøndal EV",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "4-6",
-      "pts": 3
     }
   ],
   "fixtures": [
@@ -367,8 +367,8 @@
       "away": "Grøndal EV",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77459",

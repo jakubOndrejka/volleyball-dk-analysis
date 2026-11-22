@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T19:50:54.202Z",
+  "updatedAt": "2026-11-22T21:19:19.440Z",
   "teams": [
     {
       "pos": 1,
@@ -13,11 +13,11 @@
     {
       "pos": 2,
       "name": "Hvidovre VK.4",
-      "k": 4,
-      "v": 3,
+      "k": 5,
+      "v": 4,
       "t": 1,
-      "sets": "11-4",
-      "pts": 10
+      "sets": "14-4",
+      "pts": 13
     },
     {
       "pos": 3,
@@ -49,10 +49,10 @@
     {
       "pos": 6,
       "name": "Ishøj Volley.2",
-      "k": 5,
+      "k": 6,
       "v": 2,
-      "t": 3,
-      "sets": "9-12",
+      "t": 4,
+      "sets": "9-15",
       "pts": 6
     },
     {
@@ -332,8 +332,8 @@
       "away": "Ishøj Volley.2",
       "venue": "Frihedens Idrætscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "77642",
