@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T20:25:39.397Z",
+  "updatedAt": "2026-11-22T13:36:02.979Z",
   "teams": [
     {
       "pos": 1,
@@ -21,21 +21,21 @@
     },
     {
       "pos": 3,
+      "name": "Hillerød G&I",
+      "k": 6,
+      "v": 4,
+      "t": 2,
+      "sets": "13-8",
+      "pts": 12
+    },
+    {
+      "pos": 4,
       "name": "KSV.4",
       "k": 6,
       "v": 4,
       "t": 2,
       "sets": "12-11",
       "pts": 12
-    },
-    {
-      "pos": 4,
-      "name": "Hillerød G&I",
-      "k": 5,
-      "v": 3,
-      "t": 2,
-      "sets": "10-8",
-      "pts": 9
     },
     {
       "pos": 5,
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Roskilde VK",
-      "k": 6,
+      "k": 7,
       "v": 1,
-      "t": 5,
-      "sets": "3-17",
+      "t": 6,
+      "sets": "3-20",
       "pts": 3
     }
   ],
@@ -380,8 +380,8 @@
       "away": "Hillerød G&I",
       "venue": "Roskilde Gym.",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76642",

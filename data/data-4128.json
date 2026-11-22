@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T17:26:09.958Z",
+  "updatedAt": "2026-11-22T13:36:03.235Z",
   "teams": [
     {
       "pos": 1,
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "Amager Volley",
+      "k": 6,
+      "v": 4,
+      "t": 2,
+      "sets": "12-12",
+      "pts": 12
+    },
+    {
+      "pos": 4,
       "name": "VLI",
       "k": 5,
       "v": 3,
@@ -29,39 +38,30 @@
       "pts": 11
     },
     {
-      "pos": 4,
-      "name": "Gentofte Volley.2",
-      "k": 5,
-      "v": 3,
-      "t": 2,
-      "sets": "9-8",
-      "pts": 9
-    },
-    {
       "pos": 5,
-      "name": "Amager Volley",
-      "k": 5,
+      "name": "Gentofte Volley.2",
+      "k": 6,
       "v": 3,
-      "t": 2,
-      "sets": "9-10",
-      "pts": 9
+      "t": 3,
+      "sets": "11-11",
+      "pts": 10
     },
     {
       "pos": 6,
+      "name": "Lyngby-Gladsaxe Volley",
+      "k": 6,
+      "v": 3,
+      "t": 3,
+      "sets": "10-12",
+      "pts": 9
+    },
+    {
+      "pos": 7,
       "name": "Lynge Uggeløse",
       "k": 4,
       "v": 2,
       "t": 2,
       "sets": "7-7",
-      "pts": 6
-    },
-    {
-      "pos": 7,
-      "name": "Lyngby-Gladsaxe Volley",
-      "k": 5,
-      "v": 2,
-      "t": 3,
-      "sets": "7-12",
       "pts": 6
     },
     {
@@ -76,10 +76,10 @@
     {
       "pos": 9,
       "name": "Farum VK 2",
-      "k": 4,
+      "k": 5,
       "v": 1,
-      "t": 3,
-      "sets": "4-10",
+      "t": 4,
+      "sets": "4-13",
       "pts": 3
     },
     {
@@ -415,8 +415,8 @@
       "away": "Amager Volley",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "76276",
@@ -428,8 +428,8 @@
       "away": "Lyngby-Gladsaxe Volley",
       "venue": "Ny Holtehal",
       "mapsUrl": "https://maps.google.com/maps?q=Kongevejen%20464%2C%202840%20Holte",
-      "score": null,
-      "completed": false
+      "score": "0-3",
+      "completed": true
     },
     {
       "matchId": "76277",

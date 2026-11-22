@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T20:25:40.119Z",
+  "updatedAt": "2026-11-22T13:36:03.711Z",
   "teams": [
     {
       "pos": 1,
@@ -30,33 +30,42 @@
     },
     {
       "pos": 4,
-      "name": "B1960",
+      "name": "Aarby Volley",
       "k": 4,
       "v": 2,
       "t": 2,
-      "sets": "9-6",
-      "pts": 7
+      "sets": "10-8",
+      "pts": 8
     },
     {
       "pos": 5,
-      "name": "Hillerød G&I",
+      "name": "B1960",
       "k": 5,
       "v": 2,
       "t": 3,
-      "sets": "7-9",
-      "pts": 6
+      "sets": "10-9",
+      "pts": 7
     },
     {
       "pos": 6,
-      "name": "Aarby Volley",
-      "k": 3,
-      "v": 1,
+      "name": "VK Næstved",
+      "k": 4,
+      "v": 2,
       "t": 2,
-      "sets": "7-7",
-      "pts": 5
+      "sets": "6-9",
+      "pts": 6
     },
     {
       "pos": 7,
+      "name": "Hillerød G&I",
+      "k": 6,
+      "v": 2,
+      "t": 4,
+      "sets": "8-12",
+      "pts": 6
+    },
+    {
+      "pos": 8,
       "name": "Farum-Holte.2",
       "k": 4,
       "v": 1,
@@ -65,21 +74,12 @@
       "pts": 4
     },
     {
-      "pos": 8,
+      "pos": 9,
       "name": "Grøndal EV",
       "k": 3,
       "v": 1,
       "t": 2,
       "sets": "4-6",
-      "pts": 3
-    },
-    {
-      "pos": 9,
-      "name": "VK Næstved",
-      "k": 3,
-      "v": 1,
-      "t": 2,
-      "sets": "3-8",
       "pts": 3
     }
   ],
@@ -341,8 +341,8 @@
       "away": "VK Næstved",
       "venue": "Sophienborgskolen",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "77461",
@@ -354,8 +354,8 @@
       "away": "B1960",
       "venue": "Aarby Fritidscenter",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "77401",

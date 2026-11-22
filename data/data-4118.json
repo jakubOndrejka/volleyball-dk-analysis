@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T19:50:53.980Z",
+  "updatedAt": "2026-11-22T13:36:03.536Z",
   "teams": [
     {
       "pos": 1,
@@ -22,10 +22,10 @@
     {
       "pos": 3,
       "name": "Gentofte Volley.2",
-      "k": 5,
+      "k": 6,
       "v": 4,
-      "t": 1,
-      "sets": "14-5",
+      "t": 2,
+      "sets": "15-8",
       "pts": 13
     },
     {
@@ -39,6 +39,15 @@
     },
     {
       "pos": 5,
+      "name": "KSV",
+      "k": 5,
+      "v": 3,
+      "t": 2,
+      "sets": "11-9",
+      "pts": 10
+    },
+    {
+      "pos": 6,
       "name": "RS Rødovre",
       "k": 5,
       "v": 3,
@@ -47,31 +56,22 @@
       "pts": 9
     },
     {
-      "pos": 6,
-      "name": "KSV",
-      "k": 4,
+      "pos": 7,
+      "name": "Amager Volley.2",
+      "k": 6,
       "v": 2,
-      "t": 2,
-      "sets": "8-8",
-      "pts": 7
+      "t": 4,
+      "sets": "9-13",
+      "pts": 6
     },
     {
-      "pos": 7,
+      "pos": 8,
       "name": "Team Køge",
       "k": 7,
       "v": 1,
       "t": 6,
       "sets": "7-19",
       "pts": 4
-    },
-    {
-      "pos": 8,
-      "name": "Amager Volley.2",
-      "k": 5,
-      "v": 1,
-      "t": 4,
-      "sets": "6-12",
-      "pts": 3
     },
     {
       "pos": 9,
@@ -85,10 +85,10 @@
     {
       "pos": 10,
       "name": "Enghave VK",
-      "k": 5,
+      "k": 6,
       "v": 0,
-      "t": 5,
-      "sets": "0-15",
+      "t": 6,
+      "sets": "1-18",
       "pts": 0
     }
   ],
@@ -441,8 +441,8 @@
       "away": "Enghave VK",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
-      "score": null,
-      "completed": false
+      "score": "3-1",
+      "completed": true
     },
     {
       "matchId": "75354",
@@ -454,8 +454,8 @@
       "away": "Amager Volley.2",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "1-3",
+      "completed": true
     },
     {
       "matchId": "75353",
