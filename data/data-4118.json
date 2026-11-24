@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T13:36:03.536Z",
+  "updatedAt": "2026-11-24T18:23:25.992Z",
   "teams": [
     {
       "pos": 1,
@@ -488,7 +488,7 @@
       "matchNumber": "148100",
       "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75338",
       "date": "2026-11-29",
-      "time": "18:00",
+      "time": "16:30",
       "home": "KSV",
       "away": "DTU Volley",
       "venue": "Idrætshuset",
@@ -714,6 +714,19 @@
       "away": "Gentofte Volley.2",
       "venue": "Idrætshuset",
       "mapsUrl": "https://maps.google.com/maps?q=Gunnar%20Nu%20Hansens%20Plads%207%2C%202100%20K%C3%B8benhavn%20%C3%98",
+      "score": null,
+      "completed": false
+    },
+    {
+      "matchId": "75355",
+      "matchNumber": "148117",
+      "matchUrl": "https://resultater.volleyball.dk/tms/Turneringer-og-resultater/Kamp-Information.aspx?KampId=75355",
+      "date": "2027-01-24",
+      "time": "13:30",
+      "home": "Frederiksberg Volley",
+      "away": "Hvidovre VK.2",
+      "venue": "Kedelhallen",
+      "mapsUrl": "https://maps.google.com/maps?q=Nyelandsvej%2075%2C%202000%20Frederiksberg",
       "score": null,
       "completed": false
     },
