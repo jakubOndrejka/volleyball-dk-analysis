@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T18:23:25.649Z",
+  "updatedAt": "2026-11-28T14:17:49.899Z",
   "teams": [
     {
       "pos": 1,
@@ -21,6 +21,15 @@
     },
     {
       "pos": 3,
+      "name": "Rosenlund Volley",
+      "k": 5,
+      "v": 4,
+      "t": 1,
+      "sets": "13-6",
+      "pts": 12
+    },
+    {
+      "pos": 4,
       "name": "Enghave VK",
       "k": 6,
       "v": 3,
@@ -29,30 +38,21 @@
       "pts": 11
     },
     {
-      "pos": 4,
+      "pos": 5,
       "name": "Frederiksberg Volley",
-      "k": 6,
+      "k": 7,
       "v": 3,
-      "t": 3,
-      "sets": "11-12",
+      "t": 4,
+      "sets": "11-15",
       "pts": 10
     },
     {
-      "pos": 5,
+      "pos": 6,
       "name": "VLI.2",
       "k": 4,
       "v": 3,
       "t": 1,
       "sets": "10-5",
-      "pts": 9
-    },
-    {
-      "pos": 6,
-      "name": "Rosenlund Volley",
-      "k": 4,
-      "v": 3,
-      "t": 1,
-      "sets": "10-6",
       "pts": 9
     },
     {
@@ -419,8 +419,8 @@
       "away": "Frederiksberg Volley",
       "venue": "Ny Rosenlundhal",
       "mapsUrl": null,
-      "score": null,
-      "completed": false
+      "score": "3-0",
+      "completed": true
     },
     {
       "matchId": "76176",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T18:23:25.668Z",
+  "updatedAt": "2026-11-28T14:17:50.457Z",
   "teams": [
     {
       "pos": 1,
@@ -22,11 +22,11 @@
     {
       "pos": 3,
       "name": "Farum VK.3",
-      "k": 5,
-      "v": 4,
+      "k": 6,
+      "v": 5,
       "t": 1,
-      "sets": "13-6",
-      "pts": 12
+      "sets": "16-8",
+      "pts": 15
     },
     {
       "pos": 4,
@@ -67,11 +67,11 @@
     {
       "pos": 8,
       "name": "Gentofte Volley.4",
-      "k": 6,
+      "k": 7,
       "v": 1,
-      "t": 5,
-      "sets": "5-16",
-      "pts": 4
+      "t": 6,
+      "sets": "7-19",
+      "pts": 5
     },
     {
       "pos": 9,
@@ -419,8 +419,8 @@
       "away": "Farum VK.3",
       "venue": "Kildeskovshal 1",
       "mapsUrl": "https://maps.google.com/maps?q=Adolphsvej%2025%2C%202820%20Gentofte",
-      "score": null,
-      "completed": false
+      "score": "2-3",
+      "completed": true
     },
     {
       "matchId": "77659",
